@@ -13,3 +13,11 @@ def approx1(x,width,lv,tan):
     denominator=2*(1+tan**(-2))
 
     return nominator/denominator
+
+
+def approx2(x,width,lv,tan):
+
+    return 4*np.exp(-np.pi*x/width)/(width*np.pi)
+
+def approxp(x,width,lv,tan):
+    return approx1(x,width,lv,tan)+ approx2(x,width,lv,tan)

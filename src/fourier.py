@@ -20,6 +20,7 @@ def R_NLx(x,args,limit=2e2,broadening=1e-1):
     assert isinstance(x,np.ndarray), f'x has to be a numpy array, not {type(x)}'
     
     broadening=find_lim(R_NLk,1e-2,*args)
+    broadening=1
     def BR_NLk(k,*args):
         return R_NLk(k*broadening,*args) 
     
@@ -28,7 +29,7 @@ def R_NLx(x,args,limit=2e2,broadening=1e-1):
     return x/broadening,RNL*broadening
 
 
-    
+
 
 #Not working
 #@lru_cache(maxsize=5000)
