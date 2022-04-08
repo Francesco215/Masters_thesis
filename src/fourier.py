@@ -16,17 +16,12 @@ def find_lim(f,height=1e-2,*args,**kwargs):
     return k[np.where(R<height)[0][0]]
 
 
-def R_NLx(x,args,limit=2e2,broadening=1e-1):
+def R_NLx(x,args,limit=2e2):
     assert isinstance(x,np.ndarray), f'x has to be a numpy array, not {type(x)}'
     
-    broadening=find_lim(R_NLk,1e-2,*args)
-    broadening=1
-    def BR_NLk(k,*args):
-        return R_NLk(k*broadening,*args) 
-    
-    RNL=np.array([quad(BR_NLk,0,limit,args=args,weight='cos',wvar=i) for i in x])/(2*np.pi)
+    RNL=np.array([quad(R_NLk,0,limit,args=args,weight='cos',wvar=x) for x in x])/(2*np.pi)
 
-    return x/broadening,RNL*broadening
+    return RNL
 
 
 
