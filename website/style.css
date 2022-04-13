@@ -1,0 +1,22 @@
+.video-d-figure {
+    float: right;
+    position: relative;
+    left: 11em;
+    margin-left: -11em;
+    width: 450px;
+    padding-left: 1em;
+    margin-bottom: 0em !important;
+    padding-bottom: 1em;
+  }
+
+@media (max-width: 1180px) {
+    .video-d-figure {
+      float: none;
+      left: 0;
+      margin-left: none;
+      padding-left: none;
+      width: 100%;
+    }
+  }
+
+
