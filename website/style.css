@@ -24,24 +24,20 @@
   }
 
 
-p{
-  clear: left;
-}
+p{ clear: left;}
 
-my-element { display: block; }
 
 /*this part is for the counters */
-
 d-title{counter-reset: section;}
 
-h2::before {
+.section::before {
   counter-increment: section;                 
   content: counter(section) " ";  
 }
 
-h2{counter-reset: subsection;}
+d-section{counter-reset: subsection;}
 
 .subsection::before {
   counter-increment: subsection;                 
   content: counter(section) "." counter(subsection) " ";  
-}
+} 
