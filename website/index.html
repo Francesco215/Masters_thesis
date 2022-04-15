@@ -1,79 +1,122 @@
-<link rel="stylesheet" href="style.css">
-<script src="https://distill.pub/template.v2.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <script src="https://distill.pub/template.v2.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+  <script >
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+          });
+      });
+  </script>
 
 </head>
 
-<body>
+
 <d-front-matter>
-  <script type="text/json">
-    {
-  "title": "Berry Curvature",
-  "description": "What Berry Curvature is and how it works",
-  "authors": [
+  <script type="text/json">{
+    "title": "Understanding RL Vision",
+    "description": "With diverse environments, we can analyze, diagnose and edit deep reinforcement learning models using attribution.",
+    "authors": [
       {
-          "author": "Francesco Sacco",
-          "authorURL": "https://github.com/Francesco215",
-          "affiliation": "University of Pisa",
-          "affiliationURL": "https://unipi.it"
+        "author": "Francesco Sacco",
+        "authorURL": "https://github.com/Francesco215",
+        "affiliation": "University of Pisa",
+        "affiliationURL": "https://www.unipi.it"
       }
-  ],
-  "katex": {
-      "delimiters": [
-          {
-              "left": "$",
-              "right": "$",
-              "display": false
-          },
-          {
-              "left": "$$",
-              "right": "$$",
-              "display": true
-          }
       ]
-  }
-}
-  </script>
+  }</script>
 </d-front-matter>
 
-<d-title>
-  <h1>Berry curvature</h1>
-  <p>What Berry curvature is and how it works</p>
-</d-title>
-
-<d-byline></d-byline>
-
-<d-article><div>
-  <d-section id="what-is-berry-curvature">What is Berry curvature?</d-section>      
-  <p id="introduction">
-    Computing has changed how people communicate. The transmission of news, messages, and ideas is instant. Anyone's voice can be heard. In fact, access to digital communication technologies such as the Internet is so fundamental to daily life that their disruption by government is condemned by the United Nations Human Rights Council <d-cite key="un2017special"></d-cite>. But while the technology to distribute our ideas has grown in leaps and bounds, the interfaces have remained largely the same.
-  </p>
-        
-  <d-figure class="l-side" id="sanderson2018visualizing">
-    <img src="photo-1615789591457-74a63395c990.jpeg" style="width:100%; height: auto; float: left;">
-  </d-figure>
-  <p>
-    Parallel to the development of the internet, researchers like Alan Kay and Douglas Engelbart worked to build technology that would empower individuals and enhance cognition. Kay imagined the Dynabook <d-cite key="kay2011personal"></d-cite> in the hands of children across the world. Engelbart, while best remembered for his "mother of all demos," was more interested in the ability of computation to augment human intellect <d-cite key="engelbart1962augmenting"></d-cite>. Neal Stephenson wrote speculative fiction that imagined interactive paper that could display videos and interfaces, and books that could teach and respond to their readers <d-cite key="stephenson1998diamond"></d-cite>.
-  </p>
-  <p>
-    While these videos are praised for their approachability and rich exposition, they are not interactive. One radical extension from traditional video content is also incorporating user input into the video while narration plays. A series of these interactive videos on "Visualizing Quaternions" lets a reader listen to narration of a live animation on screen, but at any time the viewer can take control of the video and manipulate the animation and graphics while simultaneously listening to the narration <d-cite key="sanderson2018visualizing"></d-cite>.
-  </p>
-  <d-section id="asd">maronn</d-section>
-
-  <d-subsection id="123">acd</d-subsection>
-  
-  <d-reference id="uwu" key="asf"></d-reference>
-  
-
-  <d-subsection id="asf">asdf</d-subsection>
-
-  <d-section> coooos</d-section>
-  <d-subsection>alloa</d-subsection>
+  <d-title>
+    <h1>The paradox of infinite fermions</h1>
+    <p>
+        When we have an infinite number of fermions a paradox can occur when you exchange a infinite number of couples
+    </p>
     
-</div></d-article>
-<d-bibliography src="bibliography.bib"></d-bibliography>
+  </d-title>
 
-<script async rel="text/javascript" src="new_types.js"> </script>
+  <d-article>
+
+    <d-contents>
+      <nav class="l-text figcaption">
+        <h3>Contents</h3>
+        <div><a href="#paradox">The paradox</a></div>
+        
+        <ul>
+          <li><a href="#remarks">Some remarks</a></li>
+        </ul>
+        <div><a href="#hyperbolic">The solution</a></div>
+      </nav>
+    </d-contents>
+
+    <div>
+        <d-section id="no_flat">The paradox</d-section>
+        <p>
+            The wavefunction of a two fermions obeys this property:
+        <d-equation id="equazione">
+        $$
+          \psi (x_1,x_2)=-\psi (x_2,x_1)
+        $$
+        </d-equation>
+        Lets say that we have a system of $2n$ fermions, than it follows that on the exchange of every couple of fermions $x_1 \leftrightarrow x_2$, $x_3 \leftrightarrow x_4,\dots,x_{2n-1} \leftrightarrow x_{2n}$ we have that
+        $$
+          \psi (x_1,x_2,x_3,x_4,\dots,x_{2n-1},x_{2n})=(-1)^n\psi(x_2,x_1,x_4,x_3\dots ,x_{2n},x_{2n-1})
+        $$
+        This runs into a problem when we try to do this with a (numerably) infinite number of fermions.
+        </p>
+        <d-figure class="l-side" id="sanderson2018visualizing">
+            <img src="photo-1615789591457-74a63395c990.jpeg" style="width:100%; height: auto; float: left;">
+          </d-figure>
+        <p>
+        $$
+          \psi(x_1,x_2,\dots)=(-1)^\infty\psi(x_2,x_1,\dots)
+        $$
+        Bosons don't have this probem because under exchange they don't change sign
+        </p>
+        <d-subsection id="remarks">Some remarks</d-subsection>
+        <p>  
+        For an uncountable number of fermions you can just get a coutable subset of fermions and the paradox will remain.
+        </p>
+        <p>
+          In the case of quantum field theory the paradox is written in terms of creation and annihilation operators.
+        </p>
+        
+        <d-section id="no_flat">The solution (?)</d-section>
+        <p>
+            Theese are the possibilities:
+            <l>
+              <li>
+                There are only a finite number of fermions
+              </li>
+              <li>
+                The axiom of choise is not applicable in Quantum Mechanics
+              </li>
+              <li>
+                The new phase cannot be observed in any way (although i don't know if this last one is true)
+              </li>
+            </l>
+        </p>
+
+        <p>
+          As you can see from equation <d-reference key="equazione"></d-reference> the phase of the wavefunction is not observable.
+        </p>
+
+  <d-bibliography src="bibliography.bib"></d-bibliography>
+  <script rel="text/javascript" src="new_types.js"> </script>
+
 </body>

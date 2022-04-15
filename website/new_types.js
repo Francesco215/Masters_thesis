@@ -63,6 +63,14 @@ for (var i=0;i<sections.length;i++){
 
 }
 
+class Equation extends HTMLElement {
+    connectedCallback() {
+        this.setAttribute("class","equation");
+
+    };
+}
+customElements.define('d-equation', Equation);
+
 
 //this code manages the references
 class Ref extends HTMLElement {
@@ -72,4 +80,17 @@ class Ref extends HTMLElement {
         this.appendChild(createCustomLink(number,"#"+key));
     };
 }
-customElements.define('d-reference', Ref);
+
+
+//this code manages the equations,
+document.addEventListener("DOMContentLoaded", function() {
+    var equations=document.querySelectorAll('.katex-display');
+    for (var i=0;i<equations.length;i++){
+    var parent=equations[i].parentElement.parentElement;
+    if (parent.className=="equation"){
+        parent.setAttribute("number",i+1);
+        }
+    }
+    customElements.define('d-reference', Ref); //this line calls the reference manager
+
+});
