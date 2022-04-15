@@ -76,8 +76,26 @@ customElements.define('d-equation', Equation);
 class Ref extends HTMLElement {
     connectedCallback() {
         var key=this.getAttribute("key");
-        var number= document.getElementById(key).getAttribute('number');
+        var element=document.getElementById(key)
+        var number= element.getAttribute('number');
+        
+        if (element.getAttribute('class')=="equation"){ //this part is only valid if it is an equation
+            var equation=element;
+            for(i=0;i<10;i++){ //find the element with katex inside
+                if (equation.firstElementChild.getAttribute('class')=="katex") {break;}
+                equation=equation.firstElementChild;
+            }
+
+            var hover_box=document.createElement("d-hover-box"); //create the hover box
+            hover_box.innerHTML=equation.innerHTML; //put the equation inside
+            hover_box.firstElementChild.style.padding="10px"; //and add some padding
+
+            this.after(hover_box);
+            this.onmouseover=function(){hover_box.style.display="block";}
+            this.onmouseout=function(){hover_box.style.display="none";}
+        }
         this.appendChild(createCustomLink(number,"#"+key));
+
     };
 }
 

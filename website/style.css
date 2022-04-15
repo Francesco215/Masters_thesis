@@ -49,6 +49,8 @@ d-section{counter-reset: subsection;}
 } 
 
 
+
+
 /* table of contents */
 @media (max-width: 1000px) {
   d-contents {
