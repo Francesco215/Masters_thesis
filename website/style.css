@@ -1,6 +1,5 @@
+
 /*this part is for the image on the side*/
-
-
 .l-side {
     float: right;
     position: relative;
@@ -24,16 +23,21 @@
   }
 
 
-p{ clear: left;}
+  d-article p{
+  clear: left;
+}
 
 
 /*this part is for the counters */
-d-title{counter-reset: section equation;}
+d-title{counter-reset: section equation figure;}
 
-.katex-display span.katex span.katex-html::after{
+
+
+d-equation span .katex-display span.katex span.katex-html::after{
   counter-increment: equation;
   content: "(" counter(equation) ")";
   float: right;
+  line-height: 200%;
 }
 
 .section::before {
@@ -48,7 +52,10 @@ d-section{counter-reset: subsection;}
   content: counter(section) "." counter(subsection) " ";  
 } 
 
-
+figcaption::before{
+  counter-increment: figure;
+  content: "Figure " counter(figure) ": ";
+}
 
 
 /* table of contents */

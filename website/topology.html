@@ -1,0 +1,290 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <script src="https://distill.pub/template.v2.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+  <script >
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+          });
+      });
+  </script>
+
+</head>
+
+
+<d-front-matter>
+  <script type="text/json">{
+    "title": "Topology in Quantum Mechanics",
+    "description": "With diverse environments, we can analyze, diagnose and edit deep reinforcement learning models using attribution.",
+    "authors": [
+      {
+        "author": "Francesco Sacco",
+        "authorURL": "https://github.com/Francesco215",
+        "affiliation": "University of Pisa",
+        "affiliationURL": "https://www.unipi.it"
+      }
+      ]
+  }</script>
+</d-front-matter>
+
+  <d-title> 
+    <h1>What does Topology have to do with Physics?</h1>
+    <p>
+        Sometimes the term "Topology" gets used in physics because it makes everything cool even if the connection with actual topology is not very clear. Here we are going to try to make clear the link between the two.
+    </p>
+    
+  </d-title>
+
+  <d-article>
+
+    
+    <d-section id="intro">Introduction</d-section>
+    <div>
+    <p>
+        In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending; that is, without closing holes, opening holes, tearing, gluing, or passing through itself. <d-cite key="topologyWikipedia"></d-cite>
+    </p>
+    <p>
+        Let's start with a simple but important example:
+    </p>
+    <p>
+        Let's consider the set of all the curves in the plane that don't pass thought the origin and that don't intersect themeseves. We can divide this set in two main subsets:
+
+    </p>
+    </div>
+
+    <div>
+        <figure class="l-side">
+            <img src="images/topo1.svg" style="width:100%; height: auto; float: left;">
+            <figcaption>
+                The origin in represented with a black dot. On the left the different equivalence classes are shown in different colors, and on the right you can see what happens when we apply noise
+            </figcaption>
+        </figure>
+        <ul>
+            <li>The set of curves that circle around the origin (<font color="#FE6100">orange</font>)</li>
+            <li>The set of curves that don't circle around the origin (<font color="#648FFF">blue</font>)</li>
+        </ul>
+        <p>
+            You cannot deform continously a <font color="#FE6100">orange</font> curve in to a <font color="#648FFF">blue</font> one without crossing the origin, but you can deform continously a curve to reach one of the same color
+        </p>
+        <p>
+            So we say that the two types of curves have different topologies, or alternatively that they form two different classes of equivalence.
+        </p>
+        <p>
+            As you can see from the image below, if we add noise, most of the time the curves will keep their topology. However, if the noise is strong enough, or the curve close enough to the origin, the curve sometimes changes its topology.
+        </p>
+    </div>
+    <figure id="mamama">
+        <img src="images/toponoise.svg" style="width:100%; height: auto; float: left;">
+        <figcaption>
+            In this image the <font color="#648FFF">blue</font> curve sometimes under noise keeps its topology, leaving it's color unchanged, other times it gets pushed beyond the origin and switches color  (here shown in <font color="#DC267F">fucsia</font>)
+        </figcaption>
+    </figure>
+    <d-subsection id="why-important">Why is it important?</d-subsection>
+
+    <p>
+        For a physicist, things that are topological in nature are important because they are resistant to noise. For example, in quantum computing the main bottleneck comes from envorinment noise. Because of this reaserchers are trying to explore the possibility of using topological effects to execute noise-resistant computations.
+    </p>
+    
+    <d-section id="topoEM">Topology in ElectroMagnetism</d-section>
+    
+    <p>
+        The first example of topology in physics comes from Gauss's law
+    <d-equation id="gauss">
+    $$
+        \oint \mathbf{E}\cdot d\mathbf s= \frac {1}{\epsilon_0} Q_{\textrm{inside}}
+    $$
+    </d-equation>
+    Lets say that we only have to work with one charge, then there are two types of closed surfaces:
+    <ol>
+        <li>
+            The ones that have the charge inside
+        </li>
+        <li>
+            The ones that don't have the charge inside
+        </li>
+    </ol>
+
+    Thats exaclty the same as the example in the intoduction!
+    </p>
+    <p>
+        The reason I bring this up is because with this we have a way to actually calculate the topology of something instead of relying on what you eyes see
+    </p>
+    <p>
+        There are a few other examples of things that link to topology in ElectroMagnetism, but we are going to skip them to jump straitgh into Quantum Mechanichs!
+    </p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <d-section id="no_flat">Topology in QM + EM</d-section>
+    <d-subsection id="fluxparticle">Particle moving around a Flux tube</d-subsection>
+    <div>
+        <p>
+            To start off we are goin to talk about a very specific case of a quantum particle in a ring around a infinitely long solenoid
+            <d-footnote>
+                <i>Wait! isn't it harder to start off with Quantum Mechanichs + Electromagnetism? Why don't just use QM?</i><br><t>
+                &nbsp;&nbsp; Believe it or not, it's harder to use QM without EM for topological stuff, plus when we'll do that, we'll use tools that are better understood by doing analogies with the QM+EM case
+            </d-footnote>
+        </p>
+        <p>
+            The hamiltonian of a particle with charge $-e$ moving through a magnetic field $\mathbf B= \nabla \times \mathbf A$ is
+            <d-equation id="EMHamiltonian">
+                $$
+                    H=\frac 1{2m}(\mathbf p + e\mathbf A)^2 
+                $$
+            </d-equation>
+        </p>
+        <p>
+            Since $$\mathbf p=p_\theta \hat\theta=-\frac{i\hbar\mathbf {\hat \theta}}{R}\frac\partial {\partial \theta}$$
+            $$
+             \oint \mathbf A\cdot d\mathbf r=\int \mathbf B\cdot d\mathbf s = \Phi
+            $$
+            it means that
+            <d-equation id="vector_potential">
+            $$
+                \mathbf A=\frac \Phi{2\pi R} \mathbf {\hat \theta}
+            $$
+            </d-equation>
+            Putting it back into the hamiltonian
+            $$
+                H=\frac 1{2mR^2}\bigg(-\frac{i\hbar}{R}\frac\partial {\partial \theta} + \frac{e\Phi}{2\pi R}\bigg)^2 
+            $$
+        </p>
+    </div>
+    <figure class="l-gutter">
+        <img src="images/ring-solenoid.svg" style="width:170%; height: auto; float: left;">
+    </figure>
+    <div>
+        <figure class="l-side">
+            <img src="images/spectral_flow.svg" style="width:100%; height: auto; float: left;">
+            <figcaption>
+                Here plotted the $E_n$ for $ |n|\le 2$ (eq. <d-reference key="spectral_flow"></d-reference> ), notice how the state <i>"flow"</i> as we change $\Phi$
+            </figcaption>
+        </figure>
+    <p>
+        The eigenstates of this hamiltonian are 
+        $$
+        \psi_n(\theta)=\frac {e^{in\theta}} {\sqrt{2\pi R}}; \quad n\in \mathbb Z
+        $$
+        Interestingly the Energies of the eigenstates are influenced by the vector potential
+        <d-equation id="spectral_flow">
+            $$
+                E_n=\frac 1{2mR^2}\bigg(\hbar n+ \frac{e\Phi}{2\pi}\bigg)^2=\tilde E\bigg(n+\frac{\Phi}{\Phi_0}\bigg)^2
+            $$
+        </d-equation>
+        where
+        $$
+        \tilde E=\frac{\hbar^2}{2mR^2} \quad \textrm{and} \quad \Phi_0=\frac{2\pi \hbar}e
+        $$
+    </p>
+    
+        <p>
+            Suppose now that we start with the turned soleind off, and place the particle in the $n=0$ ground
+            state. If we increase the flux then, by the time we have reached $\Phi=\Phi_0$ , the $n=0$ state
+            has transformed into the state that we previously labelled $n = 1$. Similarly, each state
+            $n$ is shifted to the next state, $n + 1$ <d-footnote>It is tempting to invoke the adiabatic theorem
+            here but, because of level crossing at $\Phi=\Phi_0/2$ it is not valid</d-footnote>
+        </p>
+        <p>
+            This is an example of a phenomenon is called spectral flow: under a change of parameter
+            the spectrum of the Hamiltonian changes, or “flows”. As we change increase the flux
+            by one unit  $\Phi_0$ the spectrum returns to itself, but individual states have morphed into
+            each other.
+        </p>
+        
+        <!--<p>
+            In Classical Electromagnetism the gauge potential $\mathbf A$ is unphisical: the physical quantities that affect the motion a particle are the electric and magnetic fields. But here we have shown that quantum mechanically the gauge potential acts in one way or the other on the particle
+        </p>-->
+    </div>
+    <d-subsection>Parallelism with Bloch's Theorem</d-subsection>
+    <p>
+        The keen eyed among you might have noticed that Figure 3 is suspicially similar to a crystal band structure in the limit on which the periodic potential $V\to 0$, let's see if this analogy holds <i>the test of math</i>. Let's start by taking the single-particle free progating Hamiltonian $$H=\frac 1{2m}p_\theta^2$$
+    </p>
+    <p>
+        The eigenstates this time have to respect the condition that $u_{n,q}(\theta)=e^{i2\pi q}u_{n,q}(\theta+2\pi)$.<d-footnote>This come from the block's theorem that states that the eigenstates of the hamiltonian of a periodic potential with periodicity $a$ mush obey that $u_{n,q}(x)=e^{iaq}u_{n,q}(x+a)$. In our case the periodicity $a=2\pi$ and the variable of the function is $\theta$ instead of $x$</d-footnote>
+    </p>
+    <p>
+        To comply with the general formalism of the vector potential, we make the following unitary transformation to obtain a $q$-depentant Hamiltonian.
+        $$
+            H(q)=e^{-iq\theta}He^{iq\theta}=\frac 1{2m}(p_\theta + \hbar q)^2
+        $$
+        We can easly map this hamiltonian to the one in equation <d-reference key="EMHamiltonian"></d-reference> just by sending $q\to \frac e \hbar A$.
+        <d-equation id="blochA">
+        $$
+            H(A)=\frac 1{2m}(p_\theta + e A)^2
+        $$
+        </d-equation>
+        The tranformed eigenstates $\psi_{n,q}=e^{-iq\theta}u_{n,q}$ is just the cell-periodic part of the Bloch funciton. It satified the stricter periodic boundary conditiion
+        <d-equation id="blochboundraty"> 
+        $$\psi_{n,q}(\theta)=\psi_{n,q}(\theta +2\pi)$$
+        </d-equation>
+        As you can see equations <d-reference key="blochA"></d-reference>  and <d-reference key="blochboundraty"></d-reference> create a system that is mathematically equivalent to the particle moving in a ring around a flux tube (subsection <d-reference key="fluxparticle"></d-reference>)
+    </p>
+    <d-subsection>Spectral flow in a more general context</d-subsection>
+    <p>
+        The spectral flow is applicable in much more complex geometries than the one we have seen so far.<br>
+        Suppose that now the particle can moove in a 3D potential $V(\mathbf r)$, and suppose that this same potential keeps the particle away from the solenoid.
+        The Hamiltonian is
+        $$
+            H=\frac 1{2m}(\mathbf p + e\mathbf A)^2 + V(\mathbf r) 
+        $$
+
+        Since the solenoid is still the same, the formula for $\mathbf A$ remains unchanged (eq. <d-reference key="vector_potential"></d-reference> ), and since it's expressed in cylindrical coordinates it's better to express also $\mathbf p$ in cylindrical coordinates.
+        $$
+         \mathbf p =-i\hbar \mathbf \nabla=-i\hbar\bigg( 
+             \mathbf{\hat r}\frac{\partial}{\partial r}+ \frac{\mathbf {\hat \theta}}{r}\frac{\partial}{\partial \theta} + \mathbf{\hat z}\frac{\partial}{\partial z}  \bigg) \equiv
+             \mathbf{\hat r} p_r+ \mathbf {\hat \theta} p_\theta + \mathbf{\hat z} p_z
+        $$
+        Of course if we send $\theta \to \theta + 2\pi$ the system should be unchanged.
+        $$
+            \psi(r,\theta,z)=\psi(r,\theta+2\pi,z)
+        $$
+        The rotation operator is 
+        $$
+            e^{-i\phi p_\theta/\hbar}
+        $$
+
+    </p>
+    
+
+
+  <d-bibliography src="bibliography.bib"></d-bibliography>
+  <script rel="text/javascript" src="new_types.js"> </script>
+
+</body>
+
+<!--
+    <p>
+    As you can see from equation <d-reference key="gauss"></d-reference>  and section <d-reference key="remarks"></d-reference> the phase of the wavefunction is not observable. <d-cite key="shneiderman1996eyes"></d-cite>
+</p>
+-->
