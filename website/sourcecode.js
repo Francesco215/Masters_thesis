@@ -102,13 +102,10 @@ class Ref extends HTMLElement {
 
 //this code manages the equations,
 document.addEventListener("DOMContentLoaded", function() {
-    var equations=document.querySelectorAll('.katex-display');
-    for (var i=0;i<equations.length;i++){
-    var parent=equations[i].parentElement.parentElement;
-    if (parent.className=="equation"){
-        parent.setAttribute("number",i+1);
-        }
-    }
+    var equations=document.querySelectorAll('.equation');
+    for (var i=0;i<equations.length;i++)
+        equations[i].setAttribute("number",i+1);
+    
     customElements.define('d-reference', Ref); //this line calls the reference manager
 
 });
