@@ -1,0 +1,231 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200">
+    <script src="https://distill.pub/template.v2.js"></script>
+    <link rel="stylesheet" href="website/style.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+    <script >
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // customised options
+                // • auto-render specific keys, e.g.:
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+                // • rendering keys, e.g.:
+                throwOnError : false
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELW1T3C1CX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ELW1T3C1CX');
+</script>
+
+</head>
+
+
+<d-front-matter>
+  <script type="text/json">{
+    "title": "Berry Phase and Curvature",
+    "description": "Sometimes the term Topology gets used in physics because it makes everything cool even if the connection with actual topology is not very clear. Here we are going to try to make clear the link between the two.",
+    "authors": [
+      {
+        "author": "Francesco Sacco",
+        "authorURL": "https://github.com/Francesco215",
+        "affiliation": "University of Pisa",
+        "affiliationURL": "https://www.unipi.it"
+      }
+      ]
+  }</script>
+</d-front-matter>
+
+    <d-title> 
+        <h1>Berry phase and Berry Curvature</h1>
+        <p>
+            Berry phase is the simplest demostration of how geometry and topology can emerge from quantum mechanics and it is in the heart of the quantum Hall effect
+        </p>
+        
+    </d-title>
+
+    <d-article>
+
+    
+        <d-section id="intro">Introduction</d-section>
+            <p>
+                Let us consider a physical system described by a Hamiltonian that depends on a set of parameters $\boldsymbol \lambda=(\lambda_1,\lambda_2,\dots)$. These parameters do not represent the degrees of freedom of the system like position and momentum, rather they describe things such as the mass of a particle, the strenght of a potential and so on.<br> For each $H(\boldsymbol \lambda)$ there exists a set of eigenstates such that 
+                <d-equation>
+                $$ H(\boldsymbol \lambda)\ket{n,\boldsymbol \lambda}=E_n(\boldsymbol \lambda)\ket{n,\boldsymbol \lambda}$$
+                </d-equation>
+                <div>
+                    <div style="width:40%; float:right">
+                        <d-equation id="random-phase">
+                            $$\ket{n,\boldsymbol \lambda}\to \underbrace{e^{i\gamma_n(\boldsymbol \lambda (t))}}_{\textrm{Berry phase}} \ket{n,\boldsymbol \lambda}  $$
+                        </d-equation>
+                    </div>
+                However the equation above does not completely determine the basis function $\ket{n,\boldsymbol \lambda}$; We can change arbitrarly the phase $\gamma_n(\boldsymbol \lambda)$ of any eigenstate which is called <b>Berry phase</b>
+                </div>
+                
+            </p>
+            <p>
+                Suppose we start off with a hamiltonian and than we slowly change the parameters for a time $T$ until it reaches a different hamiltonian, this means that $\boldsymbol \lambda=\boldsymbol \lambda(T)$. For the adiabatic theorem we can say that if we start on an energy eigenstate, and the system changes slowly enough
+                <d-footnote>How slow you have to be in changing the parameters depens on the energy gap from the state you're in to the nearest other state. The smaller the gap, the slower you have to change the parameters. A way of showing this without doing long calculations is the following: <br> We know from the Heisemberg uncertanty principle that $T \Delta E \ge \hbar/2$. We want the uncertanty in the Energy to be way smaller than the energy gap$E_g \gg\Delta E$, so $E_g \gg \frac{\hbar}{2T}$, so if we make $T$ big enought it can be archieved</d-footnote>,
+                and has no degeneracies, then the system will cling on that energy eigenstate
+            </p>
+            <p>
+                This means that the equation of motion of a particle that for time $t=0$ is equal to $\ket{\psi_n(t=0)}=\ket{n,\boldsymbol \lambda(0)}$ is 
+                <d-equation id="psin">
+                    $$
+                        |\psi_n(t)\rangle=\underbrace{e^{i\gamma_n(\boldsymbol \lambda (t))}}_{\textrm{Berry phase}}\cdot
+                                            \underbrace{e^{-\frac i\hbar\int_0^t E_n(\boldsymbol \lambda (t')) dt'}}_\textrm{dynamical phase}|n,\boldsymbol \lambda (t)\rangle 
+                    $$
+                </d-equation>    
+                Where the first exponent comes from eq. <d-reference key="random-phase"></d-reference>. We now insert the equation above into the time-dependent Shrodinger equation
+                <d-equation id="shrodt">
+                $$
+                    i\hbar\partial_t|\psi_n(t)\rangle=H(\boldsymbol \lambda(t)) |\psi_n(t)\rangle 
+                $$
+                </d-equation>
+                By plugging equation <d-reference key="psin"></d-reference> into the <i>right</i> term term of equation <d-reference key="shrodt"></d-reference> we get we get that <d-equation id="H(t)"> $$H(\boldsymbol \lambda(t)) |\psi_n(t)\rangle = E_n(t)\ket{\psi_n(t)}$$ </d-equation>
+
+                and by plugging equation <d-reference key="psin"></d-reference> into the <i>left</i> term of equation <d-reference key="shrodt"></d-reference> we get
+                <d-equation id="psin-t">
+                $$
+                    i\hbar\partial_t|\psi_n(t)\rangle=
+                    -\hbar \dot \gamma_n(t)|\psi_n(t)\rangle + E_n(t)|\psi_n(t)\rangle + e^{i\phi_n(t)}\partial_t|n,t\rangle
+                $$
+                </d-equation>
+                where we have defined $e^{i\phi_n(t)} \equiv e^{i\gamma_n(\boldsymbol \lambda (t))}e^{-\frac i\hbar\int_0^t E_n(\boldsymbol \lambda (t')) dt'}$
+            </p>
+            <p>
+                By equating the right terms in equations <d-reference key="H(t)"></d-reference> and <d-reference key="psin-t"></d-reference> we get that 
+                <d-equation id="psin-t-H">
+                    $$
+                        i\hbar e^{i\phi_nt(t)}\partial_t|n,t\rangle=\hbar\dot \gamma_n(t)\ket{\psi_n(t)} =\hbar\dot \gamma_n(t)e^{i\phi_n(t)}\ket{n,t}
+                    $$
+                </d-equation>    
+                now we multiply the term on the left and on the right of equation <d-reference key="psin-t-H"></d-reference> by $\hbar^{-1}e^{-i\phi_n(t)} \bra{n,t}$
+                <d-equation id="psin-t-H-bra">
+                    $$
+                        \dot \gamma_n(t)=i\bra{n,t} \partial_t\ket{n,t}
+                    $$
+                </d-equation>
+                We can re-express it in terms of $\boldsymbol \lambda$
+                <d-equation id="psin-t-H-bra">
+                    $$
+                        \dot \gamma_n(t)=\dot{\boldsymbol \lambda}\cdot\underbrace{i\bra{n,t} \partial_{\boldsymbol \lambda}\ket{n,t}}_{\equiv \mathbf A_n(\boldsymbol \lambda)}
+                    $$
+                </d-equation>
+                Where $\mathbf A_n(\boldsymbol \lambda)$ called the <b>Berry connection</b>
+                This means that we can calculate the total change in $\gamma_n(t)$ can be obtained by doing a line integral in the space of parameters $\boldsymbol \lambda$ over the path $\mathcal P$ of values that $\boldsymbol \lambda$ assumes during the time evolution
+
+                <d-equation id="line_int1">
+                    $$
+                        \gamma_n=\int_\mathcal{P} \mathbf A_n(\boldsymbol \lambda) \cdot d\boldsymbol \lambda
+                    $$
+                </d-equation>
+                <div>
+                    <div style="width:35%; float:right">
+                        <d-equation id="re-define">
+                            $$\ket{n,\boldsymbol \lambda}\to e^{if_n(\boldsymbol \lambda)}\ket{n,\boldsymbol \lambda}$$
+                        </d-equation>
+                    </div>
+                    Keep in mind however that the eigenstates are defined up to a phase, meaning that we can re-define the base vectors like so 
+                    (equation <d-reference key="re-define"></d-reference>). If we apply this substitution
+                    into the formula of $\mathbf A_n$ we have that
+                </div>
+                $$
+                \mathbf A_n(\boldsymbol \lambda) =i\bra{n,t} \partial_{\boldsymbol \lambda}\ket{n,t}\to i\bra{n,t} \partial_{\boldsymbol \lambda}\ket{n,t} - \partial_{\boldsymbol \lambda}f_n(\boldsymbol \lambda)
+                $$
+                <div>
+                    <div style="width:33%; float:right; height: 50%;">
+                        <d-equation id="gauge1">
+                            $$\mathbf A_n \to \mathbf A_n - \partial_{\boldsymbol \lambda}f_n$$
+                        </d-equation>
+                    </div>
+                    So the system is invariant under the gauge transformation in equation <d-reference key="gauge1"></d-reference>.  If we do this transformation to equation <d-reference key="line_int1"></d-reference> we have that
+
+                </div>
+                </p>
+                $$
+                    \gamma_n=\int_\mathcal{P} \mathbf A_n(\boldsymbol \lambda) \cdot d\boldsymbol \lambda - \int_\mathcal{P} \partial_{\boldsymbol \lambda}f_n(\boldsymbol \lambda) \cdot d\boldsymbol \lambda= \int_\mathcal{P} \mathbf A_n(\boldsymbol \lambda) \cdot d\boldsymbol \lambda + f(\boldsymbol \lambda(0))-f(\boldsymbol \lambda (T))
+
+                $$
+                <p>
+                This means that if the path $\mathcal{P}$ is open we can always choose a function $f_n$ such that 
+                $f(\boldsymbol \lambda(0))-f(\boldsymbol \lambda(T))=\int_\mathcal{P} \mathbf A_n(\boldsymbol \lambda) \cdot d\boldsymbol \lambda$, 
+                thus we can conclude that one can always choose a suitable $f(\boldsymbol \lambda)$ such that $\gamma_n$ accumulated along the path $\mathcal P$ is calceled out leaving equation 
+                <d-reference key="psin"></d-reference> with only the dynamical phase. 
+            </p>
+            <p>
+                However if the path is closed $\boldsymbol \lambda(0)=\boldsymbol \lambda(T)$, in order to make the phase change
+                in equation <d-reference key="re-define"></d-reference> single value we must have that
+                $$
+                e^{f(\boldsymbol \lambda(0))-f(\boldsymbol \lambda(T))}=1
+                $$
+                so 
+                $$f(\boldsymbol \lambda(0))-f(\boldsymbol \lambda(T))=2n\pi \quad n\in \R$$
+                This leads us to the important result that
+                <d-equation id="closed-berry">
+                    $$\gamma_n=\oint_{\mathcal P} \mathbf A_n(\boldsymbol \lambda)\cdot d\boldsymbol \lambda + 2n\pi$$
+                </d-equation>
+                This time, if the line integral is not a multiple of $2\pi$ (and there is no reason why it should) there is no way of choosing a suitable $f_n$ to
+                cancel it out and the Berry phase in equation <d-reference key="psin"></d-reference> is there to stay
+            </p>
+            <d-section>Berry curvature</d-section>
+            <p>
+                <div>
+                    <div style="width:40%; float:right">
+                        <d-equation id="EM-field-tensor">
+                            $$F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$$
+                        </d-equation>
+                        </div>
+                    In EM the field thensor $F_{\mu\nu}$ is defined as in equation <d-reference key="EM-field-tensor"></d-reference>.
+                    Since Berry conenction has the same Gauge invariance as the one of the EM vector potential it is useful to define, a gauge field tensor derived from the Berry connection:
+                </div>
+            </p><p>
+                <d-equation id="berry-curvature1">
+                    $$
+                        \Omega_{\mu\nu}^n =\partial_\mu A^n_\nu(\boldsymbol \lambda) - \partial_\nu A^n_\mu(\boldsymbol \lambda)
+                    $$
+                </d-equation>
+                This new field tensor is defined as <b>Berry curvature</b> and it is gauge independent just like 
+                $F_{\mu\nu}$!<d-footnote>The notation has changed a bit, now $A_\mu^n\equiv (\mathbf A_n)_\mu$</d-footnote>
+            </p>
+            <p>
+                With a few mathematical steps it is possible to re cast the Berry curvature into a different form that might be useful later
+                $$
+                    \partial_\mu A^n_\mu =i\partial_\mu \bra{n,\boldsymbol \lambda}\partial_\nu n,\boldsymbol \lambda \rangle= 
+                    i\bra{\partial_\mu n,\boldsymbol \lambda}\partial_\nu n,\boldsymbol \lambda \rangle + i\bra{n,\boldsymbol \lambda}\partial_\mu\partial_\nu n,\boldsymbol \lambda \rangle
+                $$
+                <d-equation id="berry-curvature2">
+                    $$
+                        \Omega_{\mu\nu}^n =i\bra{\partial_\mu n}\partial_\nu n\rangle - i\bra{\partial_\nu n}\partial_\mu n\rangle
+                    $$
+                </d-equation>
+            </p>
+
+    </d-article>
+
+
+  <d-bibliography src="website/bibliography.bib"></d-bibliography>
+  <script rel="text/javascript" src="website/sourcecode.js"> </script>
+
+</body>
+
+<!--
+    <p>
+    As you can see from equation <d-reference key="gauss"></d-reference>  and section <d-reference key="remarks"></d-reference> the phase of the wavefunction is not observable. <d-cite key="shneiderman1996eyes"></d-cite>
+</p>
+-->

@@ -39,7 +39,7 @@
 <d-front-matter>
   <script type="text/json">{
     "title": "Topology in Quantum Mechanics",
-    "description": "With diverse environments, we can analyze, diagnose and edit deep reinforcement learning models using attribution.",
+    "description": "Sometimes the term Topology gets used in physics because it makes everything cool even if the connection with actual topology is not very clear. Here we are going to try to make clear the link between the two.",
     "authors": [
       {
         "author": "Francesco Sacco",
@@ -202,23 +202,24 @@
                 Here plotted the energies $E_n$ (eq. <d-reference key="spectral_flow"></d-reference> ), notice how the state <i>"flow"</i> as we change $\Phi$
             </figcaption>
         </d-figure>
-    <p>
-        The eigenstates of this hamiltonian are 
-        $$
-        \psi_n(\theta)=\frac {e^{in\theta}} {\sqrt{2\pi R}}; \quad n\in \mathbb Z
-        $$
-        Interestingly the Energies of the eigenstates are influenced by the vector potential
-        <d-equation id="spectral_flow">
+        <p>
+            The eigenstates of this hamiltonian are 
             $$
-                E_n=\frac 1{2mR^2}\bigg(\hbar n+ \frac{e\Phi}{2\pi}\bigg)^2=\tilde E\bigg(n+\frac{\Phi}{\Phi_0}\bigg)^2
+            \psi_n(\theta)=\frac {e^{in\theta}} {\sqrt{2\pi R}}; \quad n\in \mathbb Z
             $$
-        </d-equation>
-        where
-        $$
-        \tilde E=\frac{\hbar^2}{2mR^2} \quad \textrm{and} \quad \Phi_0=\frac{2\pi \hbar}e
-        $$
-    </p>
-    
+            Interestingly the Energies of the eigenstates are influenced by the vector potential
+            <d-equation id="spectral_flow">
+                $$
+                    E_n=\frac 1{2mR^2}\bigg(\hbar n+ \frac{e\Phi}{2\pi}\bigg)^2=\tilde E\bigg(n+\frac{\Phi}{\Phi_0}\bigg)^2
+                $$
+            </d-equation>
+            where
+            $$
+            \tilde E=\frac{\hbar^2}{2mR^2} \quad \textrm{and} \quad \Phi_0=\frac{2\pi \hbar}e
+            $$
+        </p>
+    </div>
+    <div>
         <p>
             Suppose now that we start with the turned soleind off, and place the particle in the $n=0$ ground
             state. If we increase the flux then, by the time we have reached $\Phi=\Phi_0$ , the $n=0$ state
@@ -226,17 +227,22 @@
             $n$ is shifted to the next state, $n + 1$ <d-footnote>It is tempting to invoke the adiabatic theorem
             here but, because of level crossing at $\Phi=\Phi_0/2$ it is not valid</d-footnote>
         </p>
-        <p>
-            This is an example of a phenomenon is called spectral flow: under a change of parameter
-            the spectrum of the Hamiltonian changes, or “flows”. As we change increase the flux
-            by one unit  $\Phi_0$ the spectrum returns to itself, but individual states have morphed into
-            each other. <d-cite key="tong2016lectures"></d-cite>
-        </p>
-        
+    </div>
+        <figure id="state-flow1">
+        <img src="website/images/state-flow1.svg" style="width:100%; height: auto; float: left;">
+    </figure>
+    <p>
+        This is an example of a phenomenon is called spectral flow: under a change of parameter
+        the spectrum of the Hamiltonian changes, or “flows”. As we change increase the flux
+        by one unit  $\Phi_0$ the spectrum returns to itself, but individual states have morphed into
+        each other. <d-cite key="tong2016lectures"></d-cite>
+    </p>
+    
+    
         <!--<p>
             In Classical Electromagnetism the gauge potential $\mathbf A$ is unphisical: the physical quantities that affect the motion a particle are the electric and magnetic fields. But here we have shown that quantum mechanically the gauge potential acts in one way or the other on the particle
         </p>-->
-    </div>
+    
     <d-subsection id="paraBloch">Parallelism with Bloch's Theorem</d-subsection>
     <p>
         The keen eyed among you might have noticed that Figure 3 is suspicially similar to a crystal band structure in the limit on which the periodic potential $V\to 0$ with periodicity $2\pi$, let's see if this analogy holds <i>the test of math</i>. Let's start by taking the single-particle free propagating Hamiltonian $$H=\frac 1{2m}p_\theta^2$$
@@ -340,7 +346,7 @@
         </figcaption>
     </figure>
 
-
+  </d-article>
   <d-bibliography src="website/bibliography.bib"></d-bibliography>
   <script rel="text/javascript" src="website/sourcecode.js"> </script>
 
