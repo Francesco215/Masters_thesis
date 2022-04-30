@@ -194,7 +194,8 @@
                     In EM the field thensor $F_{\mu\nu}$ is defined as in equation <d-reference key="EM-field-tensor"></d-reference>.
                     Since Berry conenction has the same Gauge invariance as the one of the EM vector potential it is useful to define, a gauge field tensor derived from the Berry connection:
                 </div>
-            </p><p>
+            </p>
+            <p>
                 <d-equation id="berry-curvature1">
                     $$
                         \Omega_{\mu\nu}^n =\partial_\mu A^n_\nu(\boldsymbol \lambda) - \partial_\nu A^n_\mu(\boldsymbol \lambda)
@@ -203,6 +204,7 @@
                 This new field tensor is defined as <b>Berry curvature</b> and it is gauge independent just like 
                 $F_{\mu\nu}$!<d-footnote>The notation has changed a bit, now $A_\mu^n\equiv (\mathbf A_n)_\mu$</d-footnote>
             </p>
+            <d-subsection>Other formulas for $\Omega_{\mu\nu}$</d-subsection>
             <p>
                 With a few mathematical steps it is possible to re cast the Berry curvature into a different form that might be useful later
                 $$
@@ -211,10 +213,87 @@
                 $$
                 <d-equation id="berry-curvature2">
                     $$
-                        \Omega_{\mu\nu}^n =i\bra{\partial_\mu n}\partial_\nu n\rangle - i\bra{\partial_\nu n}\partial_\mu n\rangle
+                        \boxed{\Omega_{\mu\nu}^n =i\bra{\partial_\mu n}\partial_\nu n\rangle - i\bra{\partial_\nu n}\partial_\mu n\rangle}
                     $$
                 </d-equation>
             </p>
+            <p>
+                It is also possible to express $\Omega$ in terms of the eigenstates of the Hamiltonian with some mathematical manipulation
+                $$
+                    \bra{n'} H \ket{n}=\delta_{n'n} \to \partial_\mu \bra{n'} H \ket{n}=0
+                $$
+                $$
+                \partial_\mu \bra{n'} H \ket{n}=\bra{\partial_\mu n'}H\ket{n} + \bra{n'}H\ket{\partial_\mu n} + \bra{n'} \partial_\mu H\ket{n}
+                $$
+                $$
+                    E_{n}\bra{\partial_\mu n'}n\rangle + E_{n'} \bra{n'}\partial_\mu n\rangle=\bra{n'} \partial_\mu H\ket{n}
+                $$
+                $$
+                    (E_{n'}-E_n)\bra{n'} \partial_\mu n\rangle=\bra{n'} \partial_\mu H\ket{n}
+                $$
+                <d-equation id="partial H">
+                    $$
+                        \bra{n'}\partial_\mu n\rangle=  \frac{\bra{n'} \partial_\mu H\ket{n}}{E_{n'}-E_n}
+                    $$
+                </d-equation>
+
+                Now we write equation <d-reference key="berry-curvature2"></d-reference> like so
+                $$
+                    \Omega_{\mu\nu}^n =i\bra{\partial_\mu n}\partial_\nu n\rangle - (\mu \leftrightarrow \nu)= i\sum_{n'\neq n}\bra{\partial_\mu n}n'\rangle\bra{n'}\partial_\nu n\rangle - (\mu \leftrightarrow \nu)
+                $$
+                By plugging in above equation <d-reference key="partial H"></d-reference> we get
+                <d-equation id="berry-curvature3">
+                    $$
+                    \boxed{\Omega_{\mu\nu}^n=i\sum_{n'\neq n} \frac{\bra{n}\partial_\mu H\ket{n'}\bra{n'} \partial_\nu H\ket{n}}{(E_{n'}-E_n)^2}- (\mu \leftrightarrow \nu)}
+                    $$
+                </d-equation>
+                This last form of the Berry curvature has the advantage that no differentiation of the wavefunction is needed
+            </p>
+            <d-subsection>Stokes theorem</d-subsection>
+            <div>
+                <d-figure class="l-side">
+                    <img src="website/images/stokes.svg" style="width:100%; height: auto; float: left;">
+                    <figcaption>
+                        Representation of the Stokes theorem in 3D, the border of the surface $\partial \Sigma \equiv \mathcal P$
+                    </figcaption>
+                </d-figure>
+                <p>
+                    From the Stokes theorem we have that
+                    <d-equation id="stokes">
+                        $$
+                            \gamma_n=\oint_\mathcal{P} A^n_\mu\: d\lambda^\mu=\frac 12 \int_\Sigma \Omega_{\mu\nu}^n\: d\lambda^\mu \wedge d\lambda^\nu
+                        $$
+                    </d-equation>
+                    where we have used the Einstein convention of summation and the $\wedge$ operator represents the exterior product
+                </p>
+                <p>
+                    There is a subtelty in this last equation, as we know the Berry curvature tensor in Gauge-invariant, so the integral over the surface is too, but the integral over the closed path of the Berry connection is defined up to a factor $2n\pi$ that is gauge dependant.
+                    So is there a modulo $2\pi$ ambiguity or not?
+                </p>
+                <p>
+                    The answer is that if $\gamma_n$ is to be determined using the knowledge of $\ket{n,\boldsymbol \lambda}$ 
+                    only on the curve $\mathcal P$ then it is really well defined modulo $2\pi$. In this case we can re-write 
+                    equation <d-reference key="stokes"></d-reference> as 
+                    $$
+                    \frac 12 \int_\Sigma \Omega_{\mu\nu}^n\: d\lambda^\mu \wedge d\lambda^\nu:=\oint_\mathcal{P} A^n_\mu\: d\lambda^\mu
+                    $$
+                    Meaning that the integral over the surface $\mathcal \Sigma$ is equal to <i>one of the values of</i> the integrals along the closed path $\mathcal P$
+                </p>
+            </div>
+            <p>
+                But what kind of Gauge gives the "correct" answer? If we choose a gauge that is continuous and smooth
+                everywhere along the surface $\Sigma$ including on its boundary $\mathcal P$ then equation <d-reference key="stokes"></d-reference> becomes unambiguous.
+            </p>
+            <p>
+                While it is possible to make a radical gauge transformation that shifts $\gamma_n$ by $2\pi$ when regarding $\ket{n,\boldsymbol \lambda}$ as a function defined only in the neighborhood of $\mathcal P$, such a gauge change cannot be smoothly continued into the interior $\mathcal S$ without creating a vortex-like singularity of $\gamma_n(\boldsymbol \lambda)$.
+            </p>
+
+            <d-subsection> Chern theorem </d-subsection>
+            <p>
+                Since there are so many parallelism between Electromagnetism and Berry phase, one could ask if there
+                was any such things as the equivalent of charges
+            </p>
+            
 
     </d-article>
 
