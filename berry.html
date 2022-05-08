@@ -247,12 +247,13 @@
                     \boxed{\Omega_{\mu\nu}^n=i\sum_{n'\neq n} \frac{\bra{n}\partial_\mu H\ket{n'}\bra{n'} \partial_\nu H\ket{n}}{(E_{n'}-E_n)^2}- (\mu \leftrightarrow \nu)}
                     $$
                 </d-equation>
-                This last form of the Berry curvature has the advantage that no differentiation of the wavefunction is needed
+                This last form of the Berry curvature has the advantage that no differentiation of the wavefunction is needed. This equation also tells us that
+                $$ \sum_n \Omega_{\mu\nu}^n (\boldsymbol \lambda)=0 $$
             </p>
             <d-subsection>Stokes theorem</d-subsection>
             <div>
                 <d-figure class="l-side">
-                    <img src="website/images/stokes.svg" style="width:100%; height: auto; float: left;">
+                    <img src="website/images/berry/stokes.svg" style="width:100%; height: auto; float: left;">
                     <figcaption>
                         Representation of the Stokes theorem in 3D, the border of the surface $\partial \Sigma \equiv \mathcal P$
                     </figcaption>
@@ -289,10 +290,68 @@
             </p>
 
             <d-subsection> Chern theorem </d-subsection>
+            
             <p>
                 Since there are so many parallelism between Electromagnetism and Berry phase, one could ask if there
-                was any such things as the equivalent of charges
+                was any such things as the equivalent of electrical charges
             </p>
+            <div>
+                <d-figure class="l-side">
+                    <img src="website/images/berry/chern_theorem.png" style="width:100%; height: auto; float: left;">
+                    <figcaption>
+                        Here we divide the surface of the sphere in two different surfaces \mathcal A and \mathcal B that share the edge \mathcal P
+                    </figcaption>
+                </d-figure>
+                <p>
+                    Let's take as an example Gauss's theorem. It tells us that the flux of the field through a closed surface is equal to the charges inside. 
+                </p>
+                <p>
+                    Now let's calculate the flux of the Berry curvature thorugh a closed surface. We can divide the closed surface as two different open surfaces that share the same edge $\mathcal P$.
+                </p>
+                <p>
+                    Thanks to stokes theorem the flux throught the surface $\mathcal A$ is $\oint_\mathcal{P} \mathbf A \cdot d\boldsymbol \lambda$, but the flux throught the surface $\mathcal B$ is $-\oint_\mathcal{P} \mathbf A \cdot d\boldsymbol \lambda$.
+                </p>
+                <p>
+                    Theese two integrals must be equal modulo $2\pi$, so
+                </p>
+                <d-equation id="eq:chern">
+                    $$\oint_\mathcal{S} \Omega_{\mu\nu}^n d\lambda^\mu \wedge d\lambda^\nu =2\pi C \quad\quad C\in \mathbb Z$$
+                </d-equation>
+                <p><center style="border: 2px solid black; font-size: large; font-weight: bold;">This means that the flux thought a closed surface of the<br> Berry curvature is quantized</center></p>
+                <p>The constant C in known as the Chern number. Note that when the Chern index is nonzero, it is impossible to construct a smooth and continuous gauge over the entire surface $\mathcal{S}$. If such a gauge did exist, then we could apply Stokes’ theorem directly to the entire surface and conclude that the Chern number vanishes, in contradiction with the assumption.</p>
+                <p>
+                    But what are theese "pseudo-charges" inside the closed surface that generate the flux?
+                </p>
+                <p>
+                    In E.M. a simple way to spot charges (or monopoles) is to look at the field tensor and see if as some point it diverges as $1/(\mathbf r-\mathbf{r_0})^2$. Let's take a look at $\Omega_{\mu\nu}$ (eq. <d-reference key="berry-curvature3"></d-reference>) and see if we can spot anything similar <d-footnote>In the equation below I expressed explicitely the $\boldsymbol \lambda$ dependence in the denomiator and condensed the fomula using the wedge product $\wedge$</d-footnote>
+                    <d-equation id="eq:monopoles1">
+                        $$
+                        \Omega_{\mu\nu}^n=i\sum_{n'\neq n} \frac{\bra{n}\partial_\mu H\ket{n'}\wedge \bra{n'} \partial_\nu H\ket{n}}
+                        {\underbrace{[E_{n'}(\boldsymbol \lambda)-E_n(\boldsymbol \lambda)]^2}_
+                        {\substack{\text{what happens if for some } \boldsymbol \lambda=\boldsymbol \lambda_d  \\\text{ the two energies are the same?}}}}
+                        $$
+                    </d-equation>
+
+                    So, suppose that for some $\boldsymbol \lambda=\boldsymbol \lambda_d$ we have that $E_n (\boldsymbol \lambda_d)=E_m(\boldsymbol \lambda_d)$, now we expand the energies near $\boldsymbol \lambda_d$ at first order
+                    $$
+                    \begin{cases}
+                    E_n(\boldsymbol \lambda)\, \approx E_n(\boldsymbol \lambda_d) +\, \partial_{\boldsymbol \lambda} E_n|_{\boldsymbol \lambda =\boldsymbol \lambda_d}\cdot (\boldsymbol \lambda-\boldsymbol \lambda_d)\\
+                    E_m(\boldsymbol \lambda)\approx E_n(\boldsymbol \lambda_d) + \partial_{\boldsymbol \lambda} E_m|_{\boldsymbol \lambda =\boldsymbol \lambda_d}\cdot (\boldsymbol \lambda-\boldsymbol \lambda_d)\\
+
+                    \end{cases}
+                    $$
+                    This means that 
+                    $$
+                    E_n(\boldsymbol \lambda)-E_m(\boldsymbol \lambda)\approx \partial_{\boldsymbol \lambda} (E_n-E_m)|_{\boldsymbol \lambda =\boldsymbol \lambda_d}\cdot (\boldsymbol \lambda-\boldsymbol \lambda_d)
+                    $$
+                    so the denominator of the berry curvature near $\boldsymbol \lambda_d$ goes like $ 1/(\boldsymbol \lambda-\boldsymbol \lambda_d)^2$.
+                </p>
+                <p>
+                    This means that there are "charges" or "monopoles" that induce the flux throught the closed surface, and they are localized where 2 (or more) energy levels cross
+
+                </p>
+                
+            </div>
             
 
     </d-article>
