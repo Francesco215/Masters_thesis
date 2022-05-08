@@ -1,0 +1,8 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Berry phase and Berry curvature}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Berry curvature}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Other formulas for $\Omega _{\mu \nu }$}{6}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Stokes' Theorem}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Chern Theorem}{8}{section.1.4}%
