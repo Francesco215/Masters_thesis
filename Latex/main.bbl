@@ -1,0 +1,677 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{gorbachev2014detecting}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=GR}{%
+         family={Gorbachev},
+         familyi={G\bibinitperiod},
+         given={RV},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={JCW},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YG}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={GL},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kretinin},
+         familyi={K\bibinitperiod},
+         given={AV},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Withers},
+         familyi={W\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=CY}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Y},
+         giveni={Y},
+      }}%
+      {{hash=MA}{%
+         family={Mishchenko},
+         familyi={M\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=GI}{%
+         family={Grigorieva},
+         familyi={G\bibinitperiod},
+         given={IV},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NKS}{%
+         family={Novoselov},
+         familyi={N\bibinitperiod},
+         given={Konstantin\bibnamedelima S},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Levitov},
+         familyi={L\bibinitperiod},
+         given={LS},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRSJYGKAWFCYMAGINKSLL+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6208}
+    \field{pages}{448\bibrangedash 451}
+    \field{title}{Detecting topological currents in graphene superlattices}
+    \field{volume}{346}
+    \field{journaltitle}{Science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{sui2015gate}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=SM}{%
+         family={Sui},
+         familyi={S\bibinitperiod},
+         given={Mengqiao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Guorui},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Liguo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SWY}{%
+         family={Shan},
+         familyi={S\bibinitperiod},
+         given={Wen-Yu},
+         giveni={W\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Dai},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Taniguchi},
+         familyi={T\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JX}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Xiaofeng},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XD}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Di},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMCGMLSWYTDWKTTJXYWXD+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{1027\bibrangedash 1031}
+    \field{title}{Gate-tunable topological valley transport in bilayer
+  graphene}
+    \field{volume}{11}
+    \field{journaltitle}{Nature Physics}
+    \field{year}{2015}
+  \endentry
+
+  \entry{shimazaki2015generation}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SY}{%
+         family={Shimazaki},
+         familyi={S\bibinitperiod},
+         given={Yuya},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YM}{%
+         family={Yamamoto},
+         familyi={Y\bibinitperiod},
+         given={Michihisa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BIV}{%
+         family={Borzenets},
+         familyi={B\bibinitperiod},
+         given={Ivan\bibnamedelima V},
+         giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Taniguchi},
+         familyi={T\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tarucha},
+         familyi={T\bibinitperiod},
+         given={Seigo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SY+1}
+    \strng{fullhash}{SYYMBIVWKTTTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{pages}{1032\bibrangedash 1036}
+    \field{title}{Generation and detection of pure valley current by
+  electrically induced Berry curvature in bilayer graphene}
+    \field{volume}{11}
+    \field{journaltitle}{Nature Physics}
+    \field{year}{2015}
+  \endentry
+
+  \entry{xiao2012coupled}{article}{}
+    \name{author}{5}{}{%
+      {{hash=XD}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Di},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LGB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Gui-Bin},
+         giveni={G\bibinithyphendelim B\bibinitperiod},
+      }}%
+      {{hash=FW}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Wanxiang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Xiaodong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{XD+1}
+    \strng{fullhash}{XDLGBFWXXYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{19}
+    \field{pages}{196802}
+    \field{title}{Coupled spin and valley physics in monolayers of MoS 2 and
+  other group-VI dichalcogenides}
+    \field{volume}{108}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2012}
+  \endentry
+
+  \entry{mak2014valley}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MKF}{%
+         family={Mak},
+         familyi={M\bibinitperiod},
+         given={Kin\bibnamedelima Fai},
+         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MKL}{%
+         family={McGill},
+         familyi={M\bibinitperiod},
+         given={Kathryn\bibnamedelima L},
+         giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Jiwoong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MPL}{%
+         family={McEuen},
+         familyi={M\bibinitperiod},
+         given={Paul\bibnamedelima L},
+         giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{MKF+1}
+    \strng{fullhash}{MKFMKLPJMPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6191}
+    \field{pages}{1489\bibrangedash 1492}
+    \field{title}{The valley Hall effect in MoS2 transistors}
+    \field{volume}{344}
+    \field{journaltitle}{Science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{lee2017valley}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jieun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zefang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XH}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Hongchao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MKF}{%
+         family={Mak},
+         familyi={M\bibinitperiod},
+         given={Kin\bibnamedelima Fai},
+         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shan},
+         familyi={S\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJWZXHMKFSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{887\bibrangedash 891}
+    \field{title}{Valley magnetoelectricity in single-layer MoS2}
+    \field{volume}{16}
+    \field{journaltitle}{Nature materials}
+    \field{year}{2017}
+  \endentry
+
+  \entry{valenzuela2006direct}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VSO}{%
+         family={Valenzuela},
+         familyi={V\bibinitperiod},
+         given={Sergio\bibnamedelima O},
+         giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tinkham},
+         familyi={T\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{VSOTM1}
+    \strng{fullhash}{VSOTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7099}
+    \field{pages}{176\bibrangedash 179}
+    \field{title}{Direct electronic measurement of the spin Hall effect}
+    \field{volume}{442}
+    \field{journaltitle}{Nature}
+    \field{year}{2006}
+  \endentry
+
+  \entry{abanin2009nonlocal}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AD}{%
+         family={Abanin},
+         familyi={A\bibinitperiod},
+         given={DA},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shytov},
+         familyi={S\bibinitperiod},
+         given={AV},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Levitov},
+         familyi={L\bibinitperiod},
+         given={LS},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Halperin},
+         familyi={H\bibinitperiod},
+         given={BI},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{AD+1}
+    \strng{fullhash}{ADSALLHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{035304}
+    \field{title}{Nonlocal charge transport mediated by spin diffusion in the
+  spin Hall effect regime}
+    \field{volume}{79}
+    \field{journaltitle}{Physical review B}
+    \field{year}{2009}
+  \endentry
+
+  \entry{brune2010evidence}{article}{}
+    \name{author}{9}{}{%
+      {{hash=BC}{%
+         family={Br{\"u}ne},
+         familyi={B\bibinitperiod},
+         given={C},
+         giveni={C},
+      }}%
+      {{hash=RA}{%
+         family={Roth},
+         familyi={R\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=NE}{%
+         family={Novik},
+         familyi={N\bibinitperiod},
+         given={EG},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={K{\"o}nig},
+         familyi={K\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=BH}{%
+         family={Buhmann},
+         familyi={B\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+      {{hash=HE}{%
+         family={Hankiewicz},
+         familyi={H\bibinitperiod},
+         given={EM},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Hanke},
+         familyi={H\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+      {{hash=SJ}{%
+         family={Sinova},
+         familyi={S\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=ML}{%
+         family={Molenkamp},
+         familyi={M\bibinitperiod},
+         given={LW},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{BC+1}
+    \strng{fullhash}{BCRANEKMBHHEHWSJML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{448\bibrangedash 454}
+    \field{title}{Evidence for the ballistic intrinsic spin Hall effect in HgTe
+  nanostructures}
+    \field{volume}{6}
+    \field{journaltitle}{Nature Physics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{abanin2011giant}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=AD}{%
+         family={Abanin},
+         familyi={A\bibinitperiod},
+         given={DA},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Morozov},
+         familyi={M\bibinitperiod},
+         given={SV},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Ponomarenko},
+         familyi={P\bibinitperiod},
+         given={LA},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gorbachev},
+         familyi={G\bibinitperiod},
+         given={RV},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mayorov},
+         familyi={M\bibinitperiod},
+         given={AS},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Katsnelson},
+         familyi={K\bibinitperiod},
+         given={MI},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Taniguchi},
+         familyi={T\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Novoselov},
+         familyi={N\bibinitperiod},
+         given={KS},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Levitov},
+         familyi={L\bibinitperiod},
+         given={LS},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{AD+1}
+    \strng{fullhash}{ADMSPLGRMAKMWKTTNKLL+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6027}
+    \field{pages}{328\bibrangedash 330}
+    \field{title}{Giant nonlocality near the Dirac point in graphene}
+    \field{volume}{332}
+    \field{journaltitle}{Science}
+    \field{year}{2011}
+  \endentry
+
+  \entry{balakrishnan2013g}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Balakrishnan},
+         familyi={B\bibinitperiod},
+         given={Jayakumar},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KKW}{%
+         family={Koon},
+         familyi={K\bibinitperiod},
+         given={Kok\bibnamedelima Wai},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJKKW1}
+    \strng{fullhash}{BJKKW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{284\bibrangedash 287}
+    \field{title}{G., Jaiswal, M., Castro Neto, AH \& {\"O}zyilmaz, B. Colossal
+  enhancement of spin--orbit coupling in weakly hydrogenated graphene}
+    \field{volume}{9}
+    \field{journaltitle}{Nat. Phys}
+    \field{year}{2013}
+  \endentry
+
+  \entry{wang2015proximity}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhiyong},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Chi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sachs},
+         familyi={S\bibinitperiod},
+         given={Raymond},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Barlas},
+         familyi={B\bibinitperiod},
+         given={Yafis},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{WZ+1}
+    \strng{fullhash}{WZTCSRBYSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{016603}
+    \field{title}{Proximity-induced ferromagnetism in graphene revealed by the
+  anomalous Hall effect}
+    \field{volume}{114}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2015}
+  \endentry
+\enddatalist
+\endinput

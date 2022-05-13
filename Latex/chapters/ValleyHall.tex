@@ -1,0 +1,185 @@
+\chapter{ValleyHall}
+\section{Berry curvature in Gapped graphene}
+
+The hamiltonian for the gapped graphene near the point $K_1$ and $K_2$ can be written as 
+\begin{equation}
+    H_{K_1}=H_{K_2}^\dagger=
+    \begin{bmatrix}
+        \Delta & \hbar v_F(k_x+ik_y)\\
+        \hbar v_f(k_x-ik_y)& \Delta
+    \end{bmatrix}
+\end{equation}
+Where $\Delta$ is the energy gap and $v_F$ is the Fermi velocity. For ease of notation we are going to work with just $H_{K_1}$ and drop the $K_1$,\footnote{Don't worry, I'll bring it back if when we'll need it} and for ease of computation we define $\vect q=\hbar v_F\vect k$
+\begin{equation}
+    H=
+    \begin{bmatrix}
+        \Delta & q_x+iq_y\\
+        q_x-iq_y& \Delta
+    \end{bmatrix}=
+    \sigma_x q_x + \sigma_y q_y + \sigma_z \Delta \equiv  \boldsymbol \sigma \cdot \vect E
+\end{equation}
+
+Here the enegry vector $\vect E$ is defined as $\vect E =( q_x,q_y,\Delta)$. The nice things about it is that $E=|\vect E|=\sqrt{q_x^2+q_y^2+\Delta^2}$ is the positive eigenvalue of the hamiltonian (the negative eigenvalue is just $-E$).\newline
+To calculate the Berry curvature we are first going to calculate the Berry connection \ref{eq:connection}, and to calultate the Berry connection we need the eigenvectors which are well known for the Hamiltonian of the form $\boldsymbol \sigma \cdot \vect{E}$.
+
+\begin{equation}
+    \ket{+;\theta,\phi}=
+    \begin{bmatrix}
+        \cos{\frac \theta 2}\\
+        e^{i\phi}\sin{\frac \theta 2}
+    \end{bmatrix}
+    \quad
+    \ket{-;\theta,\phi}=
+    \begin{bmatrix}
+        -e^{-i\phi}\sin{\frac \theta 2}\\
+        \cos{\frac \theta 2}
+    \end{bmatrix}
+\end{equation}
+Where $\theta$ and $\phi$ are the coordinates of $\vect E$ in the polar representation
+
+Now we can calculate the Berry connection
+
+\begin{equation}
+    A_\theta^+=-A_\theta^-=0 \quad A_\phi^+=-A_\phi^-=\sin^2\frac \theta 2
+\end{equation}
+
+This means that the Berry curvature is
+\begin{equation}
+    \Omega^+_{\theta\phi}=-\Omega^-_{\theta\phi}=\partial_\theta A^+_\phi=\frac{\sin \theta}2
+\end{equation}
+
+From now on we are going to work with $\Omega^+$ and we are going to drop the $+$ sign to make the notation lighter.
+
+We want to express $\Omega$ in terms of $\vect q$, however it's more convenient to write it in terms fo  $\cos \theta$ and $\phi$, so we do a small coordinate transformation
+
+
+\begin{equation}
+    \Omega_{\theta\phi}=\frac{\partial\cos\theta}{\partial \theta}\Omega_{\cos(\theta)\phi} \rightarrow \Omega_{\cos(\theta)\phi}=\frac 12
+\end{equation}
+
+
+
+Now we can easily make the transformation to express $\Omega$ in terms of $\vect q$. The Berry curvature transforms like any other tensor under coordinate transformation, so
+
+\begin{equation}
+    \Omega_{q_xq_y}=\frac{\partial\cos \theta}{\partial q_x}\frac{\partial \phi}{\partial q_y}\Omega_{\cos(\theta)\phi}+\frac{\partial \phi}{\partial q_x}\frac{\partial\cos \theta}{\partial q_y}\Omega_{\phi\cos(\theta)} 
+\end{equation}
+
+That can be rewritten as
+
+\begin{equation}
+    \Omega_{q_xq_y}=\frac 12 \det\bigg[\frac{\partial (cos\theta,\phi)}{\partial (q_x,q_y)}\bigg]=\frac 12 \frac{\Delta^2}{q^2E^3}(q_x+q_y-2q)
+\end{equation}
+
+
+And finally we can express it in terms of $\vect k$
+\begin{equation}
+    \Omega_{k_xk_y}=(\hbar v_F)^2\Omega_{q_xq_y}=\frac {\hbar v_F}2 \frac{\Delta^2}{k^2E^3}(k_x+k_y-2k)
+\end{equation}
+Up until now we have worked with the Hamiltonian $H_{K_1}$, but with the $K_1$ hidden. The Berry curvature around $K_2$ is equal, but with opposite sign (figure \ref{fig:cones})
+\footnote{
+    A short proof for it can be the following: If we send $k_y\to -k_y$ we effectively send $H_{K_1}\to H_{K_2}$.\\
+    The berry curvature can be written as $\Omega_{k_xk_y}=i\bra{\partial _{k_x}n}\wedge\ket{\partial_{k_y}n}$. By sending  $k_y\to -k_y$ we have that $\Omega\to-\Omega$.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Immagini/ValleyHall/band_graphene.pdf}
+    \includegraphics[width=0.7\linewidth]{Immagini/ValleyHall/curvature_graphene.pdf}
+    \caption{In the top panel are displayed the Energy bands in 2D. In the bottom panel with the dotted line are displayed a section of the energy bands, and with the continuous red line the Berry curvature.}
+    \label{fig:cones}
+\end{figure}
+
+
+
+
+
+
+
+
+
+ 
+
+\section{Valley-Hall effect}
+The Hall conductivity $\sigma_{xy}$ is 
+\begin{equation}
+    \sigma_{xy}=\frac{e^2}\hbar \int_{\mathbb R^2} f[E^+(k)]\Omega^+_{k_xk_y}+f[E^-(k)]\Omega^-_{k_xk_y}\frac{d^2\vect k}{2\pi}
+    \label{eq:valley-conductivity-1}
+\end{equation}
+Where $f(E)=\big[e^{\beta (E-\mu)}+1\big]^{-1}$ is the Fermi-Dirac distribution, it is applied once for the states with positive energy and once for the states with negative energy.
+
+We are going to analyze the system at low temperatures ($k_bT\ll 1$), so our Fermi-Dirac distribution can be considered like a step-function.
+
+First let's integrate the conductivity for the positive energies and drop the $+$ sign to make the notation lighter.
+
+\[
+    \int_{\mathbb R^2} f[E(k)]\Omega_{k_xk_y}dk_xdk_y=\int_{\mathbb R^2} f[E(q)]\Omega_{q_xq_y}dq_xdq_y\approx
+\]
+
+\[
+    \approx\int_{0}^{2\pi}\int_{0}^{q_F}\frac12 \frac{\Delta^2}{q^2E^3}(q_x+q_y-2q)qdqd\theta=
+\]
+
+\[
+    =-2\pi\Delta^2\int_0^{q_f}\frac{dq}{E^2} =-2\pi\Delta^2\int_0^{q_f}\frac{dq}{(\Delta^2+q^2)^{3/2}}= 
+    -\frac{2\pi q_F}{\sqrt{\Delta^2+q_F^2}}
+\]
+
+And now we express it in terms of the chemical potential $\mu$ \footnote{Here we can use interchangeably $\mu$ and $E_F$}
+
+
+\begin{equation}
+    \int_{\mathbb R^2} f[E(k)]\Omega_{k_xk_y}dk_xdk_y\approx-2\pi \frac{\sqrt{\mu^2-\Delta^2}}\mu\theta(\mu-\Delta)
+\end{equation}
+The $\theta(\mu-\Delta)$ is there to make sure that if no states are inside the Fermi-Dirac the integral is zero. One thing to notice is that if you have $\mu \gg \Delta$ (aka. all states in the band are occupied) then the integral is equal to $-2\pi$. The integral of the lower band is very similar. By the end equation of the conductivity \ref{eq:valley-conductivity-1} becomes
+\begin{equation}
+    \sigma_{xy}(\mu)=-\frac {e^2}{2\pi \hbar}\Bigg[\frac{\sqrt{\mu^2-\Delta^2}}{\mu} \theta(\mu^2-\Delta^2) - \theta(\mu-\Delta)\Bigg]
+    \label{eq:valley-conductivity-2}
+\end{equation}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/ValleyHall/sigma_xy.eps}
+    \caption{Here is shown $\sigma_{xy}(\mu)$ (eq. \ref{eq:valley-conductivity-2}). Notice how, when $\mu \in [-\Delta,\Delta]$ then $\sigma_{xy}=\frac {e^2}{2\pi \hbar}$}
+    \label{fig:sigma_xy}
+\end{figure}
+To be fear we only calculated $\sigma_{xy}$ for the electrons in the valley $K_1$, the conductivity for the other valley is just $-\sigma_{xy}$. So, putting it all together, we have
+
+\begin{equation}
+    \sigma_{K_i,xy}(\mu)=(-1)^i\frac {e^2}{2\pi \hbar}\Bigg[\frac{\sqrt{\mu^2-\Delta^2}}{\mu} \theta(\mu^2-\Delta^2) - \theta(\mu-\Delta)\Bigg]
+    \label{eq:valley-conductivity-complete}
+\end{equation}
+However in most cases it's safe to assume that the chemical potential is inside the energy gap, so equation \ref{eq:valley-conductivity-complete} becomes
+\begin{equation}
+    \sigma_{K_i,xy}=(-1)^{i+1}\frac {e^2}{2\pi \hbar}
+\end{equation}
+
+
+
+\section{Non-local Charge transport}
+If we apply a voltage $V$ in two opposite points of a strip of a ohmic material of width $W$ and infinite lenght, and  we see a current that flows from one point to another figure \ref{fig:beconcini_strip}.\newline
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Immagini/ValleyHall/beconcini_strip.pdf}
+    \caption{Representation of the strip}
+    \label{fig:beconcini_strip}
+\end{figure}
+Clearly the current isn't completely localized along the axis that unites the two injection points, and so does the voltage difference.\newline
+If we probe the voltage from two different points with an offset of $x$ from the injection points and we divide it by the total current between the contacts we see that  
+
+\begin{equation}
+    \frac{V(x)}I=\frac{2\rho}\pi\ln\bigg |\coth \Big(\frac{\pi x}{2W}\Big)\bigg |
+\end{equation}
+Where $\rho$ is the resistivity. Don't worry later on there is the proof of this equation.\newline
+
+However, two-dimentional material like gapped graphene \cite{gorbachev2014detecting,sui2015gate,shimazaki2015generation} and transition-metal dichalcogenides \cite{xiao2012coupled,mak2014valley,lee2017valley}, don't obey this equation.\newline
+This is because theese materials display the Valley Hall effect we talked about previously (inserire reference a sezione).\newline
+Non-local transport can be a useful tool to probe the existance of anomalous Hall effect \cite{valenzuela2006direct,abanin2009nonlocal,brune2010evidence,abanin2011giant,balakrishnan2013g,wang2015proximity}
+
+
+\section{Theory of non local charge transport}
+
+Let $K_1$ and $K_2$ be the two valleys in our honeycomb material (figure \ref{fig:cones}). Their Berry curvature is 
+
+
+
+
+Each of the two cones will have an excess of density of electrons $n_K(\vect r)$ with $K\in \{K_1,K_2\}$
