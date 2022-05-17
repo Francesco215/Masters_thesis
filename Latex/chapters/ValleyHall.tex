@@ -1,7 +1,7 @@
 \chapter{ValleyHall}
 \section{Berry curvature in Gapped graphene}
 
-The hamiltonian for the gapped graphene near the point $K_1$ and $K_2$ can be written as 
+The Hamiltonian for the gapped graphene near the point $K_1$ and $K_2$ can be written as 
 \begin{equation}
     H_{K_1}=H_{K_2}^\dagger=
     \begin{bmatrix}
@@ -107,7 +107,7 @@ The Hall conductivity $\sigma_{xy}$ is
 \end{equation}
 Where $f(E)=\big[e^{\beta (E-\mu)}+1\big]^{-1}$ is the Fermi-Dirac distribution, it is applied once for the states with positive energy and once for the states with negative energy.
 
-We are going to analyze the system at low temperatures ($k_bT\ll 1$), so our Fermi-Dirac distribution can be considered like a step-function.
+We are going to analyze the system at low temperatures ($k_\beta T\ll 1$), so our Fermi-Dirac distribution can be considered like a step-function.
 
 First let's integrate the conductivity for the positive energies and drop the $+$ sign to make the notation lighter.
 
@@ -170,16 +170,86 @@ If we probe the voltage from two different points with an offset of $x$ from the
 \end{equation}
 Where $\rho$ is the resistivity. Don't worry later on there is the proof of this equation.\newline
 
-However, two-dimentional material like gapped graphene \cite{gorbachev2014detecting,sui2015gate,shimazaki2015generation} and transition-metal dichalcogenides \cite{xiao2012coupled,mak2014valley,lee2017valley}, don't obey this equation.\newline
-This is because theese materials display the Valley Hall effect we talked about previously (inserire reference a sezione).\newline
+However, two-dimentional material like gapped graphene \cite{gorbachev2014detecting,sui2015gate,shimazaki2015generation} and transition metal dichalcogenides \cite{xiao2012coupled,mak2014valley,lee2017valley}, don't obey this equation. This is because theese materials display the Valley Hall effect we talked about previously (inserire reference a sezione).
+
 Non-local transport can be a useful tool to probe the existance of anomalous Hall effect \cite{valenzuela2006direct,abanin2009nonlocal,brune2010evidence,abanin2011giant,balakrishnan2013g,wang2015proximity}
 
 
 \section{Theory of non local charge transport}
 
-Let $K_1$ and $K_2$ be the two valleys in our honeycomb material (figure \ref{fig:cones}). Their Berry curvature is 
+The charges inside the material get pushed around from the electrochemical potential $\psi_K$
 
 
+\begin{equation}
+    \psi_{K}(\vect r)= V(\vect r)-\frac 1e \mu_K[n_{K_1}(\vect r),n_{K_2}(\vect r),T]
+\end{equation}
+
+Where $\phi$ is the electrical potential, and $\mu_K=\frac {\partial}{\partial n_{K}}F[n_{K_1}(\vect r),n_{K_2}(\vect r),T]$ is the chemical potential of the material and $F$ is the free energy.
+
+The current generated from this potential in the valley $K_\alpha$ in the $i-$th direction is
+
+\begin{equation}
+    -eJ_{K_\alpha,i}(\vect r)= \sum_{j,b} \underbrace{-\sigma_{K_\alpha K_\beta ,ij}}_{\textrm{conductivity}}\partial_j\psi_{K_\beta }(\vect r)
+\end{equation}
+From now we are going to set $T\approx 0$\footnote{A more precise statement is that the thermal De Broglie wavelenght $\lambda_T$ must be much larger than the average distance between the electrons. We are not going into the math here, but if you want to calculate it, keep in mind that the dispersion relation is relativistic, so the formula of $\lambda_T$ is going to be a bit different}
+and ignore intervalley scattering, so if $K_\alpha \neq K_\beta $ $\sigma_{K_\alpha K_\beta ,ij}=0$, also because of this the free energy can be written as the sum of the two Free energies
+\begin{equation}
+    F(n_{K_1},n_{K_2})=F_1(n_{K_1}(\mathbf r))+F_2(n_{K_2}(\mathbf r))
+\end{equation}
+And so the chemical potential of a given valley depend only on the number of electron in the same valley
+\begin{equation}
+    \mu_\alpha(n_{K_\alpha}(\mathbf r))=\frac{\partial}{\partial n_{K_\alpha}}F(n_{K_0},n_{K_1})=\frac{\partial}{\partial n_{K_\alpha}}F_\alpha(n_{K_\alpha}(\mathbf r))
+\end{equation}
+This simplifies the trasport equation in 
+
+\begin{equation}
+    -e\mathbf J_{K_{\alpha}}(\mathbf r)= \sigma_{K_\alpha}(\mathbf r)\nabla \psi_{K_\alpha}(\mathbf r)
+    \label{eq:current-1}
+\end{equation}
+Where $\sigma_{K_\alpha}$ is the following matrix
+\[
+    \sigma_{K_\alpha}=
+    \begin{bmatrix}
+        \sigma_{K_\alpha K_\alpha,xx} & \sigma_{K_\alpha K_\alpha,xy}\\
+        -\sigma_{K_\alpha K_\alpha,xy}^* & \sigma_{K_\alpha K_\alpha,xx}
+    \end{bmatrix}
+\]
+Now we need to write the gradient electrochemical potential $\nabla \psi(\vect r)$
+\begin{equation}
+    \nabla \psi_{K_\alpha}(\mathbf r)=\nabla V(\mathbf r) -\frac 1e \frac{\partial}{\partial n_{K_\alpha}}\mu_\alpha(n_{K_\alpha}(\mathbf r))\nabla n_{K_\alpha}
+    \label{eq:echemical1}
+\end{equation}
+From equation INSERIRE REFERENCE A EQUAZIONE we can write for gapped Dirac hamiltonians that VERIFICARE SE VALE ANCHE PER BILAYER GRAPHENE  \[\frac{\partial \mu_{K_\alpha}}{\partial n_{K_\alpha}}=\frac{\pi}{\sqrt{2\pi |n|+\Delta^2}}+\Delta\delta(n)\approx \frac \pi\Delta +\Delta\delta(n) \quad \forall \alpha\]
+In this equation we assumed that there are very few charge carries, so $\frac n{\Delta^2}\approx 0$. We can shorten the equation \ref{eq:echemical1} by defining
+\begin{equation}
+    e^2D_{K_\alpha,ij}=\sigma_{K_\alpha, ij}\frac{\partial \mu_\alpha}{\partial n_{K_\alpha}}[n_{K_\alpha}(\mathbf r)]
+\end{equation}
+So equation \ref{eq:current-1} becomes
+
+\begin{equation}
+    -eJ_{K_\alpha,i}(\mathbf r)=\sigma_{K_\alpha, ij}E_j(\mathbf r) -eD_{K_\alpha,ij}\partial _jn_{K_\alpha}(\mathbf r)
+\end{equation}
+or, written in matrix form
+\begin{equation}
+    -e\mathbf J_{K_\alpha}(\mathbf r)=\sigma_{K_\alpha}\mathbf E(\mathbf r) -eD_{K_\alpha}\nabla n_{K_\alpha}(\mathbf r)
+\end{equation}
+Where $\sigma_{K_\alpha}$ and  $-eD_{K_\alpha}$ are matrices.
+
+\subsection{Re-writing the equations in terms of charge current and valley current}
+Measuring the currents in different valley can be cumbersome, however measuring the charge current $\mathbf J_{c}=\mathbf J_{K_1}+\mathbf J_{K_2}$ is straightforward, and for mathematical convenience we also define the valley current $\mathbf J_{v}=\mathbf J_{K_1}-\mathbf J_{K_2}$.
+
+Since we no longer describe the currents in terms of their valley index, but on the sum and the difference of what happens at the different valleys, we are going to reparametrize also the other quantities in the same fashion.
 
 
-Each of the two cones will have an excess of density of electrons $n_K(\vect r)$ with $K\in \{K_1,K_2\}$
+\begin{equation}
+    \begin{cases}
+        \sigma_c=\sigma_{K_1}+\sigma_{K_2}=2\sigma_{xx}\delta_{ij}\\
+        \sigma_v=\sigma_{K_1}-\sigma_{K_2}=\sigma_v=2\sigma_{xy}\epsilon_{ij}
+    \end{cases}
+\end{equation}
+The term $-eD_{K_\alpha}\nabla n_{K_\alpha}(\mathbf r)$ is a little harder to traslate. First off we are going to impose the local charge conservation
+
+$n_c(\mathbf r)=n_{K_0}+n_{K_1}\approx 0$, and so 
+
+$n_v(\mathbf r)=n_{K_0}-n_{K_1}=2n_{K_0}=-2n_{K_1}$
+
