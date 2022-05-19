@@ -3,6 +3,7 @@ import numpy as np
 def Lv(width,lv,tan):
     return  np.sqrt(lv**2 + width**2/12 + width*lv*tan**2/(np.tanh(width/(2*lv))*2))
 
+#the approximated version of R_NLk
 def R_NLk0(k,width,lv=1e-6,tan=0.9):
     c2= 2*np.tanh(k*width/2)/(k*width*(1+tan**2))
     c1= 1/(1+(Lv(width,lv,tan)*k)**2)/(1+tan**(-2))

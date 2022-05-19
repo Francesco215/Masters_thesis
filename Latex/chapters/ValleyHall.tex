@@ -249,7 +249,36 @@ Since we no longer describe the currents in terms of their valley index, but on 
 \end{equation}
 The term $-eD_{K_\alpha}\nabla n_{K_\alpha}(\mathbf r)$ is a little harder to traslate. First off we are going to impose the local charge conservation
 
-$n_c(\mathbf r)=n_{K_0}+n_{K_1}\approx 0$, and so 
+\[
+    n(\mathbf r)=n_{K_0}+n_{K_1}\approx 0
+\]
+and so 
 
-$n_v(\mathbf r)=n_{K_0}-n_{K_1}=2n_{K_0}=-2n_{K_1}$
+\begin{equation}
+    n_v(\mathbf r)=n_{K_1}-n_{K_2}=2n_{K_1}=-2n_{K_2}
+\end{equation}
+Now let's do the sum of the $D_{K_\alpha}\nabla n_{K_\alpha}(\mathbf r)$ terms to write them in terms of charge and valleys degrees of freedom
+
+\[D_{K_1}\nabla n_{K_1}+D_{K_2}\nabla n_{K_2}=(D_{K_1}-D_{K_2})\nabla n_v(\mathbf r)/2\]
+
+\[D_{K_1}-D_{K_2}=\sigma \frac{\partial \mu_1}{\partial n_{K_1}}- \sigma^T \frac{\partial \mu_2}{\partial n_{K_2}}\]
+since $\mu_v=2\mu_1=-2\mu_2$ and $n_v=2n_{K_1}=-2n_{K_2}$
+
+\[D_{K_1}-D_{K_2}=\frac 1{e^2}(\sigma-\sigma^T)\frac{\partial \mu_v}{\partial n_v}=\frac 2{e^2}\sigma_v\frac{\partial \mu_v}{\partial n_v}\]
+so I define 
+
+\[D_{cv}=\frac 2{e^2}\sigma_v\frac{\partial \mu_v}{\partial n_v}\approx\frac 2{e^2} \frac \pi\Delta\sigma_v\]
+so we get that
+
+\[D_{K_1}\nabla n_{K_1}+D_{K_2}\nabla n_{K_2}=D_{cv}n_v\]
+Putting it all together we have that
+
+\[\mathbf J_c(\mathbf r)=\sigma_c \mathbf E(\mathbf r)+eD_{cv}\nabla n_v(\mathbf r)\]
+Writing all the indices
+
+\[J_{c,i}=\sum_j \sigma_{c,xx}\delta_{ij}E_i+D_{cv,xy}\epsilon_{ij}\partial_j n_v\]
+so we can rewrite them as
+
+\[\mathbf J_{c}= \sigma_{c,xx}\mathbf E_i + D_{cv,xy} \nabla \times n_v\]
+where $\sigma_{c,xx}$ and $D_{cv,xy}$ are scalars
 

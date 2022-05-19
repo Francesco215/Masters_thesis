@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1652803499 "main.aux" "main.bbl" "main" 1652803501
+["bibtex main"] 1652806330 "main.aux" "main.bbl" "main" 1652806376
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1643926307 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
   "bibliography.bib" 1652191920 5919 b79cc6858ccfce9b50dd3a3c41903617 ""
-  "main-blx.bib" 1652803501 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
-  "main.aux" 1652803501 9398 c222c59323d8aaf06f01b044248117e5 "pdflatex"
+  "main-blx.bib" 1652806376 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
+  "main.aux" 1652806376 9398 9ecf1b5c594c48a0b9e9013d19da77d0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1652803500 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1652803501
+["pdflatex"] 1652806375 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1652806376
   "../website/images/berry/chern_theorem.png" 1651843336 70647 dbc1070acd2af605a94f6e824f2e31a7 ""
   "/Users/francesco/Github/Masters_thesis/Latex/main.tex" 1652193115 1105 1d6bd75702bf68a652782a8603f2f4ee ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -215,15 +215,15 @@
   "Immagini/ValleyHall/sigma_xy.eps" 1652454740 21537 ebbde7ebc0c128c93705ac6b9658554a ""
   "Immagini/cherubino.eps" 1008060854 259277 326b2c72a6633bf6164fa5ee0d9c2ea6 ""
   "Immagini/stokes.eps" 1652031714 56857 eb00f63d9a4ddac062ffb4bb1126eb94 ""
-  "chapters/ValleyHall.tex" 1652803498 13336 8cfe397e25383c37d8ab1a2d72a89cc4 ""
+  "chapters/ValleyHall.tex" 1652806375 14508 581a8449274d7cd1d35ca36df289f449 ""
   "chapters/berry.tex" 1652198114 16833 ac8fe423ad5911886d0bc0d0885bdea0 ""
   "chapters/introduction.tex" 1652097110 27 8a6a9ecb9aa92412dcc79a61f7483b85 ""
-  "main.aux" 1652803501 9398 c222c59323d8aaf06f01b044248117e5 "pdflatex"
-  "main.bbl" 1652803500 17905 0eb2a8c9f4b154aab5b696b2fd7b3e91 "bibtex main"
-  "main.out" 1652803501 2234 856f7de12a19ac46c3c6b1e2d41765ba "pdflatex"
-  "main.run.xml" 1652803501 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
+  "main.aux" 1652806376 9398 9ecf1b5c594c48a0b9e9013d19da77d0 "pdflatex"
+  "main.bbl" 1652806330 17905 0eb2a8c9f4b154aab5b696b2fd7b3e91 "bibtex main"
+  "main.out" 1652806376 2234 856f7de12a19ac46c3c6b1e2d41765ba "pdflatex"
+  "main.run.xml" 1652806376 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
   "main.tex" 1652193115 1105 1d6bd75702bf68a652782a8603f2f4ee ""
-  "main.toc" 1652803501 1087 874fae2c1b2719c46933fb41fe0b3258 "pdflatex"
+  "main.toc" 1652806376 1087 12420fb2b2ad3321e1fe3e92abe0f78e "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"

@@ -22,18 +22,3 @@ def R_NLx(x,args,limit=2e2):
     RNL=np.array([quad(R_NLk,0,limit,args=args,weight='cos',wvar=x) for x in x])/np.pi
 
     return RNL
-
-
-
-
-#Not working
-#@lru_cache(maxsize=5000)
-def R_NLx_log(x,args,limit=2e2):
-    assert isinstance(x,np.ndarray), f'x has to be a numpy array, not {type(x)}'
-    
-    def R_NLk_log(k,x,*args):
-        return R_NLk(np.exp(k),*args)*k*np.cos(x*np.exp(k))
-    
-    RNL=np.array([quad(R_NLk_log,-np.inf,np.log(limit),args=(i,*args)) for i in x])
-
-    return RNL
