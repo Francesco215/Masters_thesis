@@ -276,9 +276,192 @@ Putting it all together we have that
 \[\mathbf J_c(\mathbf r)=\sigma_c \mathbf E(\mathbf r)+eD_{cv}\nabla n_v(\mathbf r)\]
 Writing all the indices
 
-\[J_{c,i}=\sum_j \sigma_{c,xx}\delta_{ij}E_i+D_{cv,xy}\epsilon_{ij}\partial_j n_v\]
+\begin{equation}
+    J_{c,i}=\sum_j \sigma_{c,xx}\delta_{ij}E_i+D_{cv,xy}\epsilon_{ij}\partial_j n_v
+\end{equation}
 so we can rewrite them as
 
-\[\mathbf J_{c}= \sigma_{c,xx}\mathbf E_i + D_{cv,xy} \nabla \times n_v\]
-where $\sigma_{c,xx}$ and $D_{cv,xy}$ are scalars
 
+\begin{equation}
+    \mathbf J_{c}= \sigma_{c,xx}\mathbf E_i + D_{cv,xy} \nabla \times n_v
+    \label{eq:diff-jc}
+\end{equation}
+where $\sigma_{c,xx}$ and $D_{cv,xy}$ are scalars.
+
+And now the difference of the $D_{K_\alpha}\nabla n_{K_\alpha}(\mathbf r)$ terms to write them in terms of charge and valleys degrees of freedom
+
+\[D_{K_0}\nabla n_{K_0}-D_{K_1}\nabla n_{K_1}=(D_{K_0}+D_{K_1})\nabla n_v(\mathbf r)/2\]
+and with some calculations done in a similar fashion to the one we use to calculate $\mathbf J_c$ we have that
+
+\[D_v=\frac12(D_{K_0}+D_{K_1})=\frac 1{e^2}\sigma_c\frac{\partial \mu_c}{\partial n_c}\]
+so, in matrix form
+
+
+\begin{equation}
+    \mathbf J_v(\mathbf r)=\sigma_v\mathbf E(\mathbf r)+eD_{v}\nabla n_v(\mathbf r)    
+\end{equation}
+which can be re-written as
+
+
+\begin{equation}
+    J_{v,i}(\mathbf r)=\sum_j \sigma_{c,xy} \epsilon_{ij}  E_j(\mathbf r)+eD_{v,xx}\delta_{ij}\partial_j n_v(\mathbf r) 
+    \label{eq:diff-jv}  
+\end{equation}
+where $\sigma_{c,xy}$ and $D_{v,xx}$ are scalars
+
+
+\subsection{Laplace equation}
+
+Now that we have the charge and valley currents differential equations we calculate the laplacians to solve them. Let's start from the equation for the charge currents \ref{eq:diff-jc}
+
+\begin{equation}
+    \nabla \cdot \vect J_c=\nabla \cdot (\sigma_c \mathbf E)+ eD_{cv,xx}\nabla \cdot (\nabla\times n_v)
+    \label{eq:lap-jc}
+\end{equation}
+Inside the material the are no sources of charge current, so $\nabla \cdot \vect J_c=$, and the divergence of a rotor is zero, so $\nabla \cdot (\nabla\times n_v)=0$. This means that inside the material
+\begin{equation}
+    \boxed{
+    \nabla^2 V(x,y)=0
+    }
+\end{equation}
+So, to be able to solve the laplace equation we just need to impose the boundary conditions that the current is injected in a single point at $x=0$ along the $\hat{\vect y}$ direction. 
+\[
+    -e\vect J_c(x,\pm W/2)=I\delta(x)\hat{\vect y}    
+\]
+If we put it in equation \ref{eq:lap-jc} we get
+\begin{equation}
+    \boxed{
+        I\delta(x)=\sigma_{c,xx}\partial_y V(x,\pm W/2)-eD_{cv,xy}\partial_x n_v(x,\pm W/2)
+    }
+\end{equation}
+Now let's calculate the laplacian for the valley current equation \ref{eq:diff-jv}
+
+
+\begin{equation}
+    \nabla \cdot \mathbf J_v=\nabla \times (\sigma_{c,xy} \mathbf E)+ e\nabla \cdot (D_{v,xx}\nabla n_v)
+\end{equation}
+Now, lets analyze all the terms one by one
+\begin{itemize}
+\item For the continuity equation we have that $\nabla \cdot \mathbf J_v=\frac \partial {\partial t} n_v$, since intervalley scattering is zero, this should be zero, but  why don't add it back now? so we say that it decays exponentially $\frac \partial {\partial t} n_v=-\frac 1 {\tau_v} n_v$
+\item$e\nabla \cdot (D_{v,xx}\nabla n_v)$ is really nothing special, inside the material $D_{v,xx}$ is constsant so in the end it is equal to $eD_{v,xx}\nabla^2 n_v$
+\item $\nabla \times (\sigma_{c,xy} \mathbf E)$ is equal to zero inside the material, but on the edge can be non-zero because $\sigma_{c,xy}$ changes form inside to the outside
+\end{itemize}
+In the end we get that
+
+
+\begin{equation}
+    eD_{v,xx}\nabla^2n_v=-\frac 1{\tau_v}n_v- \nabla \times (\sigma_{c,xy} \mathbf E)
+\end{equation}
+This means that at the equilibrium $n_v\neq 0$ only if you are were $\nabla\times (\sigma_{c,xy} \mathbf E)\neq 0$, and this is only true along the edge, so we we'll have to worry about this term only in the boundary conditions, So
+
+\begin{equation}
+    \boxed{\bigg[
+        \nabla^2 -\frac 1{\tau_v D_{v,xx}}
+        \bigg]
+    n_v(\vect r)=0}
+\end{equation}
+The boundary condition is simply that the valley current doesn't exit the material, so
+\begin{equation}
+    J_{v,y}(x,\pm W/2)=0
+\end{equation}
+putting it into the differential equation for $J_v$ (eq \ref{eq:diff-jv}) we get
+\begin{equation}
+    \boxed{
+        \sigma_{v,xy}\partial_x V(x,\pm W/2)+eD_{v,xx}\partial_y n_v(x,\pm W/2)=0
+    }
+\end{equation}
+
+
+All the boxed equations we wrote in the in this section enable us to completely solve the system. For convenience let's write the m in a single system of equations
+
+\begin{equation}
+    \begin{cases}
+        \nabla^2 V(x,y)=0\\
+        \bigg[\nabla^2 -\frac 1{\tau_v D_{v,xx}}\bigg]n_v(\vect r)=0\\
+        I\delta(x)=\sigma_{c,xx}\partial_y V(x,\pm W/2)-eD_{cv,xy}\partial_x n_v(x,\pm W/2)\\
+        \sigma_{v,xy}\partial_x V(x,\pm W/2)+eD_{v,xx}\partial_y n_v(x,\pm W/2)=0
+    \end{cases}
+    \label{eq:syst1}
+\end{equation}
+From the third equation in the system above we can see that $V(x,y)$ is even along the $\hat{\vect x}$ axis and odd along the $\hat{\vect y}$ axis.\newline
+From the fourth equation we can see that $n_v$ has the opposite parity to $V$, so it's odd along the $\hat{\vect x}$ axis and even along the $\hat{\vect y}$ axis.\newline
+
+To be able to solve it we first have to do a fourier transform over the $\hat{\vect x}$ direction. The first two equations of eq \ref{eq:syst1} become 
+
+
+\begin{equation}
+    \begin{cases}
+        (\partial_y^2 - k^2) V(k,y)=0\\
+        \big[\partial_y^2 -\omega^2(k)\big]n_v(k,y)=0
+    \end{cases}
+\end{equation}
+And the solutions that respect the symmetries we talked about earlier are
+\begin{equation}
+    V(k,y)=V(k)\sinh (ky) \quad \quad n_v(k,y)=n_v(k)\cosh [\omega(k)y]
+    \label{eq:separation}
+\end{equation}
+However we still don't know what are $V(k)$ and $n_v(k)$, to obtain them we have to plug the equations above in the last two equations of \ref{eq:syst1}
+\begin{equation}
+    \begin{cases}
+        \sigma_{c,xx}k\cosh(kw/2) V(k)-eD_{cv,xy}ik \cosh(\omega W/2)n_v(k)=I\\
+        -\sigma_{v,xy} ik \sinh(kw/2) V(k)-eD_{v,xx}\omega(k)\sinh(\omega W/2) n_v(k)=0
+    \end{cases}
+\end{equation}
+This system of equation is linear in $V(k)$ and $n_v(k)$, so it can be written in this form
+\begin{equation}
+    \begin{bmatrix}
+        A&B\\
+        C&D
+    \end{bmatrix}
+    \begin{bmatrix}
+        V\\n_v
+    \end{bmatrix}=
+    \begin{bmatrix}
+        I\\0
+    \end{bmatrix}
+\end{equation}
+And the inverse is simply
+\begin{equation}
+    \begin{bmatrix}
+        V\\n_v
+    \end{bmatrix}=
+    \frac I{AD-BC}
+    \begin{bmatrix}
+        D\\-C
+    \end{bmatrix}
+\end{equation}
+Since we want only care to calculate the voltage we only need to evaluate
+\[
+    V=\frac{I}{A-\frac{BC}D}    
+\]
+wich turns out to be equal to
+\begin{equation}
+    V(k)=\frac I{\sigma_c}\frac{\omega(k)/k}{\sinh(kW/2)}
+    \bigg\{
+        \frac{\omega(k)}{\tanh(kW/2)} + \frac{k\tan^2(\theta_{VH})}{\tanh[\omega(k)W/2]}    
+    \bigg\}^{-1}
+    \label{eq:vk}
+\end{equation}
+We can plug it into equation \ref{eq:separation} and evaluate it at $y=\pm W/2$
+
+\begin{equation}
+    V(k,\pm W/2)=V(k)\sinh(\pm kW/2)=\frac{I\omega}{\sigma_c k}\bigg\{\dots\bigg\}^{-1}
+\end{equation}
+Where the terms inside the curly brakets are the same from the previous equation (\ref{eq:vk}).
+
+
+
+\section{Study of $R_{NL}$}
+Finally we can calculate the non-local resistance
+
+\begin{equation}
+    R_{NL}(k)=\frac{V(k,W/2)-V(k,-W/2)}I
+\end{equation}
+Which is equal to
+
+\begin{equation}
+    R_{NL}(k)=\frac{2\omega(k)}{k\sigma_c}
+    \bigg\{
+        \frac{\omega(k)}{\tanh(kW/2)} + \frac{k\tan^2(\theta_{VH})}{\tanh[\omega(k)W/2]}    
+    \bigg\}^{-1}
+\end{equation}
