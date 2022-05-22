@@ -8,9 +8,9 @@ def R_NLk(k,width,lv=1e-6,tan=0.9):
     if k*lv>1e2: omega=k
     else: omega=np.sqrt(k**2+lv**(-2))
 
-    denominator= k*tan**2/np.tanh(omega*width/2)
-    
     nominator=2*omega/(k*width)
+
+    denominator= k*tan**2/np.tanh(omega*width/2)
     denominator += omega/np.tanh(k*width/2)
 
     return nominator/denominator

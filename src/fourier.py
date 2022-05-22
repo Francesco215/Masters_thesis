@@ -16,9 +16,13 @@ def find_lim(f,height=1e-2,*args,**kwargs):
     return k[np.where(R<height)[0][0]]
 
 
-def R_NLx(x,args,limit=2e2):
+def R_NLx_old(x,args,limit=2e2):
     assert isinstance(x,np.ndarray), f'x has to be a numpy array, not {type(x)}'
     
     RNL=np.array([quad(R_NLk,0,limit,args=args,weight='cos',wvar=x) for x in x])/np.pi
 
     return RNL
+
+
+def R_NLx(x,args,limit=2e2):
+    return np.array(quad(R_NLk,0,limit,args=args,weight='cos',wvar=x)[0])/np.pi
