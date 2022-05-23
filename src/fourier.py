@@ -24,5 +24,6 @@ def R_NLx_old(x,args,limit=2e2):
     return RNL
 
 
-def R_NLx(x,args,limit=2e2):
+def R_NLx(x,width,lv,tan,limit=2e2):
+    args=(width,lv,tan)
     return np.array(quad(R_NLk,0,limit,args=args,weight='cos',wvar=x)[0])/np.pi
