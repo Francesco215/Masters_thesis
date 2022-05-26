@@ -9,8 +9,14 @@ def R_NLk0(k,width,lv=1e-6,tan=0.9):
     c1= 1/(1+(Lv(width,lv,tan)*k)**2)/(1+tan**(-2))
     return c1+c2
 
-def R_NL0(x,width,lv,tan):
+def R_NL1(x,width,lv,tan):
     L=Lv(width,lv,tan)
     c1=np.exp(-np.abs(x)/L)/(2*L*(1+tan**(-2)))*width #approximation for x far from 0
+    return c1
+
+def R_NL2(x,width,lv,tan):
     c2= -2*np.log(np.abs(np.tanh(np.pi*x/(2*width))))/(np.pi*(1+tan**2))   #approximation for x close to zero
-    return c1+c2
+    return c2
+
+def R_NL0(x,width,lv,tan):
+    return R_NL1(x,width,lv,tan)+R_NL2(x,width,lv,tan)

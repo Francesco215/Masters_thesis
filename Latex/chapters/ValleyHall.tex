@@ -167,6 +167,7 @@ If we probe the voltage from two different points with an offset of $x$ from the
 
 \begin{equation}
     \frac{V(x)}I=\frac{2\rho}\pi\ln\bigg |\coth \Big(\frac{\pi x}{2W}\Big)\bigg |
+    \label{eq:ohmic signal}
 \end{equation}
 Where $\rho$ is the resistivity. Don't worry later on there is the proof of this equation.\newline
 
@@ -447,11 +448,7 @@ We can plug it into equation \ref{eq:separation} and evaluate it at $y=\pm W/2$
 \begin{equation}
     V(k,\pm W/2)=V(k)\sinh(\pm kW/2)=\frac{I\omega}{\sigma_c k}\bigg\{\dots\bigg\}^{-1}
 \end{equation}
-Where the terms inside the curly brakets are the same from the previous equation (\ref{eq:vk}).
-
-
-
-\section{Study of $R_{NL}$}
+Where the terms inside the curly brakets are the same from the previous equation (\ref{eq:vk}).\\
 Finally we can calculate the non-local resistance
 
 \begin{equation}
@@ -464,4 +461,7 @@ Which is equal to
     \bigg\{
         \frac{\omega(k)}{\tanh(kW/2)} + \frac{k\tan^2(\theta_{VH})}{\tanh[\omega(k)W/2]}    
     \bigg\}^{-1}
+    \label{eq:rnlk}
 \end{equation}
+
+
