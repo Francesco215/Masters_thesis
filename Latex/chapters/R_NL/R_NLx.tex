@@ -19,11 +19,12 @@ Let's look at the graph of the $R_{NL}(k)$ before doing any approximations:
     \label{fig:RNLk}
 \end{figure}
 As you can see from the figure \ref{fig:RNLk} if $W\gg l_v$ we have a single bell like function with the width of the bell being $\approx 1/W$. If $W\ll l_v$ we have a double-bell function, where the first bell has a height of $1$ and a width of $1/l_v$, and the second one has a shorter height. To evaluate the precise height we just need to set $l_v^{-1}\ll k \ll W^{-1}$ in equation \ref{eq:rnlk}, this gives us 
+,
 
-
-\[
-R_{NL}(l_v^{-1}\ll k \ll W^{-1})\approx \frac{R_{xx}}{1+\tan^2(\theta_{VH})}    
-\]
+\begin{equation}
+    R_{NL}(l_v^{-1}\ll k \ll W^{-1})\approx \frac{R_{xx}}{1+\tan^2(\theta_{VH})}   
+    \label{eq:plateau} 
+\end{equation}
 Where $R_{xx}=\frac{W}{\sigma_{xx}}$
 
 So, if we have $l_v\ll W$ or $\tan(\theta_{VH})\ll 1$ (or both) we have a single bell structure. Incidentally these are the conditions to NOT have topological effects, so the less visible the double bell is, the less visible the topological effects are. We'll also see later how one of the bell represents the ohmic nonlocal signal, while the other represents the topological nonlocal signal. 
@@ -142,7 +143,6 @@ The nice thing about this is that if two equations are similar, then their Fouri
     }
 \end{equation}
 Infact if we re-create figure \ref{fig:rnlx2approx} with the equation above we get figure \ref{fig:rnlxapprox}
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{Immagini/rnl/xapprox.pdf}

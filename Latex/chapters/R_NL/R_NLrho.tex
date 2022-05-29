@@ -79,6 +79,81 @@ For high values of $\rho, \tan(\theta_{VH})$ the parabola becomes really narrow 
     \bigg\{
         \frac 2W+ \frac {k^2}{\omega(k)}\frac{\tan^2(\theta_{VH})}{\tanh[\omega(k)W/2]}    
     \bigg\}^{-1}
+    \label{eq:rhotoinf}
+\end{equation}
+Ok, low let's take a look at this function as we make $\rho$ bigger and bigger
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/rho2.pdf}
+    \caption{In this graph the darker the line color is, the bigger is the value of $\rho$. Notice how, as we increase $\rho$ the first regime becomes more dominant}
+    \label{fig:rho2}
+\end{figure}\\
+
+As you can see from figure \ref{fig:rho2} are three regimes here. The first one in for $k<l_v^{-1}$, the second one is for $l_v^{-1}<k<W^{-1}$ and the third one is for $W^{-1}<k$
+
+In the first regime ($k< l_v^{-1}$) $R_{NL}(k)$ is similar to a Lorentzian function.
+\begin{equation}
+    \lim_{\rho\to\infty} R_{NL}(k)=2\rho
+    \bigg\{
+        \frac 2W+ l_vk^2\frac{\tan^2(\theta_{VH})}{\tanh[W/2l_v]}  
+    \bigg\}^{-1}
+\end{equation}
+We can re-parametrize it As
+\begin{equation}
+    \lim_{\rho\to\infty} R_{NL}(k)=\frac{R_{xx}}{1+(k/\sigma)^2}
+\end{equation}
+Where 
+\[
+    \sigma=\frac 1 {\tan(\theta_{VH})}\sqrt{\frac 2{l_vW} \tanh\bigg(\frac W{2l_v}\bigg)}
+\]
+Therefore $\rho$ and the standard deviation of the Lorentzian $\sigma$ are inversely proportional.\\
+If we do the anti-Fourier transform of this equation to get the position dependent Non-local resistivity we get 
+\[
+    \mathcal F^{-1}\bigg[\frac{R_{xx}}{1+(k/\sigma)^2} \bigg]=\frac 12\rho W\sigma {e^{-|x|\sigma}}=
+\]
+\begin{equation}
+    =\frac {\rho W}{\tan(\theta_{VH})}\sqrt{\frac 2{l_v W}\tanh\bigg(\frac W{2l_v}\bigg)}
+    \exp\Bigg[
+        \frac{-|x|}{\tan(\theta_{VH})}\sqrt{\frac 2{l_v W}\tanh\bigg(\frac W{2l_v}\bigg)}
+    \Bigg]
+\end{equation}
+Since $\tan(\theta_{VH})=\rho \sigma_v$, for $\rho\to +\infty$ the equation above converges pointwise to the following saturation constant $S$
+\begin{equation}
+    \lim_{\rho\to\infty}\mathcal F^{-1}\bigg[\frac{R_{xx}}{1+(k/\sigma)^2} \bigg]=\frac 1{\sigma_v}\sqrt{\frac {2W}{l_v}\tanh\bigg(\frac W{2l_v} \bigg)}\equiv S
 \end{equation}
 
 
+In the second regime we have already calculated the value the plateau assumes in equation \ref{eq:plateau} 
+\begin{equation}
+    R_{NL}(k)\approx \frac{\rho W}{1+\tan^2(\theta_{VH})}
+    \label{eq:second_regime}
+\end{equation}
+While in the third and last regime 
+\begin{equation}
+    R_{NL}(k)\approx \frac{2\rho}k \frac 1{1+\tan^2(\theta_{VH})}
+    \label{eq:third_regime}
+\end{equation}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/rho3.pdf}
+    \caption{The main regimes of this function}
+    \label{fig:rho3}
+\end{figure}\\
+Notice how the equations for the second and third regime are both proportional to $\rho/(1+\tan^2(\theta_{VH}))$. This means we can write equation \ref{eq:rhotoinf} as approximately
+\begin{equation}
+    \lim_{\rho\to\infty} R_{NL}(k)=\frac{R_{xx}}{1+(k/\sigma)^2} + \frac \rho{1+\tan^2(\theta_{VH})}C(k)
+    \label{eq:rhotoinf2}
+\end{equation}
+Where $C(k)$ is a function that doesn't depend on $\rho$ or $\tan(\theta_{VH})$ and it comprehends the second, third regime and eventual corrections in between the approximations\footnote{Yes, the corrections also are proportional to $\rho/(1+\tan^2(\theta_{VH}))$ SPIEGA PERCHè}.\\
+Now let $G(x)$ be it's Fourier anti-transform, then we have that 
+
+\begin{equation}
+    \lim_{\rho\to\infty} R_{NL}(x)=S + \frac 1\rho G(x)
+\end{equation}
+This means that for $\rho\to +\infty$ the right hand side term vanishes, unless it diverges. And indeed $G(x)$ diverges for $x=0$. Therefore the limit above has pointwise convergence in $\{x\in \mathbb R\,|\,x\neq 0\}$
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/all_approx_rho.pdf}
+    \caption{The main regimes of this function}
+    \label{fig:all_approx_rho}
+\end{figure}\\
