@@ -673,5 +673,48 @@
     \field{journaltitle}{Physical review letters}
     \field{year}{2015}
   \endentry
+
+  \entry{Beconcini_2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Beconcini},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Taddei},
+         familyi={T\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Polini},
+         familyi={P\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society ({APS})}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMTFPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/physrevb.94.121408
+    \endverb
+    \field{number}{12}
+    \field{title}{Nonlocal topological valley transport at large valley Hall
+  angles}
+    \verb{url}
+    \verb https://doi.org/10.1103%2Fphysrevb.94.121408
+    \endverb
+    \field{volume}{94}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
 \enddatalist
 \endinput
