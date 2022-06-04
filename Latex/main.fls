@@ -1080,6 +1080,7 @@ INPUT ./Immagini/rnl/rho3.pdf
 INPUT Immagini/rnl/rho3.pdf
 INPUT ./Immagini/rnl/rho3.pdf
 INPUT ./Immagini/rnl/rho3.pdf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT ./Immagini/rnl/all_approx_rho.pdf
 INPUT ./Immagini/rnl/all_approx_rho.pdf
 INPUT Immagini/rnl/all_approx_rho.pdf
@@ -1100,6 +1101,10 @@ INPUT ./Immagini/rnl/mixed_approx_rho.pdf
 INPUT Immagini/rnl/mixed_approx_rho.pdf
 INPUT ./Immagini/rnl/mixed_approx_rho.pdf
 INPUT ./Immagini/rnl/mixed_approx_rho.pdf
+INPUT ./chapters/R_NL/experiments.tex
+INPUT chapters/R_NL/experiments.tex
+INPUT ./chapters/R_NL/experiments.tex
+INPUT chapters/R_NL/experiments.tex
 INPUT ./chapters/berry.tex
 INPUT chapters/berry.tex
 INPUT ./chapters/berry.tex
