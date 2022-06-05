@@ -265,6 +265,7 @@ If we plot the approximations on top of the actual function we get something tha
 \end{figure}\\
 
 \subsection{Altertative way of studying $R_{\textrm{NL}}(x)$ as we change $\rho$}
+\label{sec:alternaterho}
 Up until now we have studied $R_{\textrm{NL}}(x)$ as we change $\rho$ starting directly from the frequency response function (eq. \ref{eq:rnlk}). This is the most rigorous way for doing this analysis, but it can be cumbersome to work with and doesn't really offer much insight in the topology behind.
 
 A much simpler, but less rigorous way of approaching the problem would be to start from the approximate form of $R_{\textrm{NL}}(x)$ (eq. \ref{eq:rnl}). As you might remeber, this equation had the advantage of being able to distinguish the ohmic effect from the topological ones giving us a strong tool to be able to analyze the graphs.
@@ -281,11 +282,22 @@ This image also shows that the topological component is the one responsible for 
 
 \subsubsection*{A few small details}
 In the discussion about $R_{\textrm{NL}}$ as we change $\rho$ we choose parameters to highlight the behaviors we talked about. However sometimes certain behaviors disappear, for example if we increase the ohmic contributions by decreasing the width of the bar, figures \ref{fig:all_approx_rho} and \ref{fig:two_approx_rho} become like in figure \ref{fig:mixedrho}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=.49\linewidth]{Immagini/rnl/mixed_all_approx_rho.pdf}
-    \includegraphics[width=.49\linewidth]{Immagini/rnl/mixed_approx_rho.pdf}
+
+\begin{figure}
+    \makebox[\textwidth][c]{
+        \includegraphics[width=.75\linewidth]{Immagini/rnl/mixed_all_approx_rho.pdf}
+        \includegraphics[width=.75\linewidth]{Immagini/rnl/mixed_approx_rho.pdf}
+        }%
     \caption{As you can see the $\rho^3$ behavior disappeared}
     \label{fig:mixedrho}
-\end{figure}\\
+\end{figure}
+
 In the following section we'll see how this applies to lab measurements
+
+\subsection{Shortcomings of the model}
+The main shortcoming of the model is that we don't explore the temperature dependence of the system, while we can expect that such effect to be noticeble will need to happen at low temperature CONTINUA
+
+
+\subsubsection*{Does this generalize?}
+Up until now we talked about valley currents, however this also applies to spin-hall effect and spin-orbit effect since the differential equations that govern the system are equivalent
+

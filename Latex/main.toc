@@ -17,10 +17,11 @@
 \contentsline {subsection}{\numberline {2.2.2}Big resistivities $\rho \to \infty $}{23}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Putting it all together}{26}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Altertative way of studying $R_{\textrm {NL}}(x)$ as we change $\rho $}{27}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Comparison with experimental data}{28}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Berry phase and Berry curvature}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{30}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Berry curvature}{32}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Other formulas for $\Omega _{\mu \nu }$}{33}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Stokes' Theorem}{33}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Chern Theorem}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {2.2.5}Shortcomings of the model}{28}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Comparison with experimental data}{29}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Berry phase and Berry curvature}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Berry curvature}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Other formulas for $\Omega _{\mu \nu }$}{35}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Stokes' Theorem}{35}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Chern Theorem}{37}{section.3.4}%

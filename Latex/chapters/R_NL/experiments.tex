@@ -1,1 +1,40 @@
 \section{Comparison with experimental data}
+Experimental setups have a few limitations compared to the theoretical treatment, for example you don't have complete freedom of changing the resistance, rather the resistance is changed by changing the temperature of the sample.
+This has a few consequences: 
+\begin{itemize}
+    \item Since out sample is a semiconductor, the lower the temperature, the higher the resistance, but if the temperature gets too low we enter the ballistic regime, and our treatment is no longer valid.
+    \item If the temperature gets too high, the quantization of the hall effect disappears
+\end{itemize}
+This restricts us to a couple order of magnitude of the resistivity.
+
+Now we compare the results with the experimental data. Let's start from analyzing the data from  \cite{rebecca2022moirè}.\\
+In this paper the authors measured the valley hall effect of a heterostructure made of bilayer-graphene on top of boron nitride at different angles $\phi$ between the graphene and the boron nitride. The sample has a width $W=1.7\mu$m, and inter-valley scattering length $l_{\textrm v}=1.6\mu$m and the distance of the contact from the injection point is $x=2.3\mu$m
+
+The angles $\phi$ that were explored are $0,\pi/6$ and $\pi/3$. If you plot the measurements you get figure \ref{fig:rebeccadatapoints}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/rebecca_data.pdf}
+    \caption{Datapoints from \cite{rebecca2022moirè}}
+    \label{fig:rebeccadatapoints}
+\end{figure}
+
+Now we analyze them one by one
+\begin{itemize}
+    \item For $\phi=\pi/3$ we have that the response is fully ohmic, and so we get a completely linear response (figure \ref{fig:rebecca pi/3})
+    \item For $\phi=\pi/6$ we have a hall effect, however, since $W\approx l_\textrm{v}$ the ohmic and the topological response mix together, so we never see the full-fledged $\rho^3$ behavior.\footnote{A more detailed explanation was given in the details of subsection \ref{sec:alternaterho}}
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/rebecca_0.pdf}
+    \caption{Comparison between the data points and the theoretical expectation for $\phi=\pi/3$. The last point is an outlier, but all in all it looks pretty good}
+    \label{fig:rebecca pi/3}
+\end{figure}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Immagini/rnl/rebecca_1.pdf}
+    \caption{Comparison between the data points and the theoretical expectation for $\phi=\pi/6$. The model has a lower precision for higher values of $\rho,R_{\textrm{NL}}$}
+    \label{fig:rebecca pi/6}
+\end{figure}

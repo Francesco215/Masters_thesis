@@ -716,5 +716,81 @@
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
   \endentry
+
+  \entry{rebecca2022moirè}{article}{}
+    \name{author}{9}{}{%
+      {{hash=AE}{%
+         family={Arrighi},
+         familyi={A\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=NVH}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={V.\bibnamedelima H.},
+         giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=DLM}{%
+         family={Di\bibnamedelima Luca},
+         familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Maffione},
+         familyi={M\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Watanabe},
+         familyi={W\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Taniguchi},
+         familyi={T\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mailly},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CJC}{%
+         family={Charlier},
+         familyi={C\bibinitperiod},
+         given={J.\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=RPR}{%
+         family={Ribeiro-Palau},
+         familyi={R\bibinithyphendelim P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{Mesoscale and Nanoscale Physics (cond-mat.mes-hall), FOS: Physical
+  sciences, FOS: Physical sciences}
+    \strng{namehash}{AE+1}
+    \strng{fullhash}{AENVHDLMMGWKTTMDCJCRPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/ARXIV.2205.01760
+    \endverb
+    \field{title}{Non-identical moiré twins in bilayer graphene}
+    \verb{url}
+    \verb https://arxiv.org/abs/2205.01760
+    \endverb
+    \field{year}{2022}
+  \endentry
 \enddatalist
 \endinput
