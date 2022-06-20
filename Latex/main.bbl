@@ -17,6 +17,169 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{firstExfoliation}{article}{}
+    \name{author}{8}{}{%
+      {{hash=NKS}{%
+         family={Novoselov},
+         familyi={N\bibinitperiod},
+         given={K.\bibnamedelima S.},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GAK}{%
+         family={Geim},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MSV}{%
+         family={Morozov},
+         familyi={M\bibinitperiod},
+         given={S.\bibnamedelima V.},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DSV}{%
+         family={Dubonos},
+         familyi={D\bibinitperiod},
+         given={S.\bibnamedelima V.},
+         giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=GIV}{%
+         family={Grigorieva},
+         familyi={G\bibinitperiod},
+         given={I.\bibnamedelima V.},
+         giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=FAA}{%
+         family={Firsov},
+         familyi={F\bibinitperiod},
+         given={A.\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NKS+1}
+    \strng{fullhash}{NKSGAKMSVJDZYDSVGIVFAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We describe monocrystalline graphitic films, which are a few atoms thick
+  but are nonetheless stable under ambient conditions, metallic, and of
+  remarkably high quality. The films are found to be a two-dimensional
+  semimetal with a tiny overlap between valence and conductance bands, and they
+  exhibit a strong ambipolar electric field effect such that electrons and
+  holes in concentrations up to 1013 per square centimeter and with
+  room-temperature mobilities of ∼10,000 square centimeters per volt-second
+  can be induced by applying gate voltage.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.1102896
+    \endverb
+    \verb{eprint}
+    \verb https://www.science.org/doi/pdf/10.1126/science.1102896
+    \endverb
+    \field{number}{5696}
+    \field{pages}{666\bibrangedash 669}
+    \field{title}{Electric Field Effect in Atomically Thin Carbon Films}
+    \verb{url}
+    \verb https://www.science.org/doi/abs/10.1126/science.1102896
+    \endverb
+    \field{volume}{306}
+    \field{journaltitle}{Science}
+    \field{year}{2004}
+  \endentry
+
+  \entry{guinea2008review}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CNAH}{%
+         family={Castro\bibnamedelima Neto},
+         familyi={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={A.\bibnamedelima H.},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Guinea},
+         familyi={G\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PNMR}{%
+         family={Peres},
+         familyi={P\bibinitperiod},
+         given={N.\bibnamedelima M.\bibnamedelima R.},
+         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=NKS}{%
+         family={Novoselov},
+         familyi={N\bibinitperiod},
+         given={K.\bibnamedelima S.},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GAK}{%
+         family={Geim},
+         familyi={G\bibinitperiod},
+         given={A.\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{CNAH+1}
+    \strng{fullhash}{CNAHGFPNMRNKSGAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/RevModPhys.81.109
+    \endverb
+    \field{issue}{1}
+    \field{pages}{109\bibrangedash 162}
+    \field{title}{The electronic properties of graphene}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/RevModPhys.81.109
+    \endverb
+    \field{volume}{81}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{bloch1929quantenmechanik}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BF}{%
+         family={Bloch},
+         familyi={B\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BF1}
+    \strng{fullhash}{BF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{555\bibrangedash 600}
+    \field{title}{{\"U}ber die quantenmechanik der elektronen in
+  kristallgittern}
+    \field{volume}{52}
+    \field{journaltitle}{Zeitschrift f{\"u}r physik}
+    \field{year}{1929}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}
