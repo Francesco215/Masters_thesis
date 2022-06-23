@@ -1,4 +1,5 @@
 \chapter{Introduction to relevant topics}
+\section{Graphene}
 Graphene is a two-dimensional lattice of carbon atoms, arranged in a honeycomb structure as shown in the figure \ref{fig:graphene} Although it is straightforward to build many layers of these lattices (a substance known as graphite), it was long thought that a purely two-dimensional lattice would be unstable to thermal fluctuations and impossible to create.
 This changed in 2004 when Andre Geim and Konstantin Novoselov succeeded in isolating two-dimensional graphene \cite{firstExfoliation}. For this, they won the 2010 Nobel prize. As we now show, the band structure of graphene is particularly interesting.
 \begin{figure}[h]
@@ -19,7 +20,7 @@ We define the primitive lattice vectors $\vect a_1$ and $\vect a_2$ as follows:
         3 \\ -\sqrt 3
     \end{bmatrix}
 \end{equation}
-Where $a$ is the distance between two neighboring atoms, which in graphene is $\approx 1.4\times 10^{-10}$m. The sublattice A is defined as all the points $r = n_1\vect a_1 + n_2\vect a_2$ with $n_i \in \mathbb Z$ (yellow in figure \ref{fig:graphene}), sublattice B is defined as all points $r = n_1\vect a_1 + n_2\vect a_2 + \delta$ with $\delta = (a, 0)$ (blue in figure \ref{fig:graphene}). These are the white dots.
+Where $a$ is the distance between two neighboring atoms, which in graphene is $\approx 1.4\times 10^{-10}$m. The sublattice A is defined as all the points $\vect r = n_1\vect a_1 + n_2\vect a_2$ with $n_i \in \mathbb Z$ (yellow points in figure \ref{fig:graphene}), sublattice B is defined as all points $\vect r = n_1\vect a_1 + n_2\vect a_2 + \boldsymbol\delta$ with $\boldsymbol\delta = (a, 0)$ (blue points in figure \ref{fig:graphene}).
 
 The reciprocal lattice vectors $\vect b_i$ are the vectors that satisfy $\vect a_i\cdot \vect b_j=\delta_{ij}$ and are equal to 
 \begin{equation}
@@ -31,25 +32,44 @@ The reciprocal lattice vectors $\vect b_i$ are the vectors that satisfy $\vect a
         1 \\ -\sqrt 3
     \end{bmatrix}
 \end{equation}
-This reciprocal lattice is also triangular. The Brillouin zone is constructed in the usual manner by drawing perpendicular boundaries between the origin and each other point in the reciprocal lattice giving rise to a hexagonal Brillouin zone with $K_0$ and $K_1$ as the vertices of the hexagon, where 
+This reciprocal lattice is also triangular. The Brillouin zone is constructed in the usual manner by drawing perpendicular boundaries between the origin and each other point in the reciprocal lattice giving rise to a hexagonal Brillouin zone with $\vect K_0$ and $\vect K_1$ as the vertices of the hexagon, where 
 \[
-    K_0=\frac 13 (2b_1+b_2)\quad \quad K_1=\frac 13 (b_1+2b_2)
+    \vect K_0=\frac 13 (2\vect b_1+\vect b_2)\quad \quad \vect K_1=\frac 13 (\vect b_1+2\vect b_2)
 \]
 
 \begin{equation}
-    K_0=\frac{2\pi}{3a}\left(1,\frac 1{\sqrt 3}\right)\quad\quad K_1=\frac{2\pi}{3a}\left(1,-\frac 1{\sqrt 3}\right)
+   \vect K_0=\frac{2\pi}{3a}\left(1,\frac 1{\sqrt 3}\right)\quad\quad \vect K_1=\frac{2\pi}{3a}\left(1,-\frac 1{\sqrt 3}\right)
 \end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsubsection*{The tight binding approach}
-To investigate the band structure of graphene, we are going to use the tight binding approach \cite{bloch1929quantenmechanik}.
+To investigate the band structure of graphene, we are going to use the tight binding approach \cite{bloch1929quantenmechanik,slater1954simplified}.
 First we write the Hamiltonian.
 \begin{equation}
-    H=\frac{\vect p^2}{2m} + \sum_{\vect R\in C}V(x-\vect R)
+    H=\frac{\vect p^2}{2m} + \sum_{\vect R\in C}V_a(x-\vect R)
     \label{eq:blochhamiltonian}
 \end{equation}
-where the set $C=\left\{n_1\vect a_1 +n_2\vect a_2 + j\boldsymbol \delta\,|\,n_1,n_2\in \mathbb Z,\, j\in \{0,1\} \right\}$ is the set of all the positions of the atoms.
-
-Let $\ket{n,\vect R}$ be the $n$-th eingenstate of the Hamiltonian of a carbon atom placed in $\vect R$.
+Where $V_a$ is the potential of the single carbon atom, the set\\ $C=\left\{n_1\vect a_1 +n_2\vect a_2 + j\boldsymbol \delta\,|\,n_1,n_2\in \mathbb Z,\, j\in \{0,1\} \right\}$ is the set of all the positions of the atoms.\\ We can re-write the potential of the Hamiltonian in this more convenient manner.
+\begin{equation}
+    \sum_{\vect R\in C}V_a(x-\vect R) = V_a(x)+ V'(x)
+\end{equation}
+Where $V'(x)$ the potential of the other atoms, this way the can be divided in two parts:
+\begin{equation}
+    H=\underbrace{\frac{\vect p^2}{2m} + V_a(x)}_{\substack{\text{single-atom}\\\text{Hamiltonian}}} \,\,\,+ \underbrace{V'(x)}_\text{perturbation}
+    \label{eq:blochhamiltoniandivided}
+\end{equation}
+Let $\ket{n,\vect R}$ be the $n$-th eingenstate of the Hamiltonian of single carbon atom placed in $\vect R$.
 Due to translational symmetry, the wave function must satisfy the Bloch theorem, this tells us that the eingenstates of the Hamiltonian can be written as
 \begin{equation}
     \ket{n,\vect k}=\sum_{\vect R\in C} e^{i\vect k \cdot \vect R}\ket{n,\vect R}
@@ -60,32 +80,60 @@ With this we can now calculate the matrix elements of the Hamiltonian
     \sum_{\vect k\vect k',\vect R\vect R'}e^{i\vect k\cdot \vect R-i\vect k'\cdot\vect R'}
     \big\langle n,\vect R\big|H\ket{n',\vect R'}
 \end{equation}
-Since the right-hand side of the summation does not depend on $k$ we have that the terms with $k\neq k'$ are equal to zero. So the equation above becomes
+Since the matrix elements inside the summation don't depend on $k$ we have that the terms with $k\neq k'$ are equal to zero. So the equation above becomes
 \[
     \big\langle n,\vect k\big|H\big| n',\vect k'\big\rangle= \big\langle n,\vect k\big|H\big| n',\vect k\big\rangle\delta_{\vect k,\vect k'}
 \]
-Ok, now we need to calculate $ \big\langle n,\vect R\big|H\ket{n',\vect R'}$. Using equation \ref{eq:blochhamiltonian} we get that if $\vect R=\vect R'$
+Now we need to calculate the matrix elements $ \big\langle n,\vect R\big|H\ket{n',\vect R'}$. Using equation \ref{eq:blochhamiltoniandivided} we get that if $\vect R=\vect R'$
 \begin{equation}
-    \big\langle n,\vect R\big|H\ket{n',\vect R}=E_n\delta_{n,n'}+
+    \big\langle n,\vect R\big|H\ket{n',\vect R}=
+    \big\langle n,\vect 0\big|H\ket{n',\vect 0}=E_n\delta_{n,n'}+
     \underbrace{
-        \sum_{\vect R'\neq \vect R}
-        \big\langle n,\vect R\big|V(r-\vect R')\ket{n',\vect R}
+        \big\langle n,\vect 0\big|V'(\vect r)\ket{n',\vect 0}
     }_{\text{small}}
     \label{eq:tight1}
 \end{equation}
-The second term is much smaller than the first one, so we can ignore it.\\
-In the case where $\vect R$ and $\vect R'$ are two nearest neighbors we have that $\vect R'=\vect R+\boldsymbol\delta_i$ with $i\in \{1,2,3\}$ (fig. \ref{fig:graphene}).\\ We can expand the state localized in $\vect R'$ in terms of the ones localized in $\vect R$
+Since we consider the wavefunctions $\ket{n,\vect R}$ as strongly localized, the second term is much smaller than the first one, so we can ignore it.\\
+In the case where $\vect R$ and $\vect R'$ are two nearest neighbors we have that $\vect R'=\vect R+\boldsymbol\delta_i$ with $i\in \{1,2,3\}$ (fig. \ref{fig:graphene}). The matrix elements are equal to
+\begin{equation}
+    \big\langle n,\vect R\big|H\ket{n',\vect R+\boldsymbol \delta_i}=
+    \big\langle n,\vect 0\big|H\ket{n',\boldsymbol \delta_i}
+\end{equation}
+and using equation \ref{eq:blochhamiltoniandivided} we get that
+\begin{equation}
+    \big\langle n,\vect R\big|H\ket{n',\vect R+\boldsymbol \delta_i}=
+    E_n\delta_{nn'}+\big\langle n,\vect 0\big|V'(\vect r)\ket{n',\boldsymbol \delta_i}
+\end{equation}
+Usually the matrix elements $\big\langle n,\vect 0\big|V'(\vect r)\ket{n',\boldsymbol \delta_i}$ are conveniently expressed in a a small number of independent parameters, and are evaluated either analytically, or numerically, or semi-empirically. 
+\renewcommand{\arraystretch}{1.5}
 
-\begin{equation}
-    \ket{n',\vect R +\boldsymbol\delta_i}=
-    \sum_{n''}\ket{n'',\vect R}\braket{n'',\vect R}{n',\vect R+\boldsymbol\delta_i}=
-    \sum_{n''}\ket{n'',\vect R}t_{nn'}^1
-\end{equation}
-Where $t_{nn'}\equiv\braket{n,0}{n',\boldsymbol\delta_i}$
-This means that 
-\begin{equation}
-    \big\langle n,\vect R\big|H\ket{n',\vect R'}=
-    \sum_{n''}\bra{n,\vect R}H\ket{n'',\vect R}t_{n'n''}\approx
-    E_n t_{nn'}^1
-\end{equation}
-where in the last step we used \ref{eq:tight1}
+
+In the case of carbon atoms we only need to work with atomic orbitals of type $s$ and $p$, this means that the independent matrix elements to evaluate are 
+\begin{center}
+    \begin{tabular}{c}
+        \hline
+        $\big\langle s,\vect 0\big|V'(\vect r)\ket{s,\boldsymbol \delta_i}=V(ss\sigma)$\\
+        $\big\langle s,\vect 0\big|V'(\vect r)\ket{p_x,\boldsymbol \delta_i}=l_xV(sp\sigma)$\\
+        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_x,\boldsymbol \delta_i}=l_x^2V(pp\sigma)+(1-l_x^2)V(pp\pi)$\\
+        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_y,\boldsymbol \delta_i}=l_xl_y\left[V(pp\sigma)-V(pp\pi)\right]$\\
+        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_z,\boldsymbol \delta_i}=l_xl_z\left[V(pp\sigma)-V(pp\pi)\right]$\\
+        \hline
+    \end{tabular}
+\end{center}
+
+
+% We can expand the state localized in $\vect R'$ in terms of the ones localized in $\vect R$
+
+% \begin{equation}
+%     \ket{n',\vect R +\boldsymbol\delta_i}=
+%     \sum_{n''}\ket{n'',\vect R}\braket{n'',\vect R}{n',\vect R+\boldsymbol\delta_i}=
+%     \sum_{n''}\ket{n'',\vect R}t_{nn'}^1
+% \end{equation}
+% Where $t_{nn'}\equiv\braket{n,0}{n',\boldsymbol\delta_i}$
+% This means that 
+% \begin{equation}
+%     \big\langle n,\vect R\big|H\ket{n',\vect R'}=
+%     \sum_{n''}\bra{n,\vect R}H\ket{n'',\vect R}t_{n'n''}\approx
+%     E_n t_{nn'}^1
+% \end{equation}
+% where in the last step we used \ref{eq:tight1}

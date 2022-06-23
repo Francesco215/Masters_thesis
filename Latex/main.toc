@@ -1,5 +1,6 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction to relevant topics}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Graphene}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Berry phase and Berry curvature}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Berry curvature}{8}{section.2.2}%
@@ -9,7 +10,7 @@
 \contentsline {chapter}{\numberline {3}ValleyHall}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Berry curvature in Gapped graphene}{13}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Valley-Hall effect}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Non-local Charge transport}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Non-local Charge transport}{17}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Theory of non local charge transport}{17}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Re-writing the equations in terms of charge current and valley current}{19}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Laplace equation}{20}{subsection.3.4.2}%

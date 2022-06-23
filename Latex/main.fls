@@ -864,6 +864,8 @@ INPUT ./chapters/Graphene/monlayer.tex
 INPUT chapters/Graphene/monlayer.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm2074.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx2074.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT ./Immagini/graphene/structure.eps
 INPUT ./Immagini/graphene/structure.eps
 INPUT Immagini/graphene/structure.eps
@@ -888,8 +890,6 @@ INPUT ./chapters/berry.tex
 INPUT chapters/berry.tex
 INPUT ./chapters/berry.tex
 INPUT chapters/berry.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm

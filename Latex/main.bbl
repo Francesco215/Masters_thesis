@@ -180,6 +180,36 @@
     \field{year}{1929}
   \endentry
 
+  \entry{slater1954simplified}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJC}{%
+         family={Slater},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=KGF}{%
+         family={Koster},
+         familyi={K\bibinitperiod},
+         given={George\bibnamedelima F},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{SJCKGF1}
+    \strng{fullhash}{SJCKGF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{1498}
+    \field{title}{Simplified LCAO method for the periodic potential problem}
+    \field{volume}{94}
+    \field{journaltitle}{Physical Review}
+    \field{year}{1954}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}
