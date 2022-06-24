@@ -210,6 +210,32 @@
     \field{year}{1954}
   \endentry
 
+  \entry{grosso2013solid}{book}{}
+    \name{author}{2}{}{%
+      {{hash=GG}{%
+         family={Grosso},
+         familyi={G\bibinitperiod},
+         given={Giuseppe},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PGP}{%
+         family={Parravicini},
+         familyi={P\bibinitperiod},
+         given={Giuseppe\bibnamedelima Pastori},
+         giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic press}%
+    }
+    \strng{namehash}{GGPGP1}
+    \strng{fullhash}{GGPGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Solid state physics}
+    \field{year}{2013}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}

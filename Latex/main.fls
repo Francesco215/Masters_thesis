@@ -886,6 +886,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT ./Immagini/graphene/orbitali_grafene.png
+INPUT ./Immagini/graphene/orbitali_grafene.png
+INPUT Immagini/graphene/orbitali_grafene.png
+INPUT ./Immagini/graphene/orbitali_grafene.png
+INPUT ./Immagini/graphene/orbitali_grafene.png
 INPUT ./chapters/berry.tex
 INPUT chapters/berry.tex
 INPUT ./chapters/berry.tex

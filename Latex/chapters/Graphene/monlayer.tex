@@ -60,7 +60,7 @@ First we write the Hamiltonian.
     H=\frac{\vect p^2}{2m} + \sum_{\vect R\in C}V_a(x-\vect R)
     \label{eq:blochhamiltonian}
 \end{equation}
-Where $V_a$ is the potential of the single carbon atom, the set\\ $C=\left\{n_1\vect a_1 +n_2\vect a_2 + j\boldsymbol \delta\,|\,n_1,n_2\in \mathbb Z,\, j\in \{0,1\} \right\}$ is the set of all the positions of the atoms.\\ We can re-write the potential of the Hamiltonian in this more convenient manner.
+Where $V_a$ is the potential of the single carbon atom, the set\\ $C=\left\{n_1\vect a_1 +n_2\vect a_2 + \nu\boldsymbol \delta\,|\,n_1,n_2\in \mathbb Z,\, \nu\in \{0,1\} \right\}$ is the set of all the positions of the atoms.\\ We can re-write the potential of the Hamiltonian in this more convenient manner.
 \begin{equation}
     \sum_{\vect R\in C}V_a(x-\vect R) = V_a(x)+ V'(x)
 \end{equation}
@@ -72,68 +72,121 @@ Where $V'(x)$ the potential of the other atoms, this way the can be divided in t
 Let $\ket{n,\vect R}$ be the $n$-th eingenstate of the Hamiltonian of single carbon atom placed in $\vect R$.
 Due to translational symmetry, the wave function must satisfy the Bloch theorem, this tells us that the eingenstates of the Hamiltonian can be written as
 \begin{equation}
-    \ket{n,\vect k}=\sum_{\vect R\in C} e^{i\vect k \cdot \vect R}\ket{n,\vect R}
+    \ket{n,\nu,\vect k}=\sum_{\vect R_\nu\in C_\nu} e^{i\vect k \cdot \vect R_\nu}\ket{n,\vect R_\nu}
 \end{equation}
+with $\nu\in\{0,1\}$ and $C_\nu$ si defined as
+\[
+    C_\nu=\left\{n_1\vect a_1 +n_2\vect a_2 + \nu\boldsymbol \delta\,|\,n_1,n_2\in \mathbb Z\right\}
+\]
 With this we can now calculate the matrix elements of the Hamiltonian
 \begin{equation}
-    \big\langle n,\vect k\big|H\big| n',\vect k'\big\rangle=
-    \sum_{\vect k\vect k',\vect R\vect R'}e^{i\vect k\cdot \vect R-i\vect k'\cdot\vect R'}
-    \big\langle n,\vect R\big|H\ket{n',\vect R'}
+    \big\langle n,\nu,\vect k\big|H\big| n',\nu',\vect k'\big\rangle=
+    \sum_{\vect k\vect k',\vect R\vect R'}
+    e^{i\vect k\cdot (\vect R +\nu\boldsymbol \delta)-i\vect k'\cdot(\vect R +\nu' \boldsymbol \delta)}
+    \big\langle n,\nu,\vect R\big|H\ket{n',\nu',\vect R'}
 \end{equation}
 Since the matrix elements inside the summation don't depend on $k$ we have that the terms with $k\neq k'$ are equal to zero. So the equation above becomes
 \[
-    \big\langle n,\vect k\big|H\big| n',\vect k'\big\rangle= \big\langle n,\vect k\big|H\big| n',\vect k\big\rangle\delta_{\vect k,\vect k'}
+    \big\langle n,\nu,\vect k\big|H\big| n',\nu',\vect k'\big\rangle= 
+    \big\langle n,\nu,\vect k\big|H\big| n',\nu',\vect k\big\rangle\delta_{\vect k,\vect k'}
 \]
-Now we need to calculate the matrix elements $ \big\langle n,\vect R\big|H\ket{n',\vect R'}$. Using equation \ref{eq:blochhamiltoniandivided} we get that if $\vect R=\vect R'$
+This means that 
+\[
+    \big\langle n,\nu,\vect k\big|H\big| n',\nu',\vect k\big\rangle=
+    \sum_{\vect k,\vect R\vect R'}
+    e^{i\vect k\cdot (\vect R-\vect R' +\nu\boldsymbol \delta-\nu'\boldsymbol\delta)}
+    \big\langle n,\nu,\vect R\big|H\ket{n',\nu',\vect R'}
+\]
+And, since it only depends on $\vect R-\vect R'$ we have that
 \begin{equation}
-    \big\langle n,\vect R\big|H\ket{n',\vect R}=
-    \big\langle n,\vect 0\big|H\ket{n',\vect 0}=E_n\delta_{n,n'}+
-    \underbrace{
-        \big\langle n,\vect 0\big|V'(\vect r)\ket{n',\vect 0}
-    }_{\text{small}}
+    \label{eq:boh0}
+    \big\langle n,\nu,\vect k\big|H\big| n',\nu',\vect k\big\rangle=
+    \sum_{\vect k,\vect R}
+    e^{i\vect k\cdot \vect R + i(\nu-\nu')\vect k\cdot \boldsymbol \delta}
+    \big\langle n,\nu,\vect R\big|H\ket{n',\nu',\vect 0}
+\end{equation}
+Now we need to calculate the matrix elements $ \big\langle n,\nu,\vect R\big|H\ket{n',\nu',\vect 0}$. Using equation \ref{eq:blochhamiltoniandivided} we get that if $\vect R=\vect 0$
+\begin{equation}
+    \big\langle n,\nu,\vect 0\big|H\ket{n',\nu',\vect 0}
+    =E_n\big\langle n,\nu,\vect 0\ket{n',\nu',\vect 0}+
+    \big\langle n,\nu,\vect 0\big|V'(\vect r)\ket{n',\nu',\vect 0}
+\end{equation}
+For $\nu=\nu'$ the first term ($E_n\big\langle n,\nu,\vect 0\ket{n',\nu,\vect 0}=\delta_{nn'}$) and the second term, which is called crystal field integral is usually neglected because in most cases they simply produce a rigid shift of the energy bands $E_n(\vect k)$ without affecting their dispersion. \cite{grosso2013solid}\\
+For $\nu\neq\nu'$ the second term is much bigger than the first one, so
+\begin{equation}
+    \big\langle n,\nu,\vect 0\big|H\ket{n',\nu',\vect 0}
+    \approx E_n\delta_{nn'}\delta_{\nu\nu'}+
+    \big\langle n,\nu,\vect 0\big|V'(\vect r)\ket{n',\nu',\vect 0}(1-\delta_{\nu\nu'})
     \label{eq:tight1}
 \end{equation}
-Since we consider the wavefunctions $\ket{n,\vect R}$ as strongly localized, the second term is much smaller than the first one, so we can ignore it.\\
-In the case where $\vect R$ and $\vect R'$ are two nearest neighbors we have that $\vect R'=\vect R+\boldsymbol\delta_i$ with $i\in \{1,2,3\}$ (fig. \ref{fig:graphene}). The matrix elements are equal to
-\begin{equation}
-    \big\langle n,\vect R\big|H\ket{n',\vect R+\boldsymbol \delta_i}=
-    \big\langle n,\vect 0\big|H\ket{n',\boldsymbol \delta_i}
-\end{equation}
-and using equation \ref{eq:blochhamiltoniandivided} we get that
-\begin{equation}
-    \big\langle n,\vect R\big|H\ket{n',\vect R+\boldsymbol \delta_i}=
-    E_n\delta_{nn'}+\big\langle n,\vect 0\big|V'(\vect r)\ket{n',\boldsymbol \delta_i}
-\end{equation}
-Usually the matrix elements $\big\langle n,\vect 0\big|V'(\vect r)\ket{n',\boldsymbol \delta_i}$ are conveniently expressed in a a small number of independent parameters, and are evaluated either analytically, or numerically, or semi-empirically. 
+Since we consider the wavefunctions as strongly localized, the second term is much smaller than the first one, so we can ignore it.\\
+Usually the matrix elements $\big\langle n,\nu,\vect 0\big|V'(\vect r)\ket{n',\nu',\vect 0}$ are conveniently expressed in terms of a a small number of independent parameters, and are evaluated either analytically, or numerically, or semi-empirically. 
 \renewcommand{\arraystretch}{1.5}
 
 
-In the case of carbon atoms we only need to work with atomic orbitals of type $s$ and $p$, this means that the independent matrix elements to evaluate are 
-\begin{center}
-    \begin{tabular}{c}
-        \hline
-        $\big\langle s,\vect 0\big|V'(\vect r)\ket{s,\boldsymbol \delta_i}=V(ss\sigma)$\\
-        $\big\langle s,\vect 0\big|V'(\vect r)\ket{p_x,\boldsymbol \delta_i}=l_xV(sp\sigma)$\\
-        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_x,\boldsymbol \delta_i}=l_x^2V(pp\sigma)+(1-l_x^2)V(pp\pi)$\\
-        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_y,\boldsymbol \delta_i}=l_xl_y\left[V(pp\sigma)-V(pp\pi)\right]$\\
-        $\big\langle p_x,\vect 0\big|V'(\vect r)\ket{p_z,\boldsymbol \delta_i}=l_xl_z\left[V(pp\sigma)-V(pp\pi)\right]$\\
-        \hline
-    \end{tabular}
-\end{center}
+In the case of carbon atoms we only need to work with atomic orbitals of type $s$ and $p$, this means that the independent matrix elements to evaluate are shown in table \ref{tab:matrix}
+\begin{table}
+    \label{tab:matrix}
+    \begin{center}
+        \begin{tabular}{l}
+            \hline
+            $\big\langle \,\,s\,,\nu,\vect 0\big|V'(\vect r)\ket{\,\,s\,,\nu',\vect 0}=V(ss\sigma)$\\
+            $\big\langle \,\,s\,,\nu,\vect 0\big|V'(\vect r)\ket{p_x,\nu',\vect 0}=l_xV(sp\sigma)$\\
+            $\big\langle p_x,\nu,\vect 0\big|V'(\vect r)\ket{p_x,\nu',\vect 0}=l_x^2V(pp\sigma)+(1-l_x^2)V(pp\pi)$\\
+            $\big\langle p_x,\nu,\vect 0\big|V'(\vect r)\ket{p_y,\nu',\vect 0}=l_xl_y\left[V(pp\sigma)-V(pp\pi)\right]$\\
+            $\big\langle p_x,\nu,\vect 0\big|V'(\vect r)\ket{p_z,\nu',\vect 0}=l_xl_z\left[V(pp\sigma)-V(pp\pi)\right]$\\
+            \hline
+        \end{tabular}
+        \caption{ Here we have defined $\boldsymbol\delta=(l_x,l_y,l_z)|\delta|$}
+    \end{center}
+\end{table}
+
+These parameters can be pictorially shown in figure \ref{fig:grapheneorbitals}
+\begin{figure}[h]
+    \makebox[\textwidth][c]{
+        \includegraphics[width=\linewidth]{Immagini/graphene/orbitali_grafene.png}
+        }%
+    \caption{Each one of the potentials $V(ss\sigma),V(sp\sigma),V(pp\sigma),V(pp\pi)$ represent a different kind of bonding between the two orbitals. The first two indices represent the orbitals ($s$ and $p$), the last one represent the bonding type ($\sigma$ and $\pi$)}
+    \label{fig:grapheneorbitals}
+\end{figure}\\
+The Hamiltonian matrix should be a $8 \times 8$ matrix. Nevertheless, from group theory we know that at a general point k the Bloch functions derived from $s$, $p_x$ and $p_y$ atomic functions never mix with the Bloch function $p_z$ because of the symmetry operation of reflection through the $xy$ plane. We can thus classify the energy states as even or odd with respect to this transformation; the former give rise to the so-called $\sigma$-bands and the latter to the so-called $\pi$-bands. Moreover, the problem is decomposed into two decoupled subproblems and, instead of diagonalizing a single $8 \times 8$ matrix, we have to cope separately with a $2 \times 2$ matrix ($\pi$-bands) and a $6 \times 6$ matrix
+($\sigma$-bands).\\
+Fortunately the $\sigma$-bands are fully below the Fermi-level, so they don't have any contribution to the electron-transport phenomenon, so we only have to deal with the $2\times 2$ matrix of the $\pi$-bands
+\begin{equation}
+    \big\langle p_z,\nu,\vect 0\big|H\ket{p_z,\nu',\vect 0}=
+    \begin{bmatrix}
+        E_p & V(pp\pi)\\
+        V(pp\pi) & E_p
+    \end{bmatrix}
+\end{equation}
+
+Now we can evaluate equation \ref{eq:boh0} considering just the nearest-neighbors
+\begin{equation}
+    \begin{split}
+        \big\langle p_z,0,\vect k\big|H\ket{p_z,1,\vect k}=&
+        \sum_{\vect k,\vect R}
+        e^{i\vect k\cdot \vect R + i\vect k\cdot \boldsymbol \delta}
+        \big\langle p_z,0,\vect R\big|H\ket{p_z,1,\vect 0}\approx\\
+        \approx&\sum_{i}e^{i\vect k\cdot\vect \delta_i}
+        V(pp\pi)\equiv\\
+        \equiv&V(pp\pi)F(\vect k)
+    \end{split}
+\end{equation}
 
 
-% We can expand the state localized in $\vect R'$ in terms of the ones localized in $\vect R$
-
-% \begin{equation}
-%     \ket{n',\vect R +\boldsymbol\delta_i}=
-%     \sum_{n''}\ket{n'',\vect R}\braket{n'',\vect R}{n',\vect R+\boldsymbol\delta_i}=
-%     \sum_{n''}\ket{n'',\vect R}t_{nn'}^1
-% \end{equation}
-% Where $t_{nn'}\equiv\braket{n,0}{n',\boldsymbol\delta_i}$
-% This means that 
-% \begin{equation}
-%     \big\langle n,\vect R\big|H\ket{n',\vect R'}=
-%     \sum_{n''}\bra{n,\vect R}H\ket{n'',\vect R}t_{n'n''}\approx
-%     E_n t_{nn'}^1
-% \end{equation}
-% where in the last step we used \ref{eq:tight1}
+\begin{equation}
+    \begin{split}
+        \big\langle p_z,0,\vect k\big|H\ket{p_z,0,\vect k}=&
+        \sum_{\vect k,\vect R}
+        e^{i\vect k\cdot \vect R}
+        \big\langle p_z,0,\vect R\big|H\ket{p_z,0,\vect 0}\approx E_p
+    \end{split}
+\end{equation}
+Therefore, the $k$-dependent Hamiltonian for the $\pi$-bands is 
+\begin{equation}
+    \big\langle p_z,\nu,\vect k\big|H\ket{p_z,\nu',\vect k'}=\delta_{kk'}
+    \begin{bmatrix}
+        E_p & V(pp\pi)F(\vect k)\\
+        V(pp\pi)F(\vect k) & E_p
+    \end{bmatrix}
+\end{equation}
