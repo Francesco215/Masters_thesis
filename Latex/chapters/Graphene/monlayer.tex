@@ -39,6 +39,7 @@ This reciprocal lattice is also triangular. The Brillouin zone is constructed in
 
 \begin{equation}
    \vect K_0=\frac{2\pi}{3a}\left(1,\frac 1{\sqrt 3}\right)\quad\quad \vect K_1=\frac{2\pi}{3a}\left(1,-\frac 1{\sqrt 3}\right)
+   \label{eq:K_points}
 \end{equation}
 
 
@@ -163,6 +164,14 @@ Fortunately the $\sigma$-bands are fully below the Fermi-level, so they don't ha
 Now we can evaluate equation \ref{eq:boh0} considering just the nearest-neighbors
 \begin{equation}
     \begin{split}
+        \big\langle p_z,0,\vect k\big|H\ket{p_z,0,\vect k}=&
+        \sum_{\vect k,\vect R}
+        e^{i\vect k\cdot \vect R}
+        \big\langle p_z,0,\vect R\big|H\ket{p_z,0,\vect 0}\approx E_p
+    \end{split}
+\end{equation}
+\begin{equation}
+    \begin{split}
         \big\langle p_z,0,\vect k\big|H\ket{p_z,1,\vect k}=&
         \sum_{\vect k,\vect R}
         e^{i\vect k\cdot \vect R + i\vect k\cdot \boldsymbol \delta}
@@ -173,15 +182,12 @@ Now we can evaluate equation \ref{eq:boh0} considering just the nearest-neighbor
     \end{split}
 \end{equation}
 
-
+Where $F(\vect k)$ is defined as the geometrical form factor, and it is equal to 
 \begin{equation}
-    \begin{split}
-        \big\langle p_z,0,\vect k\big|H\ket{p_z,0,\vect k}=&
-        \sum_{\vect k,\vect R}
-        e^{i\vect k\cdot \vect R}
-        \big\langle p_z,0,\vect R\big|H\ket{p_z,0,\vect 0}\approx E_p
-    \end{split}
+     F(\vect k)=\sum_{\boldsymbol\delta_i}e^{i\vect k\cdot \boldsymbol\delta_i}=
+     1+2\cos\frac{k_x \delta}2e^{-i\frac{\sqrt3}2 k_y\delta}
 \end{equation}
+
 Therefore, the $k$-dependent Hamiltonian for the $\pi$-bands is 
 \begin{equation}
     \big\langle p_z,\nu,\vect k\big|H\ket{p_z,\nu',\vect k'}=\delta_{kk'}
@@ -190,3 +196,33 @@ Therefore, the $k$-dependent Hamiltonian for the $\pi$-bands is
         V(pp\pi)F(\vect k) & E_p
     \end{bmatrix}
 \end{equation}
+The eigenvalues of the Hamiltonian give us the dispersion relation \ref{fig:graphenedispersion}
+\begin{equation}
+    E(\vect k)=E_p+V(pp\pi)F(\vect k)
+\end{equation}
+\begin{figure}[h]
+    \makebox[\textwidth][c]{
+        \includegraphics[width=\linewidth]{Immagini/graphene/dispersione.eps}
+        }%
+    \caption{This is the dispersion relation for the single layer graphene, notice how near the vertices of the reciprocal lattice we get a cone-like dispersion relation typical of relativistic massless particles}
+    \label{fig:graphenedispersion}
+\end{figure}
+Near the degenerate points $\vect K_0$ and $\vect K_1$ (eq. \ref{eq:K_points}), the geometrical form factor can be expanded in Taylor series to first order in the wavevector measured from the $\vect K_0$ and $\vect K_1$ points. The resulting expression of the form factors are
+\begin{equation}
+    F_{\vect K_0}(\vect k)=-F^*_{\vect K_1}(\vect k)= -\frac{\sqrt 3}2 \delta (k_x-ik_y)
+\end{equation}
+This means that the matrix Hamiltonians near the degeneracies can be recast in the form
+\begin{equation}
+    H_{\vect K_0}(\vect k)=
+    -H^*_{\vect K_1}(\vect k)=
+    \begin{bmatrix}
+        0&v_F\hbar(k_x-ik_y)\\
+        v_F\hbar(k_x+ik_y)&0
+    \end{bmatrix};\quad
+    v_f=\frac{\sqrt 3}2 \frac\delta \hbar V(pp\pi)
+\end{equation}
+The eigenvalues of both Hamiltonians are 
+\begin{equation}
+    E(k)=\pm v_F\hbar k \quad\text{with}\quad k=\sqrt{k_x^2+k_y^2}
+\end{equation}
+This means that electrons near the Dirac cones behave pretty much like photons, except that they move at the Fermi speed $v_F$ instead of the speed of light
