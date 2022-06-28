@@ -204,7 +204,7 @@ The eigenvalues of the Hamiltonian give us the dispersion relation \ref{fig:grap
     \makebox[\textwidth][c]{
         \includegraphics[width=\linewidth]{Immagini/graphene/dispersione.eps}
         }%
-    \caption{This is the dispersion relation for the single layer graphene, notice how near the vertices of the reciprocal lattice we get a cone-like dispersion relation typical of relativistic massless particles}
+    \caption{This is the dispersion relation for the single layer graphene, notice how near the vertices of the reciprocal lattice we get a cone-like dispersion relation typical of relativistic massless particles \cite{guinea2008review}}
     \label{fig:graphenedispersion}
 \end{figure}
 Near the degenerate points $\vect K_0$ and $\vect K_1$ (eq. \ref{eq:K_points}), the geometrical form factor can be expanded in Taylor series to first order in the wavevector measured from the $\vect K_0$ and $\vect K_1$ points. The resulting expression of the form factors are
@@ -220,9 +220,21 @@ This means that the matrix Hamiltonians near the degeneracies can be recast in t
         v_F\hbar(k_x+ik_y)&0
     \end{bmatrix};\quad
     v_f=\frac{\sqrt 3}2 \frac\delta \hbar V(pp\pi)
+    \label{eq:dirac_Hamiltonian}
 \end{equation}
 The eigenvalues of both Hamiltonians are 
 \begin{equation}
     E(k)=\pm v_F\hbar k \quad\text{with}\quad k=\sqrt{k_x^2+k_y^2}
 \end{equation}
-This means that electrons near the Dirac cones behave pretty much like photons, except that they move at the Fermi speed $v_F$ instead of the speed of light
+This means that electrons near the Dirac cones behave pretty much like photons, except that they move at the Fermi speed $v_F$ instead of the speed of light.\\
+The eigenstates of this Hamiltonian are called \textit{Dirac-fermions} and are equal To
+\begin{equation}
+    \ket{\pm,\vect k}=\frac 1{\sqrt 2}
+    \begin{bmatrix}
+        e^{-i\lambda\theta}\\
+        \pm e^{i\lambda\theta}
+    \end{bmatrix};\quad \theta=\arctan(k_x/k_y)
+\end{equation}
+where $\lambda=1$ in $K_0$ and $\lambda=-1$ in $K_1$. Hence, the low-energy quasiparticles in graphene can be interpreted as Massless Dirac Fermion, and described by a spinor wave function in which the spin degree-of-freedom is substituted with a sublattice degree-of-freedom, that is defined as \textit{pseudospin}
+
+\subsection*{exfoliation}
