@@ -236,6 +236,43 @@
     \field{year}{2013}
   \endentry
 
+  \entry{McCann_2013}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ME}{%
+         family={McCann},
+         familyi={M\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Koshino},
+         familyi={K\bibinitperiod},
+         given={Mikito},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IOP} Publishing}%
+    }
+    \strng{namehash}{MEKM1}
+    \strng{fullhash}{MEKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1088/0034-4885/76/5/056503
+    \endverb
+    \field{number}{5}
+    \field{pages}{056503}
+    \field{title}{The electronic properties of bilayer graphene}
+    \verb{url}
+    \verb https://doi.org/10.1088%2F0034-4885%2F76%2F5%2F056503
+    \endverb
+    \field{volume}{76}
+    \field{journaltitle}{Reports on Progress in Physics}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}

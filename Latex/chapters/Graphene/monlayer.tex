@@ -196,9 +196,22 @@ Therefore, the $k$-dependent Hamiltonian for the $\pi$-bands is
         V(pp\pi)F(\vect k) & E_p
     \end{bmatrix}
 \end{equation}
-The eigenvalues of the Hamiltonian give us the dispersion relation \ref{fig:graphenedispersion}
+However before diagonalizing the Hamiltonian we have to keep in mind that we don't start off with an orthonormal base of states
 \begin{equation}
-    E(\vect k)=E_p+V(pp\pi)F(\vect k)
+    \braket{p_z,\nu,\vect k}{p_z,\nu',\vect k}\equiv S_{\nu\nu'}(\vect k)=
+    \begin{bmatrix}
+        1 & sF(\vect k)\\
+        sF(\vect k)& 1
+    \end{bmatrix}
+    \label{eq:overlap}
+\end{equation}
+This means that the eigenvalue equation is
+\begin{equation}
+    \det \left|H_{\nu\nu'}(\vect k)-E(\vect k)S_{\nu\nu'}(\vect k)\right|=0
+\end{equation}
+The eigenvalues of the Hamiltonian gives us the dispersion relation \ref{fig:graphenedispersion}
+\begin{equation}
+    E(\vect k)=\frac{E_p\pm V(pp\pi)|F(\vect k)|}{1\mp s|F(\vect k)|}
 \end{equation}
 \begin{figure}[h]
     \makebox[\textwidth][c]{

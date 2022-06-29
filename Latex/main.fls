@@ -917,6 +917,17 @@ INPUT ./chapters/Graphene/bilayer.tex
 INPUT chapters/Graphene/bilayer.tex
 INPUT ./chapters/Graphene/bilayer.tex
 INPUT chapters/Graphene/bilayer.tex
+INPUT ./Immagini/graphene/bilayerlattice.eps
+INPUT ./Immagini/graphene/bilayerlattice.eps
+INPUT Immagini/graphene/bilayerlattice.eps
+INPUT ./Immagini/graphene/bilayerlattice.eps
+INPUT ./Immagini/graphene/bilayerlattice.eps
+INPUT ./Immagini/graphene/bilayerlattice-eps-converted-to.pdf
+INPUT ./Immagini/graphene/bilayerlattice-eps-converted-to.pdf
+INPUT ./Immagini/graphene/bilayerlattice.eps
+INPUT ./Immagini/graphene/bilayerlattice-eps-converted-to.pdf
+INPUT ./Immagini/graphene/bilayerlattice-eps-converted-to.pdf
+INPUT ./Immagini/graphene/bilayerlattice-eps-converted-to.pdf
 INPUT ./chapters/berry.tex
 INPUT chapters/berry.tex
 INPUT ./chapters/berry.tex
