@@ -1,0 +1,31 @@
+\section{Kubo Formula}
+We'll derive the Kubo formula for a general, multi-particle (or, if you prefer, single particle) Hamiltonian $H_0$ where the subscript 0 means that this is the unperturbed Hamiltonian before we apply an electric field. We denote the eigentstates of the Hamiltonian as $\ket m$ with $H_0\ket m=E_m \ket m$.
+\begin{equation}
+    H_0=\sum_i\left[\frac{1}{2m}\left(\vect p_i-e\vect A_0\right)^2 + V_0(\vect r_i)\right]+\sum_{i\neq j}V_{ee}(\vect r_i-\vect r_j)
+\end{equation}
+Where $\vect A_0$ and $V_0$ are due to an existing EM field. Now we add a background electric field. We 
+\begin{equation}
+    H=\sum_i\left[\frac{1}{2m}\left(\vect p_i-e\vect A_0 - e\vect A\right)^2 + V_0(\vect r_i) - e\vect r_i\phi(\vect r_i)\right]+\sum_{i\neq j}V_{ee}(\vect r_i-\vect r_j)
+\end{equation}
+Which can be written as 
+\begin{equation}
+    H=H_0 + \sum_{i}-\frac{e}m \boldsymbol \pi_i\cdot \vect A - e\vect r_i\phi(\vect r_i)
+    \label{eq:temp_ham}
+\end{equation}
+Where $\boldsymbol \pi_i=\vect p -e\vect A_0=m\dot{\vect r}$ is the mechanical momentum,
+furthermore we can use the fact that the electric charge operator $\rho(\vect r)=-e\sum_{i}\delta(\vect r-\vect r_i)$ current operator  $\vect J$ is equal to 
+\begin{equation}
+    \vect J=-e\sum_{i}\dot{\vect r}_i=-\sum_{i}\frac{e}m \boldsymbol \pi_i
+\end{equation}
+to re-write equation \ref{eq:temp_ham} like so
+\begin{equation}
+    H=H_0+\vect J\cdot \vect A + \int\rho(\vect r)\phi(\vect r)d\vect r
+\end{equation}
+however, we can assume that the density of charge $\rho$ is always zero
+\begin{equation}
+    H=H_0+\vect J\cdot \vect A
+\end{equation}
+At this point we need to write the perturbation in terms of the electric field, we can choose a gauge where $\vect E=-\partial_t\vect A$ and assume that the wave is monochromatic $\vect E(t)=\vect Ee^{-i\omega t}$, so 
+\begin{equation}
+    A=\frac{ \vect E}{i\omega}e^{i\omega t}
+\end{equation}
