@@ -21,11 +21,98 @@ to re-write equation \ref{eq:temp_ham} like so
 \begin{equation}
     H=H_0+\vect J\cdot \vect A + \int\rho(\vect r)\phi(\vect r)d\vect r
 \end{equation}
-however, we can assume that the density of charge $\rho$ is always zero
+however, we can assume that the density of charge $\rho$ is always zero (it is usually considered when investigating dielectric properties of a material, but here we are interested in conduction, so we are ignoring it)
 \begin{equation}
     H=H_0+\vect J\cdot \vect A
+    \label{eq:deltaH}
 \end{equation}
 At this point we need to write the perturbation in terms of the electric field, we can choose a gauge where $\vect E=-\partial_t\vect A$ and assume that the wave is monochromatic $\vect E(t)=\vect Ee^{-i\omega t}$, so 
 \begin{equation}
     A=\frac{ \vect E}{i\omega}e^{i\omega t}
+    \label{eq:A(E)}
 \end{equation}
+Our goal is to compute the current $\langle \vect J\rangle$ that flows due to the perturbation $\Delta H$. To do so we'll work in the \textit{interaction picture}, this means that the operators evolve as $\mathcal O(t)=V^{-1}\mathcal O V$ with $V=e^{-iH_0t/\hbar}$. This means that the states evolve by 
+\begin{equation}
+    \ket{\psi(t)}=U(t,t_0)\ket{\psi(t_0)}; \quad 
+    U(t,t_0)=T\exp\left(-\frac i\hbar \int_{t_0}^t\Delta H(t')dt'\right)
+    \label{eq:int evol}
+\end{equation}
+Where $T$ is the time ordering, keep in mind that since we are in the interaction picture $\Delta H(t)=V^{-1}\Delta HV$.\\
+We now prepare the system at time $t=-\infty$ in a specific many body state $\rho_0=\sum_i p_i\ket{i}\bra{i}$ (it usually is either the ground state or a thermodynamic distribution). Keep in mind that the density operator, in the interaction picture evolves with the states
+\begin{equation}
+\begin{split}
+        \rho(t)&=\sum_ip_i\ket{\psi_i(t)}\bra{\psi_i(t)}=\\
+        &0=\sum_ip_iU(t,t_0)\ket{\psi_i(t_0)}\bra{\psi_i(t_0)}U^{-1}(t,t_0)=\\
+        &=U(t,t_0)\rho(t_0)U^{-1}(t,t_0)
+\end{split}
+\end{equation}
+Then, writing $U(t)=T(t,t_0\to-\infty)$, the expectation value of the current is
+\begin{equation}
+    \begin{split}
+        \langle \vect J(t)\rangle &= \tr\left[\rho(t)\vect J(t)\right]=\\
+        &=\tr\left[U(t)\rho_0 U^{-1}(t) \vect J(t)\right]=\\
+        &=\tr\left[\rho_0 U^{-1}(t) \vect J(t)U(t)\right]=\\
+        &=\langle U^{-1}(t) \vect J(t)U(t)\rangle_{0}\approx\\
+        &\approx\left\langle\vect J(t)\right\rangle_{0} +
+        \left\langle \frac i\hbar \int_{-\infty}^t[\Delta H(t'),\vect J(t)]dt'\right\rangle_0
+    \end{split}
+\end{equation}
+Where in the last passage we've expanded the exponential in the $U$ operator (equation \ref{eq:int evol}), and $\langle \dots\rangle_0$ means the average with respect to $\rho_0$. The first term is the current in the absence of an electric field, therefore it is zero. Using equation \ref{eq:deltaH} and \ref{eq:A(E)} and plugging it in the last equation we have that the current due to the electric field is then
+\begin{equation}
+    \langle J_i(t)\rangle=\frac 1{\hbar\omega}\int_{\infty}^t
+    \langle[J_j(t'),J_i(t)]\rangle_0 E_je^{-i\omega t'}dt'
+\end{equation}
+Because the system is invariant under time translations, the correlation function above can bony depend on $t''=t-t'$, we can rewrite the expression above as
+\begin{equation}
+    \frac{E_je^{-i\omega t}}{\hbar \omega}\int_0^{\infty}e^{i\omega t''} \langle[J_j(0),J_i(t'')]\rangle_0 dt''
+\end{equation}.
+The only t dependence in the formula above sits outside as $e^{-i\omega t}$. This means that the proportionality constant is the conductivity, and the off diagonal part is the \textit{Hall conductivity}
+\begin{equation}
+    \sigma_{xy}=\frac 1{\hbar \omega}\int_0^{\infty}e^{i\omega t} \langle[J_x(0),J_y(t)]\rangle_0 dt
+    \label{eq:kubo}
+\end{equation}
+This is the \textit{Kubo formula} for the Hall conductivity.
+
+
+
+
+
+
+
+\section{Quantization of Hall conductivity}
+Our job here is not done, we got Kubo formula the Hall conductivity \ref{eq:kubo}, but to capture the most important property we need to do some mathematical manipulation. Using the fact hat $\vect J(t)=V^{-1}\vect J(0) V$ with $V=e^{-iH_0t/\hbar}$ we can write
+\[
+    \sigma_{xy}(\omega)=\frac 1{\hbar \omega}\int_0^{\infty}e^{i\omega t}\sum_{nm}p_n
+    \left[
+        \braket{n|J_y}{m}\braket{m|J_x}{n}e^{-iE_{nm}t/\hbar}-(n\leftrightarrow m) %\braket{n|J_x}{m}\braket{m|J_y}{n}e^{i(E_n-E_m)t/\hbar}
+    \right]
+    dt
+\]
+Now we can perform the integral in $dt$, since the states with $n=m$ cancel out we have that
+\begin{equation}
+    \sigma_{xy}(\omega)=-\frac i\omega \sum_{nm}p_n\left[
+        \frac{\braket{n|J_y}{m}\braket{m|J_x}{n}}{\hbar \omega - E_{nm}} - (n\leftrightarrow m)
+    \right]
+\end{equation}
+To get the Hall conductivity for DC current we have to evaluate $\sigma_{xy}(\omega\to 0)$, in this limit
+\[
+    \lim_{\omega\to 0}\frac{1}{\hbar \omega-E_{nm}}=-\frac 1{E_{nm}}+\frac{\hbar \omega}{(E_{nm})^2}    
+\]
+Plugging the zeroth-order we get
+\begin{equation}
+    \begin{split}
+    \frac i\omega& \sum_{nm}p_n\left[
+        \frac{\braket{n|J_y}{m}\braket{m|J_x}{n}}{E_{nm}} - (n\leftrightarrow m)
+    \right]= \\
+    =\frac i\omega &\sum_{nm}\frac{p_n}{E_{nm}}\left[
+        \braket{n|J_y}{m}\braket{m|J_x}{n} + (n\leftrightarrow m)
+    \right]=0
+    \end{split}
+\end{equation}
+That is equal to zero because the terms inside the summation are asymmetric under the exchange of $(n\leftrightarrow m)$, and we are summing over all the possible $n$ and $m$, so it is always zero. For the first order term we have
+\begin{equation}
+    i\hbar\sum_{nm}\frac{p_n}{(E_{nm})^2}\left[
+        \braket{n|J_y}{m}\braket{m|J_x}{n} - (n\leftrightarrow m)
+    \right]
+\end{equation}
+

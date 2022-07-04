@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1656781858 "main.aux" "main.bbl" "main" 1656782795
+["bibtex main"] 1656948845 "main.aux" "main.bbl" "main" 1656949576
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1643926307 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
-  "bibliography.bib" 1656513882 9149 550e6f94e26c7a9d2b23d65c5f76929f ""
-  "main-blx.bib" 1656782795 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
-  "main.aux" 1656782795 29668 95dc40dc42037a14922a907ab7b6c6d8 "pdflatex"
+  "bibliography.bib" 1656939136 9502 37593b2660409f3acaf0db6675f17c71 ""
+  "main-blx.bib" 1656949575 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
+  "main.aux" 1656949575 30557 9d03f29058cb528e5caf5d07d3013b86 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1656782793 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1656782795
+["pdflatex"] 1656949574 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1656949576
   "../website/images/berry/chern_theorem.png" 1651843336 70647 dbc1070acd2af605a94f6e824f2e31a7 ""
   "/Users/francesco/Github/Masters_thesis/Latex/main.tex" 1656774458 1446 9d9f0ad8d034f57c1cfda92f3fb8e3e7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -252,7 +252,7 @@
   "Immagini/rnl/x2approx.pdf" 1653574845 15834 eb09115318ebdb8cdf51f4991ef9eafc ""
   "Immagini/rnl/xapprox.pdf" 1654438381 15566 4bbdb758ec126a2e06911cba775eedea ""
   "Immagini/stokes.eps" 1652031714 56857 eb00f63d9a4ddac062ffb4bb1126eb94 ""
-  "chapters/Graphene/bilayer.tex" 1656711415 5505 8ea5819a4a646030252979ed6ab3e154 ""
+  "chapters/Graphene/bilayer.tex" 1656939192 5538 abecc428a4f890eda908a553698fcd30 ""
   "chapters/Graphene/gapped.tex" 1656513187 1644 27dddd4d665d297ff94e9aba6c66c62c ""
   "chapters/Graphene/monlayer.tex" 1656687630 14098 90d627ea20246cc563e21e6476374720 ""
   "chapters/R_NL/R_NLrho.tex" 1654467250 15156 a2d59b237a20ed8e8aa0e2353b08ecf9 ""
@@ -261,13 +261,13 @@
   "chapters/ValleyHall.tex" 1653914747 21612 fb49b9633221f9080f444b76e22f2ee6 ""
   "chapters/berry.tex" 1654698120 18279 5e3b6205b2be13117cc68edb09e733be ""
   "chapters/introduction.tex" 1652097110 27 8a6a9ecb9aa92412dcc79a61f7483b85 ""
-  "chapters/kubo.tex" 1656782793 1909 fd2f4ecf6dae532095d24fc94b9a281d ""
-  "main.aux" 1656782795 29668 95dc40dc42037a14922a907ab7b6c6d8 "pdflatex"
-  "main.bbl" 1656781858 28834 9a3f6864642b08d53241ae64db435b6d "bibtex main"
-  "main.out" 1656782795 5351 bb51aebedb0b48d82012605aad4e9178 "pdflatex"
-  "main.run.xml" 1656782795 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
+  "chapters/kubo.tex" 1656949574 6903 2bc1726452a1addd6c1f5ba40cf69111 ""
+  "main.aux" 1656949575 30557 9d03f29058cb528e5caf5d07d3013b86 "pdflatex"
+  "main.bbl" 1656948845 30197 bc2f13945fb6513c6e9f95a5be2c2b37 "bibtex main"
+  "main.out" 1656949575 5580 461ec4cb32f109911b33f90e3cdccf1a "pdflatex"
+  "main.run.xml" 1656949575 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
   "main.tex" 1656774458 1446 9d9f0ad8d034f57c1cfda92f3fb8e3e7 ""
-  "main.toc" 1656782795 2825 650fc62c0fae6b10e5dc6e8b95f7bdea "pdflatex"
+  "main.toc" 1656949575 2919 fe6fd2b8e84ee71a48ca64aa204aa36e "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"

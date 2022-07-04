@@ -273,6 +273,56 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{kuzmenko2009determination}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KA}{%
+         family={Kuzmenko},
+         familyi={K\bibinitperiod},
+         given={AB},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Crassee},
+         familyi={C\bibinitperiod},
+         given={Iris},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=VDMD}{%
+         family={Van Der\bibnamedelima Marel},
+         familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Blake},
+         familyi={B\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+      {{hash=NK}{%
+         family={Novoselov},
+         familyi={N\bibinitperiod},
+         given={KS},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KACIVDMDBPNK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{16}
+    \field{pages}{165406}
+    \field{title}{Determination of the gate-tunable band gap and tight-binding
+  parameters in bilayer graphene using infrared spectroscopy}
+    \field{volume}{80}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{2009}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}
