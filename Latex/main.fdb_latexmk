@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1657040844 "main.aux" "main.bbl" "main" 1657041643
+["bibtex main"] 1657040844 "main.aux" "main.bbl" "main" 1657061883
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1643926307 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
   "bibliography.bib" 1656939136 9502 37593b2660409f3acaf0db6675f17c71 ""
-  "main-blx.bib" 1657041643 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
-  "main.aux" 1657041643 30557 6ff46fc5359b4fd2f28cc57c81206b18 "pdflatex"
+  "main-blx.bib" 1657061883 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
+  "main.aux" 1657061883 30557 6ff46fc5359b4fd2f28cc57c81206b18 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1657041641 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1657041643
+["pdflatex"] 1657061881 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1657061883
   "../website/images/berry/chern_theorem.png" 1651843336 70647 dbc1070acd2af605a94f6e824f2e31a7 ""
   "/Users/francesco/Github/Masters_thesis/Latex/main.tex" 1656774458 1446 9d9f0ad8d034f57c1cfda92f3fb8e3e7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -261,13 +261,13 @@
   "chapters/ValleyHall.tex" 1653914747 21612 fb49b9633221f9080f444b76e22f2ee6 ""
   "chapters/berry.tex" 1654698120 18279 5e3b6205b2be13117cc68edb09e733be ""
   "chapters/introduction.tex" 1652097110 27 8a6a9ecb9aa92412dcc79a61f7483b85 ""
-  "chapters/kubo.tex" 1657041641 8486 dc5d4e16764b46e9b0e18462aa3535eb ""
-  "main.aux" 1657041643 30557 6ff46fc5359b4fd2f28cc57c81206b18 "pdflatex"
+  "chapters/kubo.tex" 1657061880 8490 933f9e70ecc2c263599161607d02a86f ""
+  "main.aux" 1657061883 30557 6ff46fc5359b4fd2f28cc57c81206b18 "pdflatex"
   "main.bbl" 1657040844 30197 bc2f13945fb6513c6e9f95a5be2c2b37 "bibtex main"
-  "main.out" 1657041643 5580 461ec4cb32f109911b33f90e3cdccf1a "pdflatex"
-  "main.run.xml" 1657041643 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
+  "main.out" 1657061883 5580 461ec4cb32f109911b33f90e3cdccf1a "pdflatex"
+  "main.run.xml" 1657061883 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
   "main.tex" 1656774458 1446 9d9f0ad8d034f57c1cfda92f3fb8e3e7 ""
-  "main.toc" 1657041643 2919 8e30cd20b4f717dabd204439132deb42 "pdflatex"
+  "main.toc" 1657061883 2919 8e30cd20b4f717dabd204439132deb42 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"
