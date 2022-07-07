@@ -121,6 +121,7 @@ That is equal to zero because the terms inside the summation are asymmetric unde
     \sigma_{xy}=\frac{i\hbar}S\sum_{nm}\frac{p_n}{(E_{nm})^2}\left[
         \braket{n|I_y}{m}\braket{m|I_x}{n} - (n\leftrightarrow m)
     \right]
+    \label{eq:kkubo}
 \end{equation}
 
 From equation \ref{eq:deltaH} we can see that $I_i=\partial H/\partial A_i$, this means that the equation above becomes
@@ -146,5 +147,89 @@ This is a nice formula, however it doesn't explain why $\sigma_{xy}$ is quantize
         =&\left(\frac{e^2}{4\pi^2\hbar^2}\right)2\pi\hbar\sum_np_nC_n=\\
         =&\frac{e^2}{2\pi\hbar}\sum_np_nC_n\quad \quad \text{with }C_n\in \mathbb Z
     \end{split}
+    \label{eq:quantized sigma}
 \end{equation}
 Where we have defined the Chern numbers $2\pi C_n=\int \Omega^n_{A_xA_y}d^2\vect A$ and for the Stokes theorem it is a multiple of $1$. The most emblematic passage here is why $\int d^2\vect A=\Phi_0^2/S$.\\
+
+\subsubsection*{$\boldsymbol{\sigma_{xy}}$ at low temperatures}
+In equation \ref{eq:quantized sigma} we had a contribution that is the average of $C_n$ over all the states, if we are at low temperature there are two possibilities depending on the treatment we had on the wavefunction
+\begin{itemize}
+    \item \textbf{Many body interacting wavefunction} For $T\to 0$ we have that it will be at the fundamental state $p_0\to1$ and $p_i\to 0$ for $i\neq 0$, this means that $\sum_np_nC_n\to C_0$, therefore a quantized conductivity quill be observed
+    \item \textbf{Non-interacting single particle wavefunctions} For $T\to 0$ the electrons will settle in a Fermi-Dirac distribution, so \[\sum_np_nC_n=N^{-1}\sum_nC_n\theta(E_F-E_n)\] where $N$ is the total number of electrons and $E_F$ is the Fermi energy. Although it's not as easy to prove that is generally quantized due to the $N^{-1}$ factor,\footnote{Even thought we know for sure it must be quantized, because we can always re-parametrize Non-interacting single particle wavefunctions into many body interacting wavefunction} we'll see that it's much easier to calculate the precise value for real world scenarios, and it's going to be the subject of the next section
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Berry phase in Bloch bands}
+The band structure of crystals provides a natural platform to investigate the occurrence of the berry phase effect. Within the independent electron approximation, the band structure of a crystal is determined by the Bloch Hamiltonian:
+\begin{equation}
+    H= \frac {(\vect p -e\vect A)^2}{2m} + V(\vect r)
+\end{equation}
+Where $V(\vect r+\vect a)=V(\vect r)$ is the periodic potential with $a$ being the Bravais lattice vector. According to Bloch's theorem the eigenstates satisfy 
+\begin{equation}
+    \psi_{n\vect k}(\vect r+\vect a)=e^{i\vect k\cdot \vect a}\psi_{n\vect k}(\vect r)
+\end{equation}
+where $n$ is the band index and $\hbar \vect k$ is the crystal momentum. To comply with the general formalism of the Berry phase, we make the following unitary transformation to obtain a $\vect k$-dependent Hamiltonian
+
+\begin{equation}
+    e^{-i\vect k\cdot \vect r}He^{i\vect k\cdot \vect r}= H= \frac {(\vect p-e\vect A+\hbar \vect k)^2}{2m} + V(\vect r)
+\end{equation}
+The transformed eigenstate $u_{n\vect k}(\vect r)= e^{-i\vect k\cdot \vect r}\psi_{n\vect k}(\vect r)$ is just the cell-periodic part of the Bloch function. It satisfies the strict periodic boundary condition 
+\begin{equation}
+    u_{n\vect k}(\vect r+\vect a)=u_{n\vect k}(\vect r)
+\end{equation}
+We can now identify the Brillouin zone as the parameter space of the transformed Hamiltonian $H(\vect k)$, and $u_{n\vect k}=\ket{n,\vect k}$ as the basis function.\\
+In this regime the Kubo formula \ref{eq:kkubo} becomes 
+\begin{equation}
+    \sigma_{xy}=i\hbar\sum_{m,E_n<E_F}\int_{T^2}
+    \frac{
+        \braket{n,\vect k|J_y}{m,\vect k}\braket{m,\vect k|J_x}{n,\vect k} - (n\leftrightarrow m)
+    }
+    {
+        E_m(\vect k)-E_n(\vect k)
+    }
+    \frac{d^2\vect k}{(2\pi)^2}
+    \label{eq:tknn}
+\end{equation}
+And it is called the TKNN formula \cite{thouless1982quantized}
+
+We can define the current in terms of the group velocity of the wavepackets
+\begin{equation}
+    \vect J=\frac e\hbar \frac{\partial H}{\partial \vect k}
+\end{equation}
+this means that equation \ref{eq:tknn} is equal to
+\begin{equation}
+    \frac{e^2}{2\pi\hbar}\sum_{n}C_n
+\end{equation}
+where $C_n$ is the Chern number of the $n$-th band
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -323,6 +323,89 @@
     \field{year}{2009}
   \endentry
 
+  \entry{tong2016lectures}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TD1}
+    \strng{fullhash}{TD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Lectures on the quantum Hall effect}
+    \field{journaltitle}{arXiv preprint arXiv:1606.06687}
+    \field{year}{2016}
+  \endentry
+
+  \entry{WeinbergBloch}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WS}{%
+         family={Weinberg},
+         familyi={W\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hyperion New York}%
+    }
+    \strng{namehash}{WS1}
+    \strng{fullhash}{WS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Lectures on Quantum Mechanics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{thouless1982quantized}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TDJ}{%
+         family={Thouless},
+         familyi={T\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kohmoto},
+         familyi={K\bibinitperiod},
+         given={Mahito},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NMP}{%
+         family={Nightingale},
+         familyi={N\bibinitperiod},
+         given={M\bibnamedelima Peter},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=dNM}{%
+         prefix={den},
+         prefixi={d\bibinitperiod},
+         family={Nijs},
+         familyi={N\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{TDJ+1}
+    \strng{fullhash}{TDJKMNMPNMd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{405}
+    \field{title}{Quantized Hall conductance in a two-dimensional periodic
+  potential}
+    \field{volume}{49}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{1982}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}

@@ -3,31 +3,31 @@
 \contentsline {section}{\numberline {1.1}Graphene}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Gapped Graphene}{10}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Bilayer graphene}{10}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Berry phase and Berry curvature}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{14}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Berry curvature}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Other formulas for $\Omega _{\mu \nu }$}{17}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Stokes' Theorem}{18}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Chern Theorem}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Kubo Formula}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Quantization of Hall conductivity}{23}{section.2.6}%
-\contentsline {chapter}{\numberline {3}ValleyHall}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Berry curvature in Gapped graphene}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Valley-Hall effect}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Non-local Charge transport}{29}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Theory of non local charge transport}{29}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Re-writing the equations in terms of charge current and valley current}{31}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Laplace equation}{32}{subsection.3.4.2}%
-\contentsline {chapter}{\numberline {4}Study of $R_{\textrm {NL}}$}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Study of $R_{\textrm {NL}}(x)$}{36}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Small $k$}{37}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Big $k$}{38}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Testing the approximations}{39}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Improving the approximation}{39}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}$R_{\textrm {NL}}(x)$ as we change $\rho $}{41}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Low resistivities $\rho \to 0$}{43}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Big resistivities $\rho \to \infty $}{44}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Putting it all together}{48}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Altertative way of studying $R_{\textrm {NL}}(x)$ as we change $\rho $}{48}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Shortcomings of the model}{50}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Comparison with experimental data}{50}{section.4.3}%
+\contentsline {chapter}{\numberline {2}Topology in quantum mechanics}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Berry phase}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Berry curvature}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Stokes' Theorem}{22}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Chern Theorem}{23}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Kubo Formula}{25}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Quantization of Hall conductivity}{27}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Berry phase in Bloch bands}{29}{section.2.7}%
+\contentsline {chapter}{\numberline {3}ValleyHall}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Berry curvature in Gapped graphene}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Valley-Hall effect}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Non-local Charge transport}{35}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Theory of non local charge transport}{35}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Re-writing the equations in terms of charge current and valley current}{37}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Laplace equation}{38}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Study of $R_{\textrm {NL}}$}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Study of $R_{\textrm {NL}}(x)$}{42}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Small $k$}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Big $k$}{44}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Testing the approximations}{45}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Improving the approximation}{45}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}$R_{\textrm {NL}}(x)$ as we change $\rho $}{47}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Low resistivities $\rho \to 0$}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Big resistivities $\rho \to \infty $}{50}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Putting it all together}{54}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Altertative way of studying $R_{\textrm {NL}}(x)$ as we change $\rho $}{54}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Shortcomings of the model}{56}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Comparison with experimental data}{56}{section.4.3}%
