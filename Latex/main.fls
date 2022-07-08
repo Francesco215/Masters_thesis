@@ -1026,7 +1026,6 @@ INPUT ./Immagini/graphene/dispersione-eps-converted-to.pdf
 INPUT ./Immagini/graphene/dispersione-eps-converted-to.pdf
 INPUT ./Immagini/graphene/dispersione-eps-converted-to.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ./chapters/Graphene/gapped.tex
 INPUT chapters/Graphene/gapped.tex
 INPUT ./chapters/Graphene/gapped.tex
@@ -1090,11 +1089,17 @@ INPUT Immagini/topo/spectral_flow.pdf
 INPUT ./Immagini/topo/spectral_flow.pdf
 INPUT ./Immagini/topo/spectral_flow.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT ./Immagini/topo/grosso-flow.png
 INPUT ./Immagini/topo/grosso-flow.png
 INPUT Immagini/topo/grosso-flow.png
 INPUT ./Immagini/topo/grosso-flow.png
 INPUT ./Immagini/topo/grosso-flow.png
+INPUT ./Immagini/topo/disk-solenoid.pdf
+INPUT ./Immagini/topo/disk-solenoid.pdf
+INPUT Immagini/topo/disk-solenoid.pdf
+INPUT ./Immagini/topo/disk-solenoid.pdf
+INPUT ./Immagini/topo/disk-solenoid.pdf
 INPUT ./chapters/Berry/berry.tex
 INPUT chapters/Berry/berry.tex
 INPUT ./chapters/Berry/berry.tex

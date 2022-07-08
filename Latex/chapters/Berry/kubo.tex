@@ -179,7 +179,7 @@ In equation \ref{eq:quantized sigma} we had a contribution that is the average o
 \section{Berry phase in Bloch bands}
 The band structure of crystals provides a natural platform to investigate the occurrence of the berry phase effect. Within the independent electron approximation, the band structure of a crystal is determined by the Bloch Hamiltonian:
 \begin{equation}
-    H= \frac {(\vect p -e\vect A)^2}{2m} + V(\vect r)
+    H= \frac {\vect p^2}{2m} + V(\vect r)
 \end{equation}
 Where $V(\vect r+\vect a)=V(\vect r)$ is the periodic potential with $a$ being the Bravais lattice vector. According to Bloch's theorem the eigenstates satisfy 
 \begin{equation}
@@ -188,7 +188,7 @@ Where $V(\vect r+\vect a)=V(\vect r)$ is the periodic potential with $a$ being t
 where $n$ is the band index and $\hbar \vect k$ is the crystal momentum. To comply with the general formalism of the Berry phase, we make the following unitary transformation to obtain a $\vect k$-dependent Hamiltonian
 
 \begin{equation}
-    e^{-i\vect k\cdot \vect r}He^{i\vect k\cdot \vect r}= H= \frac {(\vect p-e\vect A+\hbar \vect k)^2}{2m} + V(\vect r)
+    e^{-i\vect k\cdot \vect r}He^{i\vect k\cdot \vect r}= H= \frac {(\vect p+\hbar \vect k)^2}{2m} + V(\vect r)
 \end{equation}
 The transformed eigenstate $u_{n\vect k}(\vect r)= e^{-i\vect k\cdot \vect r}\psi_{n\vect k}(\vect r)$ is just the cell-periodic part of the Bloch function. It satisfies the strict periodic boundary condition 
 \begin{equation}
