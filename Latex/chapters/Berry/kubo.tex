@@ -215,9 +215,14 @@ We can define the current in terms of the group velocity of the wavepackets
 \end{equation}
 this means that equation \ref{eq:tknn} is equal to
 \begin{equation}
-    \frac{e^2}{2\pi\hbar}\sum_{n}C_n
+    \sigma_{xy}=\frac{e^2}\hbar \sum_{E_n<E_F}\Omega^n_{k_xk_y}\frac {d^2\vect k}{(2\pi)^2}
+    \label{eq:fermi-cond}
 \end{equation}
-where $C_n$ is the Chern number of the $n$-th band
+Using the Chern theorem \ref{eq:chern} we have that the equation above is equal to 
+\begin{equation}
+    \frac{e^2}{2\pi\hbar}\sum_n^N C_n
+\end{equation}
+where $C_n$ is the Chern number of the $n$-th band and the bands up to the $N$-th band are occupied, therefore we sum over the occupied bands
 
 
 

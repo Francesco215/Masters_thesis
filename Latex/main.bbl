@@ -17,6 +17,89 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{tong2016lectures}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TD1}
+    \strng{fullhash}{TD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Lectures on the quantum Hall effect}
+    \field{journaltitle}{arXiv preprint arXiv:1606.06687}
+    \field{year}{2016}
+  \endentry
+
+  \entry{WeinbergBloch}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WS}{%
+         family={Weinberg},
+         familyi={W\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hyperion New York}%
+    }
+    \strng{namehash}{WS1}
+    \strng{fullhash}{WS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Lectures on Quantum Mechanics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{thouless1982quantized}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TDJ}{%
+         family={Thouless},
+         familyi={T\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kohmoto},
+         familyi={K\bibinitperiod},
+         given={Mahito},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NMP}{%
+         family={Nightingale},
+         familyi={N\bibinitperiod},
+         given={M\bibnamedelima Peter},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=dNM}{%
+         prefix={den},
+         prefixi={d\bibinitperiod},
+         family={Nijs},
+         familyi={N\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{TDJ+1}
+    \strng{fullhash}{TDJKMNMPNMd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{405}
+    \field{title}{Quantized Hall conductance in a two-dimensional periodic
+  potential}
+    \field{volume}{49}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{1982}
+  \endentry
+
   \entry{firstExfoliation}{article}{}
     \name{author}{8}{}{%
       {{hash=NKS}{%
@@ -323,87 +406,359 @@
     \field{year}{2009}
   \endentry
 
-  \entry{tong2016lectures}{article}{}
+  \entry{vanderbilt2018berry}{book}{}
     \name{author}{1}{}{%
-      {{hash=TD}{%
-         family={Tong},
-         familyi={T\bibinitperiod},
+      {{hash=VD}{%
+         family={Vanderbilt},
+         familyi={V\bibinitperiod},
          given={David},
          giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TD1}
-    \strng{fullhash}{TD1}
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{VD1}
+    \strng{fullhash}{VD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Lectures on the quantum Hall effect}
-    \field{journaltitle}{arXiv preprint arXiv:1606.06687}
-    \field{year}{2016}
+    \field{title}{Berry phases in electronic structure theory: electric
+  polarization, orbital magnetization and topological insulators}
+    \field{year}{2018}
   \endentry
 
-  \entry{WeinbergBloch}{book}{}
+  \entry{hall1881}{article}{}
     \name{author}{1}{}{%
-      {{hash=WS}{%
-         family={Weinberg},
-         familyi={W\bibinitperiod},
-         given={Steven},
-         giveni={S\bibinitperiod},
+      {{hash=HEH}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Edwin\bibnamedelima Herbert},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Hyperion New York}%
+      {Taylor \& Francis}%
     }
-    \strng{namehash}{WS1}
-    \strng{fullhash}{WS1}
+    \strng{namehash}{HEH1}
+    \strng{fullhash}{HEH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Lectures on Quantum Mechanics}
-    \field{year}{2013}
+    \field{number}{74}
+    \field{pages}{157\bibrangedash 172}
+    \field{title}{XVIII. On the “Rotational Coefficient” in nickel and
+  cobalt}
+    \field{volume}{12}
+    \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical
+  Magazine and Journal of Science}
+    \field{year}{1881}
   \endentry
 
-  \entry{thouless1982quantized}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TDJ}{%
-         family={Thouless},
-         familyi={T\bibinitperiod},
-         given={David\bibnamedelima J},
-         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=KM}{%
-         family={Kohmoto},
+  \entry{karplus1954hall}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KR}{%
+         family={Karplus},
          familyi={K\bibinitperiod},
-         given={Mahito},
-         giveni={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
       }}%
-      {{hash=NMP}{%
-         family={Nightingale},
-         familyi={N\bibinitperiod},
-         given={M\bibnamedelima Peter},
-         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=dNM}{%
-         prefix={den},
-         prefixi={d\bibinitperiod},
-         family={Nijs},
-         familyi={N\bibinitperiod},
-         given={Marcel},
-         giveni={M\bibinitperiod},
+      {{hash=LJ}{%
+         family={Luttinger},
+         familyi={L\bibinitperiod},
+         given={JM},
+         giveni={J\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {APS}%
     }
-    \strng{namehash}{TDJ+1}
-    \strng{fullhash}{TDJKMNMPNMd1}
+    \strng{namehash}{KRLJ1}
+    \strng{fullhash}{KRLJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{6}
-    \field{pages}{405}
-    \field{title}{Quantized Hall conductance in a two-dimensional periodic
-  potential}
-    \field{volume}{49}
+    \field{number}{5}
+    \field{pages}{1154}
+    \field{title}{Hall effect in ferromagnetics}
+    \field{volume}{95}
+    \field{journaltitle}{Physical Review}
+    \field{year}{1954}
+  \endentry
+
+  \entry{smith1958resonant}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SPB}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Philip\bibnamedelima B},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SPB1}
+    \strng{fullhash}{SPB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6-10}
+    \field{pages}{1085\bibrangedash 1091}
+    \field{title}{The resonant scattering integral; application to the analysis
+  of elastic proton scattering}
+    \field{volume}{24}
+    \field{journaltitle}{Physica}
+    \field{year}{1958}
+  \endentry
+
+  \entry{berger1970side}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BL}{%
+         family={Berger},
+         familyi={B\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{BL1}
+    \strng{fullhash}{BL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{4559}
+    \field{title}{Side-jump mechanism for the Hall effect of ferromagnets}
+    \field{volume}{2}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1970}
+  \endentry
+
+  \entry{nagaosa2010anomalous}{article}{}
+    \name{author}{5}{}{%
+      {{hash=NN}{%
+         family={Nagaosa},
+         familyi={N\bibinitperiod},
+         given={Naoto},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sinova},
+         familyi={S\bibinitperiod},
+         given={Jairo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OS}{%
+         family={Onoda},
+         familyi={O\bibinitperiod},
+         given={Shigeki},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MAH}{%
+         family={MacDonald},
+         familyi={M\bibinitperiod},
+         given={Allan\bibnamedelima H},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=ONP}{%
+         family={Ong},
+         familyi={O\bibinitperiod},
+         given={Nai\bibnamedelima Phuan},
+         giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{NN+1}
+    \strng{fullhash}{NNSJOSMAHONP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{1539}
+    \field{title}{Anomalous hall effect}
+    \field{volume}{82}
+    \field{journaltitle}{Reviews of modern physics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{dugaev2005anomalous}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DV}{%
+         family={Dugaev},
+         familyi={D\bibinitperiod},
+         given={VK},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bruno},
+         familyi={B\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+      {{hash=TM}{%
+         family={Taillefumier},
+         familyi={T\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=CB}{%
+         family={Canals},
+         familyi={C\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=LC}{%
+         family={Lacroix},
+         familyi={L\bibinitperiod},
+         given={C},
+         giveni={C},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{DV+1}
+    \strng{fullhash}{DVBPTMCBLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{22}
+    \field{pages}{224423}
+    \field{title}{Anomalous Hall effect in a two-dimensional electron gas with
+  spin-orbit interaction}
+    \field{volume}{71}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{2005}
+  \endentry
+
+  \entry{tian2009proper}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TY}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JX}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Xiaofeng},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{TY+1}
+    \strng{fullhash}{TYYLJX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{8}
+    \field{pages}{087206}
+    \field{title}{Proper scaling of the anomalous Hall effect}
+    \field{volume}{103}
     \field{journaltitle}{Physical review letters}
-    \field{year}{1982}
+    \field{year}{2009}
+  \endentry
+
+  \entry{d1971spin}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DM}{%
+         family={D'yakonov},
+         familyi={D\bibinitperiod},
+         given={MI},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Perel},
+         familyi={P\bibinitperiod},
+         given={VI},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DMPV1}
+    \strng{fullhash}{DMPV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1053}
+    \field{title}{Spin orientation of electrons associated with the interband
+  absorption of light in semiconductors}
+    \field{volume}{33}
+    \field{journaltitle}{Soviet Journal of Experimental and Theoretical
+  Physics}
+    \field{year}{1971}
+  \endentry
+
+  \entry{wolf2001spintronics}{article}{}
+    \name{author}{8}{}{%
+      {{hash=WS}{%
+         family={Wolf},
+         familyi={W\bibinitperiod},
+         given={SA},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Awschalom},
+         familyi={A\bibinitperiod},
+         given={DD},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Buhrman},
+         familyi={B\bibinitperiod},
+         given={RA},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Daughton},
+         familyi={D\bibinitperiod},
+         given={JM},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=vMvS}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Moln{\'a}r},
+         familyi={M\bibinitperiod},
+         given={von\bibnamedelima S},
+         giveni={v\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Roukes},
+         familyi={R\bibinitperiod},
+         given={ML},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CAY}{%
+         family={Chtchelkanova},
+         familyi={C\bibinitperiod},
+         given={A\bibnamedelima Yu},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Treger},
+         familyi={T\bibinitperiod},
+         given={DM},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{WS+1}
+    \strng{fullhash}{WSADBRDJMvSvRMCAYTD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5546}
+    \field{pages}{1488\bibrangedash 1495}
+    \field{title}{Spintronics: a spin-based electronics vision for the future}
+    \field{volume}{294}
+    \field{journaltitle}{science}
+    \field{year}{2001}
   \endentry
 
   \entry{gorbachev2014detecting}{article}{}

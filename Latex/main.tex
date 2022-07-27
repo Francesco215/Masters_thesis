@@ -8,7 +8,7 @@
 \usepackage[11pt]{moresize}
 
 \font\myfont=cmr12 at 40pt
-\title{{\myfont Thesis name}}
+\title{{\myfont Non-local topological valley Hall effect in bilayer graphene}}
 
 \author{{\Huge }\\ \\ \\
 		\includegraphics[scale=0.6]{Immagini/cherubino.eps}\\}
@@ -43,14 +43,21 @@
 	\maketitle
 	\tableofcontents
 	\input{chapters/introduction.tex}
-	\input{chapters/Graphene/monlayer.tex}
-	\input{chapters/Graphene/gapped.tex}
-	\input{chapters/Graphene/bilayer.tex}
+	
+	\chapter{Introduction to relevant topics}
 	\input{chapters/Berry/hall.tex}
 	\input{chapters/Berry/berry.tex}
 	%\input{chapters/Berry/drift.tex}
 	\input{chapters/Berry/kubo.tex}
-	\input{chapters/ValleyHall.tex}
+	\input{chapters/Graphene/monlayer.tex}
+	\input{chapters/Graphene/gapped.tex}
+	\input{chapters/Graphene/bilayer.tex}
+
+	\chapter{Anomalous Hall effect}
+	\input{chapters/anomalous/AnomalousHall.tex}
+	\input{chapters/anomalous/ValleyHall.tex}
+
+	\chapter{Theory of the non-local resistance}
 	\input{chapters/R_NL/R_NLx.tex}
 	\input{chapters/R_NL/R_NLrho.tex}
 	\input{chapters/R_NL/experiments.tex}

@@ -7,9 +7,9 @@
     However the equation above does not completely determine the basis function $\ket{n,\boldsymbol \lambda}$; We can change arbitrarily the phase $\gamma_n(\boldsymbol \lambda)$ of any eigenstate which is called \textit{Berry phase}
     \begin{equation}
         \label{eq:berryphase}
-        \ket{n,\boldsymbol \lambda}\to \underbrace{e^{i\gamma_n(\boldsymbol \lambda (t))}}_{\textrm{Berry phase}} \ket{n,\boldsymbol \lambda}  
+        \ket{n,\boldsymbol \lambda}\to \underbrace{e^{i\gamma_n(\boldsymbol \lambda)}}_{\textrm{Berry phase}} \ket{n,\boldsymbol \lambda}  
     \end{equation}
-    Suppose we start off with a Hamiltonian and then we slowly change the parameters for a time $T$ until it reaches a different Hamiltonian, this means that $\boldsymbol \lambda=\boldsymbol \lambda(T)$. For the adiabatic theorem we can say that if we start on an energy eigenstate, and the system changes slowly enough,
+    Suppose we start off with a Hamiltonian and then we slowly change the parameters for a time $T$ until it reaches a different Hamiltonian, this means that $\boldsymbol \lambda=\boldsymbol \lambda(t)$. For the adiabatic theorem we can say that if we start on an energy eigenstate, and the system changes slowly enough,
     \footnote{How slow you have to be in changing the parameters depends on the energy gap from the state you're in to the nearest other state. The smaller the gap, the slower you have to change the parameters. A way of showing this without doing long calculations is the following: \\ We know from the Heisenberg uncertainty principle that $T \Delta E \ge \hbar/2$. We want the uncertainty in the Energy to be way smaller than the energy gap $E_g \gg\Delta E$, so $E_g \gg \frac{\hbar}{2T}$, therefore if we make $T$ big enough it can be achieved}
     and has no degeneracies, then the system will cling on that energy eigenstate.\newline
     This means that the equation of motion of a particle that for time $t=0$ is equal to $\ket{\psi_n(t=0)}=\ket{n,\boldsymbol \lambda(0)}$ is 
@@ -227,7 +227,7 @@
     \end{figure}
     \begin{equation}
         \label{eq:chern}
-        \oint_\mathcal{S} \Omega_{\mu\nu}^n d\lambda^\mu \wedge d\lambda^\nu =2\pi C \quad\quad C\in \mathbb Z
+        \oint_\mathcal{S} \Omega_{\mu\nu}^n d\lambda^\mu \wedge d\lambda^\nu =2\pi C_n \quad\quad C_n\in \mathbb Z
     \end{equation}
     This means that the flux thought a closed surface of the Berry curvature is quantized
     
