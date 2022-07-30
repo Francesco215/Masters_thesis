@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {1.10}Gapped Graphene}{26}{section.1.10}%
 \contentsline {section}{\numberline {1.11}Bilayer graphene}{26}{section.1.11}%
 \contentsline {chapter}{\numberline {2}Anomalous Hall effect}{30}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Spin Hall effect}{32}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Berry curvature in Gapped graphene}{32}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Valley-Hall effect}{33}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Non-local Charge transport}{35}{section.2.4}%
+\contentsline {section}{\numberline {2.1}Berry curvature in Gapped graphene}{31}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Spin Hall effect}{33}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Valley-Hall effect}{34}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Non-local Charge transport}{36}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Theory of non local charge transport}{36}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Re-writing the equations in terms of charge current and valley current}{38}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Laplace equation}{39}{subsection.2.5.2}%

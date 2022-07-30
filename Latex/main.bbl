@@ -761,6 +761,64 @@
     \field{year}{2001}
   \endentry
 
+  \entry{bychkov1984properties}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BYA}{%
+         family={Bychkov},
+         familyi={B\bibinitperiod},
+         given={Yua\bibnamedelima A},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=REI}{%
+         family={Rashba},
+         familyi={R\bibinitperiod},
+         given={{\'E}\bibnamedelima I},
+         giveni={{\'E}\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BYAREI1}
+    \strng{fullhash}{BYAREI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{78}
+    \field{title}{Properties of a 2D electron gas with lifted spectral
+  degeneracy}
+    \field{volume}{39}
+    \field{journaltitle}{JETP lett}
+    \field{year}{1984}
+  \endentry
+
+  \entry{kane2005quantum}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KCL}{%
+         family={Kane},
+         familyi={K\bibinitperiod},
+         given={Charles\bibnamedelima L},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MEJ}{%
+         family={Mele},
+         familyi={M\bibinitperiod},
+         given={Eugene\bibnamedelima J},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KCLMEJ1}
+    \strng{fullhash}{KCLMEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{22}
+    \field{pages}{226801}
+    \field{title}{Quantum spin Hall effect in graphene}
+    \field{volume}{95}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2005}
+  \endentry
+
   \entry{gorbachev2014detecting}{article}{}
     \true{moreauthor}
     \true{morelabelname}

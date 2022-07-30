@@ -1,0 +1,37 @@
+\section{Spin Hall effect}
+The most famous example of anomalous Hall effect is the spin Hall effect (SHE). It is a phenomenon arising due to spin-orbit coupling in which change current passing thought a sample leads to spin transport in the transverse direction \cite{d1971spin}. This phenomenon has been attracting continuous interest, and it is one of the protagonists of the field of spintronics \cite{wolf2001spintronics}.
+
+
+Due to relativistic corrections, an electron moving with velocity $\vect v$ in an electric field $\vect E$ will experience a magnetic field 
+
+\begin{equation}
+    \vect B=-\frac 1c(\vect v \times \vect E)
+\end{equation}
+
+This means that the spin-orbit coupling term of the Hamiltonian is 
+
+\begin{equation}
+    H_\textrm{SO}=-\frac{g\mu_B}{2}\vect B\cdot\vect s=
+    \alpha_R(\vect k \times \vect E)\cdot \vect s
+    \label{eq:so-int}
+\end{equation}
+where $-g\mu_B/2$ is the electron magnetic moment, and $\alpha_R=g\mu_B/2\hbar mc$. We can assume that the electric field is equal to $\vect E= E_z \hat{\vect z}$, this is achieved  either by a perpendicular electric field or by interaction with a substrate. With this we get the Rashba spin-orbit interaction also called as the external spin-orbit interaction\cite{bychkov1984properties}
+
+\begin{equation}
+    H_\textrm{SO}^\textrm{ext}=
+    \alpha_R E_z(\vect s \times \vect k)\cdot \hat{\vect z}
+\end{equation}
+It can be show that this is equal to \cite{kane2005quantum} QUA VOLENDO POSSO METTERCI I PASSAGGI
+\begin{equation}
+    H_\textrm{SO}^\textrm{ext}=
+    \lambda_R (\sigma_x\tau_zs_y-\sigma_ys_x)
+\end{equation}
+Where in the last equation the same notation from equation \ref{eq:dirac_Hamiltonian_compressed}.
+Another contribution due to the spin-orbit interaction comes from the interaction with the honeycomb periodic potential. If we plug $\vect E=\nabla V$ into equation \ref{eq:so-int} we get
+\begin{equation}
+    H_\textrm{SO}^\textrm{int}=\alpha_R(\vect k\times \nabla V)\cdot \vect s
+\end{equation}
+Kane and Mele \cite{kane2005quantum} showed that this is equivalent to 
+\begin{equation}
+    H_\textrm{SO}^\textrm{int}=\Delta_\textrm{SO}\,\sigma_z\tau_zs_z
+\end{equation}

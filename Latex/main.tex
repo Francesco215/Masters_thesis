@@ -25,7 +25,7 @@
 \addbibresource{bibliography.bib}
 
 
-\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
 \newcommand{\vettorec}[1]{\textrm{#1}}
 \newcommand{\pscal}[2]{\langle \vettore{#1},\vettore{#2}\rangle}
 
@@ -42,6 +42,7 @@
 \begin{document}
 	\maketitle
 	\tableofcontents
+	\chapter*{Introduction}
 	\input{chapters/introduction.tex}
 	
 	\chapter{Introduction to relevant topics}
@@ -54,8 +55,10 @@
 	\input{chapters/Graphene/bilayer.tex}
 
 	\chapter{Anomalous Hall effect}
-	\input{chapters/anomalous/AnomalousHall.tex}
-	\input{chapters/anomalous/ValleyHall.tex}
+	\input{chapters/Anomalous/AnomalousHall.tex}
+	\input{chapters/Anomalous/Berry_gapped.tex}
+	\input{chapters/Anomalous/spinHall.tex}
+	\input{chapters/Anomalous/ValleyHall.tex}
 
 	\chapter{Theory of the non-local resistance}
 	\input{chapters/R_NL/R_NLx.tex}
