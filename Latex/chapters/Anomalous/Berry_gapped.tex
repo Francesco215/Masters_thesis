@@ -75,11 +75,7 @@ And finally we can express it in terms of $\vect k$
 \begin{equation}
     \Omega_{k_xk_y}=(\hbar v_F)^2\Omega_{q_xq_y}=\frac {\hbar v_F}2 \frac{\Delta^2}{k^2E^3}(k_x+k_y-2k)
 \end{equation}
-Up until now we have worked with the Hamiltonian $H_{K_1}$, but with the $K_1$ hidden. The Berry curvature around $K_2$ is equal, but with opposite sign (figure \ref{fig:cones})
-\footnote{
-    A short proof for it can be the following: If we send $k_y\to -k_y$ we effectively send $H_{K_1}\to H_{K_2}$.\\
-    The berry curvature can be written as $\Omega_{k_xk_y}=i\bra{\partial _{k_x}n}\wedge\ket{\partial_{k_y}n}$. By sending  $k_y\to -k_y$ we have that $\Omega\to-\Omega$.}
-
+Up until now we have worked with the Hamiltonian $H_{K_1}$, but with the $K_1$ hidden. The Berry curvature around $K_2$ is equal, but with opposite sign (figure \ref{fig:cones}).\\
 \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{Immagini/ValleyHall/band_graphene.pdf}
@@ -87,3 +83,6 @@ Up until now we have worked with the Hamiltonian $H_{K_1}$, but with the $K_1$ h
     \caption{In the top panel are displayed the Energy bands in 2D. In the bottom panel with the dotted line are displayed a section of the energy bands, and with the continuous red line the Berry curvature.}
     \label{fig:cones}
 \end{figure}
+Notice how from figure \ref{fig:cones} most of the berry curvature lies near the cones. The nice thing about it is that to calculate the total curvature in any given band, we can calculate the Berry in the two cones, and then sum the results. This is because we know that the total Berry curvature over the band has to be quantized.
+
+Now let's calculate the total Berry curvature in any given cone from equation FINIRE

@@ -188,7 +188,8 @@ Where $V(\vect r+\vect a)=V(\vect r)$ is the periodic potential with $a$ being t
 where $n$ is the band index and $\hbar \vect k$ is the crystal momentum. To comply with the general formalism of the Berry phase, we make the following unitary transformation to obtain a $\vect k$-dependent Hamiltonian
 
 \begin{equation}
-    e^{-i\vect k\cdot \vect r}He^{i\vect k\cdot \vect r}= H= \frac {(\vect p+\hbar \vect k)^2}{2m} + V(\vect r)
+    e^{-i\vect k\cdot \vect r}He^{i\vect k\cdot \vect r}\equiv H(\vect k)= \frac {(\vect p+\hbar \vect k)^2}{2m} + V(\vect r)
+    \label{eq:k-repr}
 \end{equation}
 The transformed eigenstate $u_{n\vect k}(\vect r)= e^{-i\vect k\cdot \vect r}\psi_{n\vect k}(\vect r)$ is just the cell-periodic part of the Bloch function. It satisfies the strict periodic boundary condition 
 \begin{equation}
@@ -236,5 +237,87 @@ where $C_n$ is the Chern number of the $n$-th band and the bands up to the $N$-t
 
 
 
+
+
+
+
+
+
+\section{Anomalous velocity}
+Finally, as a last phenomenon of the Berry curvature we talk about how it changes the velocity of electrons inside crystals. The velocity operator of a particle in a periodic potential with crystal impulse $\vect k$ is given by \cite{grosso2013solid}
+\begin{equation}
+    \vect v(\vect k)= \frac{\partial H(\vect k)}{\hbar \partial \vect k}
+    \label{eq:cryspeed}
+\end{equation}
+where $H(\vect k)$ is the Hamiltonian from equation \ref{eq:k-repr}. so the velocity of the $n$-th state with impulse $\vect k$ is simply
+\begin{equation}
+    \vect v_n(\vect k)=\bra{\psi_{n'}}\vect v(\vect k)\ket{\psi_{n'}}=\frac{\partial E_n(\vect k)}{\hbar \partial \vect k}
+\end{equation}
+Now lets see what happens if we apply a weak uniform external electric field through a uniform vector potential $\vect A(t)$. Using the Peierls substitution, the Hamiltonian is written as 
+\begin{equation}
+    H(\vect k,t)= \frac{[\vect p+\hbar\vect k +e\vect A(t)]^2}{2m}+V(\vect r)
+\end{equation}
+we can now introduce a gauge invariant crystal momentum $\vect \pi(\vect k, t)=\vect k +e\vect A(t)$ and we can notice that
+\begin{equation}
+    H(\vect k,t)=H(\vect \pi)
+\end{equation}
+Since $\vect A (t)$ preserves the translational symmetry, $\vect k$ is still a good quantum number and it is a constant of motion $\dot{\vect k}=0$ it follows from derivating with respect to time this equation $\vect \pi(\vect k, t)=\hbar \vect k +e\vect A(t)$ that
+\begin{equation}
+   \dot{\vect\pi}=-e \vect E
+   \label{eq:pidt}
+\end{equation}
+To evaluate the velocity we have to use first order perturbation theory
+\begin{equation}
+    \ket{\psi'_n}=\ket{\psi_n}+\sum_{n'\neq n}\frac{\braket{\psi_{n'}}{\Delta H|\psi_n}}{E_{n'}-E_n}\ket{\psi_{n'}}
+\end{equation}
+since in the interaction picture $\Delta H\ket{\psi_n}=-i\hbar\ket{\partial_t\psi_n}$
+we have that the equation above becomes
+\begin{equation}
+    \ket{\psi'_n}=\ket{\psi_n}-i\hbar\sum_{n'\neq n}\frac{\braket{\psi_{n'}}{\partial_t\psi_n}}{E_{n'}-E_n}\ket{\psi_{n'}}
+\end{equation}
+from equation \ref{eq:cryspeed} we have that the velocity with the new states becomes 
+\begin{equation}
+    \begin{split}
+        \vect v_n(\vect k)=&\bra{\psi'_n}\vect v(\vect k)\ket{\psi'_n}=\\
+        =&\bra{\psi_n}\vect v(\vect k)\ket{\psi_n} -i\sum _{n\neq 0}
+        \braket{\psi_n\bigg|\frac{\partial H}{\partial \vect k }}{\psi_{n'}}
+        \frac{\braket{\psi_{n'}}{\partial_t\psi_n}}{E_{n'}-E_n} - \textrm {c.c.}
+    \end{split}
+    \label{eq:start-anom}
+\end{equation}
+from equation \ref{eq:partial H} we can say that
+\begin{equation}
+    \braket{\psi_n\bigg|\frac{\partial H}{\partial \vect k }}{\psi_{n'}}\frac1{E_{n'}-E_n}=\braket{\partial_{\vect k}\psi_n}{\psi_{n'}}
+\end{equation}
+and using equation \ref{eq:cryspeed}, equation \ref{eq:start-anom} becomes
+\begin{equation}
+    \vect v_n(\vect k)=\frac{\partial E_n (k)}{\hbar\partial \vect k} -i
+    \sum_{n'\neq n}
+    \braket{\partial_{\vect k}\psi_n}{\psi_{n'}}
+    \braket{\psi_{n'}}{\partial_t\psi_n}
+    -\textrm{c.c.}
+\end{equation}
+The second term in the equation above is the Berry curvature (equation \ref{eq:berry-curvature2}), so in the end we get that
+
+\begin{equation}
+    \vect v_n(\vect k)=\frac{\partial E_n (k)}{\hbar\partial \vect k} -\Omega^n_{\vect kt}
+    \label{eq:afgubaibg}
+\end{equation}
+Also, since $\frac{\partial}{\partial \vect \pi}=\frac \partial{\hbar\partial \vect k}$ and $\hbar\frac{\partial \vect k}{\partial t}=-e\vect E$ (equation \ref{eq:pidt})
+we have that
+\[
+    \frac{\partial }{\partial t}=-\frac e\hbar \nabla_{\vect k}\cdot \vect E    
+\]
+Thought some mathematical manipulation it can be shown that parsing the equation above into equation \ref{eq:afgubaibg} we get that
+
+\begin{equation}
+    \vect v_n(\vect k)=\frac{\partial E_n (k)}{\hbar\partial \vect k} -\frac e\hbar \vect E\times \vect \Omega^n(\vect k)
+    \label{eq:anomalous_velocity}
+\end{equation}
+Where $\vect \Omega^n(\vect k)$ is the Berry curvature of the $n$-th band 
+\begin{equation}
+    \vect \Omega^n(\vect k)=i\bra{\nabla_{\vect k}\psi_n}\times \ket{\nabla_{\vect k}\psi_n}      
+\end{equation}
+From equation \ref{eq:anomalous_velocity} we can see that, in addition to the usual band dispersion contribution of equation \ref{eq:cryspeed}, an extra term previously known as an anomalous velocity contributes to $\vect v_n(\vect k)$. This velocity is transverse to the electric field, and it gives us yet another way of interpreting the Hall effect.
 
 

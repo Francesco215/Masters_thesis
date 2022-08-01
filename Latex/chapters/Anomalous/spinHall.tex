@@ -25,6 +25,7 @@ It can be show that this is equal to \cite{kane2005quantum} QUA VOLENDO POSSO ME
 \begin{equation}
     H_\textrm{SO}^\textrm{ext}=
     \lambda_R (\sigma_x\tau_zs_y-\sigma_ys_x)
+    \label{eq:rabshba-ham}
 \end{equation}
 Where in the last equation the same notation from equation \ref{eq:dirac_Hamiltonian_compressed}.
 Another contribution due to the spin-orbit interaction comes from the interaction with the honeycomb periodic potential. If we plug $\vect E=\nabla V$ into equation \ref{eq:so-int} we get
@@ -34,4 +35,20 @@ Another contribution due to the spin-orbit interaction comes from the interactio
 Kane and Mele \cite{kane2005quantum} showed that this is equivalent to 
 \begin{equation}
     H_\textrm{SO}^\textrm{int}=\Delta_\textrm{SO}\,\sigma_z\tau_zs_z
+    \label{eq:kane-ham}
 \end{equation}
+Combining equations \ref{eq:dirac_Hamiltonian_compressed}, \ref{eq:rabshba-ham} and \ref{eq:kane-ham} we get that
+\begin{equation}
+    \begin{split}
+        H(\vect k)=&H_0+H_\textrm{SO}^\textrm{int}+H_\textrm{SO}^\textrm{ext}=\\
+        =&\hbar v_\textrm{F}(\sigma_x\tau_zk_x+\sigma_yk_y)+
+        \Delta_\textrm{SO}\,\sigma_z\tau_zs_z +
+        \lambda_R (\sigma_x\tau_zs_y-\sigma_ys_x)
+    \end{split}
+\end{equation}
+For now we are going to ignore the external spin-orbit contribution, so we work with the Hamiltonian
+\begin{equation}
+    H(\vect k)=\hbar v_\textrm{F}(\sigma_x\tau_zk_x+\sigma_yk_y)+
+    \Delta_\textrm{SO}\,\sigma_z\tau_zs_z
+\end{equation}
+
