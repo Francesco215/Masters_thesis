@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1659462108 "main.aux" "main.bbl" "main" 1659462316
+["bibtex main"] 1659518354 "main.aux" "main.bbl" "main" 1659518357
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1643926307 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
   "bibliography.bib" 1659461918 13882 426c60846728e88b99e97da0df3f38f2 ""
-  "main-blx.bib" 1659462316 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
-  "main.aux" 1659462316 41748 aa466a3785917189138a3874ad063f5e "pdflatex"
+  "main-blx.bib" 1659518357 341 d1a05abdabc65fd98fc0f6354410d1ba "pdflatex"
+  "main.aux" 1659518357 41748 aa466a3785917189138a3874ad063f5e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1659462313 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1659462316
+["pdflatex"] 1659518355 "/Users/francesco/Github/Masters_thesis/Latex/main.tex" "main.pdf" "main" 1659518357
   "../website/images/berry/chern_theorem.png" 1651843336 70647 dbc1070acd2af605a94f6e824f2e31a7 ""
   "/Users/francesco/Github/Masters_thesis/Latex/main.tex" 1659203059 1887 9d962217536d3d9e2b82b86c2b03c8bf ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -269,7 +269,7 @@
   "chapters/Anomalous/ValleyHall.tex" 1659116683 17342 90bb9ba03fb7de35d794727e9a7732ce ""
   "chapters/Anomalous/spinHall.tex" 1659286309 2882 bcb0a304c606bf26247ddff71df48e21 ""
   "chapters/Berry/berry.tex" 1658930240 18237 fac8cbd92b2f7603120e49fbd808ab25 ""
-  "chapters/Berry/hall.tex" 1658848104 10649 541034e5688715f3bd4087f6ee870bf3 ""
+  "chapters/Berry/hall.tex" 1659518352 10651 5b52036c290e8d523b37599a1e0f1211 ""
   "chapters/Berry/kubo.tex" 1659462105 19304 7dd690adeb1945f6648dd8c29a7e21bc ""
   "chapters/Graphene/bilayer.tex" 1656939192 5538 abecc428a4f890eda908a553698fcd30 ""
   "chapters/Graphene/gapped.tex" 1659461582 2094 10b7af897e01cc09e62a88809a242ecd ""
@@ -278,12 +278,12 @@
   "chapters/R_NL/R_NLx.tex" 1659368354 11721 71a437d57b83b4654f4c37c6a6110db1 ""
   "chapters/R_NL/experiments.tex" 1654467077 2663 666985191a326cc575610b6aaebae431 ""
   "chapters/introduction.tex" 1659028032 2142 20b8fc3cf5d274186cf456aea71af19a ""
-  "main.aux" 1659462316 41748 aa466a3785917189138a3874ad063f5e "pdflatex"
-  "main.bbl" 1659462108 48127 06e453b2ee06f7b675d596186c21052b "bibtex main"
-  "main.out" 1659462316 7230 a08b915621335a1f8eba2bd67fb979b1 "pdflatex"
-  "main.run.xml" 1659462316 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
+  "main.aux" 1659518357 41748 aa466a3785917189138a3874ad063f5e "pdflatex"
+  "main.bbl" 1659518355 48127 06e453b2ee06f7b675d596186c21052b "bibtex main"
+  "main.out" 1659518357 7230 a08b915621335a1f8eba2bd67fb979b1 "pdflatex"
+  "main.run.xml" 1659518357 2593 6ff189137609e69771fdf537836d2494 "pdflatex"
   "main.tex" 1659203059 1887 9d962217536d3d9e2b82b86c2b03c8bf ""
-  "main.toc" 1659462316 3308 6c86bd1d1747c876f5083063d90217f5 "pdflatex"
+  "main.toc" 1659518357 3308 6c86bd1d1747c876f5083063d90217f5 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"
