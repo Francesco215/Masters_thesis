@@ -1,5 +1,31 @@
 %\chapter{Topology in quantum mechanics}
 \label{sec:no_flat}
+In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending; that is, without closing holes, opening holes, tearing, gluing, or passing through itself.\\
+\begin{wrapfigure}{r}{.5\textwidth}
+    \includegraphics[width=.6\textwidth]{Immagini/topo/topo1.pdf}
+    \caption{The origin in represented with a black dot. On the left the different equivalence classes are shown in different colors}
+    \label{fig:topo1}
+\end{wrapfigure} 
+Let's start with a simple but important example (figure \ref{fig:topo1}):
+Let's consider the set of all the curves in the plane that don't pass thought the origin and that don't intersect themeseves. We can divide this set in two main subsets:
+\begin{itemize}
+    \item The set of curves that circle around the origin (in orange)
+    \item The set of curves that don't circle around the origin (in blue)
+\end{itemize}
+You cannot deform continuously a orange curve in to a blue one without crossing the origin, but you can deform continuously a curve to reach one of the same color, so we say that the two types of curves have different topologies, or alternatively that they form two different classes of equivalence.
+
+As you can see from the image below, if we add noise, most of the time the curves will keep their topology. However, if the noise is strong enough, or the curve close enough to the origin, the curve sometimes changes its topology.
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{Immagini/topo/topo2.pdf}
+    \caption{In this image the blue curve sometimes under noise keeps its topology, leaving its color unchanged, other times it gets pushed beyond the origin and switches color  (here shown in fuchsia)
+    }
+    \label{fig:topo2}
+\end{figure}
+
+\subsubsection*{Why is it important?}
+For a physicist, things that are inherently topological in nature are important because they are resistant to noise. For example, in quantum computing the main bottleneck comes from envorinment noise. Because of this reaserchers are trying to explore the possibility of using topological effects to execute noise-resistant computations.
+
+
 
 
 \section{Elementary introduction to topology in condensed matter physics}

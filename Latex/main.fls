@@ -967,6 +967,19 @@ INPUT ./chapters/Berry/hall.tex
 INPUT chapters/Berry/hall.tex
 INPUT ./chapters/Berry/hall.tex
 INPUT chapters/Berry/hall.tex
+INPUT ./Immagini/topo/topo1.pdf
+INPUT ./Immagini/topo/topo1.pdf
+INPUT Immagini/topo/topo1.pdf
+INPUT ./Immagini/topo/topo1.pdf
+INPUT ./Immagini/topo/topo1.pdf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./Immagini/topo/topo2.pdf
+INPUT ./Immagini/topo/topo2.pdf
+INPUT Immagini/topo/topo2.pdf
+INPUT ./Immagini/topo/topo2.pdf
+INPUT ./Immagini/topo/topo2.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
@@ -999,8 +1012,6 @@ INPUT ./Immagini/topo/spectral_flow.pdf
 INPUT Immagini/topo/spectral_flow.pdf
 INPUT ./Immagini/topo/spectral_flow.pdf
 INPUT ./Immagini/topo/spectral_flow.pdf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
@@ -1055,7 +1066,6 @@ INPUT ./chapters/Berry/kubo.tex
 INPUT chapters/Berry/kubo.tex
 INPUT ./chapters/Berry/kubo.tex
 INPUT chapters/Berry/kubo.tex
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT ./Immagini/topo/curvature_Fe.pdf
 INPUT ./Immagini/topo/curvature_Fe.pdf
 INPUT Immagini/topo/curvature_Fe.pdf
