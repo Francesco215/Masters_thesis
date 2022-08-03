@@ -26,12 +26,12 @@
          giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TD1}
-    \strng{fullhash}{TD1}
+    \strng{namehash}{TD2}
+    \strng{fullhash}{TD2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Lectures on the quantum Hall effect}
-    \field{journaltitle}{arXiv preprint arXiv:1606.06687}
+    \field{journaltitle}{arXiv:1606.06687}
     \field{year}{2016}
   \endentry
 
@@ -95,7 +95,7 @@
     \field{pages}{405}
     \field{title}{Quantized Hall conductance in a two-dimensional periodic
   potential}
-    \field{volume}{49}
+    \field{volume}{\bf{49}}
     \field{journaltitle}{Physical review letters}
     \field{year}{1982}
   \endentry
@@ -126,142 +126,239 @@
     \field{year}{2013}
   \endentry
 
+  \entry{thouless1983quantization}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Thouless},
+         familyi={T\bibinitperiod},
+         given={DJ},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{TD1}
+    \strng{fullhash}{TD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{6083}
+    \field{title}{Quantization of particle transport}
+    \field{volume}{\bf{27}}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1983}
+  \endentry
+
+  \entry{chang1995berry}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMC}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Ming-Che},
+         giveni={M\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=NQ}{%
+         family={Niu},
+         familyi={N\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{CMCNQ1}
+    \strng{fullhash}{CMCNQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{1348}
+    \field{title}{Berry phase, hyperorbits, and the Hofstadter spectrum}
+    \field{volume}{\bf{75}}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{1995}
+  \endentry
+
+  \entry{yao2004first}{article}{}
+    \name{author}{8}{}{%
+      {{hash=YY}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Yugui},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kleinman},
+         familyi={K\bibinitperiod},
+         given={Leonard},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={MacDonald},
+         familyi={M\bibinitperiod},
+         given={AH},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sinova},
+         familyi={S\bibinitperiod},
+         given={Jairo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jungwirth},
+         familyi={J\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=WDs}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Ding-sheng},
+         giveni={D\bibinithyphendelim s\bibinitperiod},
+      }}%
+      {{hash=WE}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Enge},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=NQ}{%
+         family={Niu},
+         familyi={N\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{YY+1}
+    \strng{fullhash}{YYKLMASJJTWDsWENQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{037204}
+    \field{title}{First principles calculation of anomalous Hall conductivity
+  in ferromagnetic bcc Fe}
+    \field{volume}{\bf{92}}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2004}
+  \endentry
+
   \entry{firstExfoliation}{article}{}
     \name{author}{8}{}{%
       {{hash=NKS}{%
          family={Novoselov},
          familyi={N\bibinitperiod},
-         given={K.\bibnamedelima S.},
+         given={Kostya\bibnamedelima S},
          giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
       {{hash=GAK}{%
          family={Geim},
          familyi={G\bibinitperiod},
-         given={A.\bibnamedelima K.},
+         given={Andre\bibnamedelima K},
          giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
       {{hash=MSV}{%
          family={Morozov},
          familyi={M\bibinitperiod},
-         given={S.\bibnamedelima V.},
+         given={Sergei\bibnamedelima V},
          giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
-      {{hash=JD}{%
+      {{hash=JDe}{%
          family={Jiang},
          familyi={J\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
+         given={De-eng},
+         giveni={D\bibinithyphendelim e\bibinitperiod},
       }}%
       {{hash=ZY}{%
          family={Zhang},
          familyi={Z\bibinitperiod},
-         given={Y.},
+         given={Yanshui},
          giveni={Y\bibinitperiod},
       }}%
       {{hash=DSV}{%
          family={Dubonos},
          familyi={D\bibinitperiod},
-         given={S.\bibnamedelima V.},
+         given={Sergey\bibnamedelima V},
          giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
       {{hash=GIV}{%
          family={Grigorieva},
          familyi={G\bibinitperiod},
-         given={I.\bibnamedelima V.},
+         given={Irina\bibnamedelima V},
          giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod},
       }}%
       {{hash=FAA}{%
          family={Firsov},
          familyi={F\bibinitperiod},
-         given={A.\bibnamedelima A.},
+         given={Alexandr\bibnamedelima A},
          giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
     \strng{namehash}{NKS+1}
-    \strng{fullhash}{NKSGAKMSVJDZYDSVGIVFAA1}
+    \strng{fullhash}{NKSGAKMSVJDeZYDSVGIVFAA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    We describe monocrystalline graphitic films, which are a few atoms thick
-  but are nonetheless stable under ambient conditions, metallic, and of
-  remarkably high quality. The films are found to be a two-dimensional
-  semimetal with a tiny overlap between valence and conductance bands, and they
-  exhibit a strong ambipolar electric field effect such that electrons and
-  holes in concentrations up to 1013 per square centimeter and with
-  room-temperature mobilities of ∼10,000 square centimeters per volt-second
-  can be induced by applying gate voltage.%
-    }
-    \verb{doi}
-    \verb 10.1126/science.1102896
-    \endverb
-    \verb{eprint}
-    \verb https://www.science.org/doi/pdf/10.1126/science.1102896
-    \endverb
     \field{number}{5696}
     \field{pages}{666\bibrangedash 669}
-    \field{title}{Electric Field Effect in Atomically Thin Carbon Films}
-    \verb{url}
-    \verb https://www.science.org/doi/abs/10.1126/science.1102896
-    \endverb
-    \field{volume}{306}
-    \field{journaltitle}{Science}
+    \field{title}{Electric field effect in atomically thin carbon films}
+    \field{volume}{\bf{306}}
+    \field{journaltitle}{science}
     \field{year}{2004}
   \endentry
 
   \entry{guinea2008review}{article}{}
     \name{author}{5}{}{%
-      {{hash=CNAH}{%
-         family={Castro\bibnamedelima Neto},
-         familyi={C\bibinitperiod\bibinitdelim N\bibinitperiod},
-         given={A.\bibnamedelima H.},
-         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      {{hash=NAC}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={AH\bibnamedelima Castro},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
       {{hash=GF}{%
          family={Guinea},
          familyi={G\bibinitperiod},
-         given={F.},
+         given={Francisco},
          giveni={F\bibinitperiod},
       }}%
-      {{hash=PNMR}{%
+      {{hash=PNM}{%
          family={Peres},
          familyi={P\bibinitperiod},
-         given={N.\bibnamedelima M.\bibnamedelima R.},
-         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  R\bibinitperiod},
+         given={Nuno\bibnamedelima MR},
+         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
       {{hash=NKS}{%
          family={Novoselov},
          familyi={N\bibinitperiod},
-         given={K.\bibnamedelima S.},
+         given={Kostya\bibnamedelima S},
          giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
       {{hash=GAK}{%
          family={Geim},
          familyi={G\bibinitperiod},
-         given={A.\bibnamedelima K.},
+         given={Andre\bibnamedelima K},
          giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {American Physical Society}%
+      {APS}%
     }
-    \strng{namehash}{CNAH+1}
-    \strng{fullhash}{CNAHGFPNMRNKSGAK1}
+    \strng{namehash}{NAC+1}
+    \strng{fullhash}{NACGFPNMNKSGAK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/RevModPhys.81.109
-    \endverb
-    \field{issue}{1}
-    \field{pages}{109\bibrangedash 162}
+    \field{number}{1}
+    \field{pages}{109}
     \field{title}{The electronic properties of graphene}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/RevModPhys.81.109
-    \endverb
-    \field{volume}{81}
-    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{volume}{\bf{81}}
+    \field{journaltitle}{Reviews of modern physics}
     \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{bloch1929quantenmechanik}{article}{}
@@ -284,7 +381,7 @@
     \field{pages}{555\bibrangedash 600}
     \field{title}{{\"U}ber die quantenmechanik der elektronen in
   kristallgittern}
-    \field{volume}{52}
+    \field{volume}{\bf{52}}
     \field{journaltitle}{Zeitschrift f{\"u}r physik}
     \field{year}{1929}
   \endentry
@@ -314,9 +411,153 @@
     \field{number}{6}
     \field{pages}{1498}
     \field{title}{Simplified LCAO method for the periodic potential problem}
-    \field{volume}{94}
+    \field{volume}{\bf{94}}
     \field{journaltitle}{Physical Review}
     \field{year}{1954}
+  \endentry
+
+  \entry{cardona2005fundamentals}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Cardona},
+         familyi={C\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PYY}{%
+         family={Peter},
+         familyi={P\bibinitperiod},
+         given={Y\bibnamedelima Yu},
+         giveni={Y\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CMPYY1}
+    \strng{fullhash}{CMPYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fundamentals of semiconductors}
+    \field{volume}{619}
+    \field{year}{2005}
+  \endentry
+
+  \entry{hasan2010colloquium}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HMZ}{%
+         family={Hasan},
+         familyi={H\bibinitperiod},
+         given={M\bibnamedelima Zahid},
+         giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=KCL}{%
+         family={Kane},
+         familyi={K\bibinitperiod},
+         given={Charles\bibnamedelima L},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{HMZKCL1}
+    \strng{fullhash}{HMZKCL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{3045}
+    \field{title}{Colloquium: topological insulators}
+    \field{volume}{82}
+    \field{journaltitle}{Reviews of modern physics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{divincenzo1984self}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DD}{%
+         family={DiVincenzo},
+         familyi={D\bibinitperiod},
+         given={DP},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Mele},
+         familyi={M\bibinitperiod},
+         given={EJ},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{DDME1}
+    \strng{fullhash}{DDME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1685}
+    \field{title}{Self-consistent effective-mass theory for intralayer
+  screening in graphite intercalation compounds}
+    \field{volume}{29}
+    \field{journaltitle}{Physical Review B}
+    \field{year}{1984}
+  \endentry
+
+  \entry{haldane1988model}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HFDM}{%
+         family={Haldane},
+         familyi={H\bibinitperiod},
+         given={F\bibnamedelima Duncan\bibnamedelima M},
+         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{HFDM1}
+    \strng{fullhash}{HFDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{18}
+    \field{pages}{2015}
+    \field{title}{Model for a quantum Hall effect without Landau levels:
+  Condensed-matter realization of the" parity anomaly"}
+    \field{volume}{61}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{1988}
+  \endentry
+
+  \entry{kane2005quantum}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KCL}{%
+         family={Kane},
+         familyi={K\bibinitperiod},
+         given={Charles\bibnamedelima L},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MEJ}{%
+         family={Mele},
+         familyi={M\bibinitperiod},
+         given={Eugene\bibnamedelima J},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{KCLMEJ1}
+    \strng{fullhash}{KCLMEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{22}
+    \field{pages}{226801}
+    \field{title}{Quantum spin Hall effect in graphene}
+    \field{volume}{\bf{95}}
+    \field{journaltitle}{Physical review letters}
+    \field{year}{2005}
   \endentry
 
   \entry{McCann_2013}{article}{}
@@ -335,25 +576,18 @@
       }}%
     }
     \list{publisher}{1}{%
-      {{IOP} Publishing}%
+      {IOP Publishing}%
     }
     \strng{namehash}{MEKM1}
     \strng{fullhash}{MEKM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1088/0034-4885/76/5/056503
-    \endverb
     \field{number}{5}
     \field{pages}{056503}
     \field{title}{The electronic properties of bilayer graphene}
-    \verb{url}
-    \verb https://doi.org/10.1088%2F0034-4885%2F76%2F5%2F056503
-    \endverb
-    \field{volume}{76}
-    \field{journaltitle}{Reports on Progress in Physics}
+    \field{volume}{\bf{76}}
+    \field{journaltitle}{Reports on Progress in physics}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{kuzmenko2009determination}{article}{}
@@ -401,7 +635,7 @@
     \field{pages}{165406}
     \field{title}{Determination of the gate-tunable band gap and tight-binding
   parameters in bilayer graphene using infrared spectroscopy}
-    \field{volume}{80}
+    \field{volume}{\bf{80}}
     \field{journaltitle}{Physical Review B}
     \field{year}{2009}
   \endentry
@@ -447,7 +681,7 @@
     \field{pages}{157\bibrangedash 172}
     \field{title}{XVIII. On the “Rotational Coefficient” in nickel and
   cobalt}
-    \field{volume}{12}
+    \field{volume}{\bf{12}}
     \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical
   Magazine and Journal of Science}
     \field{year}{1881}
@@ -478,7 +712,7 @@
     \field{number}{5}
     \field{pages}{1154}
     \field{title}{Hall effect in ferromagnetics}
-    \field{volume}{95}
+    \field{volume}{\bf{95}}
     \field{journaltitle}{Physical Review}
     \field{year}{1954}
   \endentry
@@ -503,7 +737,7 @@
     \field{pages}{1085\bibrangedash 1091}
     \field{title}{The resonant scattering integral; application to the analysis
   of elastic proton scattering}
-    \field{volume}{24}
+    \field{volume}{\bf{24}}
     \field{journaltitle}{Physica}
     \field{year}{1958}
   \endentry
@@ -527,7 +761,7 @@
     \field{number}{11}
     \field{pages}{4559}
     \field{title}{Side-jump mechanism for the Hall effect of ferromagnets}
-    \field{volume}{2}
+    \field{volume}{\bf{2}}
     \field{journaltitle}{Physical Review B}
     \field{year}{1970}
   \endentry
@@ -575,7 +809,7 @@
     \field{number}{2}
     \field{pages}{1539}
     \field{title}{Anomalous hall effect}
-    \field{volume}{82}
+    \field{volume}{\bf{82}}
     \field{journaltitle}{Reviews of modern physics}
     \field{year}{2010}
   \endentry
@@ -624,7 +858,7 @@
     \field{pages}{224423}
     \field{title}{Anomalous Hall effect in a two-dimensional electron gas with
   spin-orbit interaction}
-    \field{volume}{71}
+    \field{volume}{\bf{71}}
     \field{journaltitle}{Physical Review B}
     \field{year}{2005}
   \endentry
@@ -660,7 +894,7 @@
     \field{number}{8}
     \field{pages}{087206}
     \field{title}{Proper scaling of the anomalous Hall effect}
-    \field{volume}{103}
+    \field{volume}{\bf{103}}
     \field{journaltitle}{Physical review letters}
     \field{year}{2009}
   \endentry
@@ -687,7 +921,7 @@
     \field{pages}{1053}
     \field{title}{Spin orientation of electrons associated with the interband
   absorption of light in semiconductors}
-    \field{volume}{33}
+    \field{volume}{\bf{33}}
     \field{journaltitle}{Soviet Journal of Experimental and Theoretical
   Physics}
     \field{year}{1971}
@@ -756,7 +990,7 @@
     \field{number}{5546}
     \field{pages}{1488\bibrangedash 1495}
     \field{title}{Spintronics: a spin-based electronics vision for the future}
-    \field{volume}{294}
+    \field{volume}{\bf{294}}
     \field{journaltitle}{science}
     \field{year}{2001}
   \endentry
@@ -784,39 +1018,9 @@
     \field{pages}{78}
     \field{title}{Properties of a 2D electron gas with lifted spectral
   degeneracy}
-    \field{volume}{39}
+    \field{volume}{\bf{39}}
     \field{journaltitle}{JETP lett}
     \field{year}{1984}
-  \endentry
-
-  \entry{kane2005quantum}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KCL}{%
-         family={Kane},
-         familyi={K\bibinitperiod},
-         given={Charles\bibnamedelima L},
-         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=MEJ}{%
-         family={Mele},
-         familyi={M\bibinitperiod},
-         given={Eugene\bibnamedelima J},
-         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {APS}%
-    }
-    \strng{namehash}{KCLMEJ1}
-    \strng{fullhash}{KCLMEJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{22}
-    \field{pages}{226801}
-    \field{title}{Quantum spin Hall effect in graphene}
-    \field{volume}{95}
-    \field{journaltitle}{Physical review letters}
-    \field{year}{2005}
   \endentry
 
   \entry{gorbachev2014detecting}{article}{}
@@ -894,7 +1098,7 @@
     \field{number}{6208}
     \field{pages}{448\bibrangedash 451}
     \field{title}{Detecting topological currents in graphene superlattices}
-    \field{volume}{346}
+    \field{volume}{\bf{346}}
     \field{journaltitle}{Science}
     \field{year}{2014}
   \endentry
@@ -975,7 +1179,7 @@
     \field{pages}{1027\bibrangedash 1031}
     \field{title}{Gate-tunable topological valley transport in bilayer
   graphene}
-    \field{volume}{11}
+    \field{volume}{\bf{11}}
     \field{journaltitle}{Nature Physics}
     \field{year}{2015}
   \endentry
@@ -1030,7 +1234,7 @@
     \field{pages}{1032\bibrangedash 1036}
     \field{title}{Generation and detection of pure valley current by
   electrically induced Berry curvature in bilayer graphene}
-    \field{volume}{11}
+    \field{volume}{\bf{11}}
     \field{journaltitle}{Nature Physics}
     \field{year}{2015}
   \endentry
@@ -1079,7 +1283,7 @@
     \field{pages}{196802}
     \field{title}{Coupled spin and valley physics in monolayers of MoS 2 and
   other group-VI dichalcogenides}
-    \field{volume}{108}
+    \field{volume}{\bf{10}8}
     \field{journaltitle}{Physical review letters}
     \field{year}{2012}
   \endentry
@@ -1121,7 +1325,7 @@
     \field{number}{6191}
     \field{pages}{1489\bibrangedash 1492}
     \field{title}{The valley Hall effect in MoS2 transistors}
-    \field{volume}{344}
+    \field{volume}{\bf{344}}
     \field{journaltitle}{Science}
     \field{year}{2014}
   \endentry
@@ -1169,7 +1373,7 @@
     \field{number}{9}
     \field{pages}{887\bibrangedash 891}
     \field{title}{Valley magnetoelectricity in single-layer MoS2}
-    \field{volume}{16}
+    \field{volume}{\bf{16}}
     \field{journaltitle}{Nature materials}
     \field{year}{2017}
   \endentry
@@ -1199,7 +1403,7 @@
     \field{number}{7099}
     \field{pages}{176\bibrangedash 179}
     \field{title}{Direct electronic measurement of the spin Hall effect}
-    \field{volume}{442}
+    \field{volume}{\bf{442}}
     \field{journaltitle}{Nature}
     \field{year}{2006}
   \endentry
@@ -1242,7 +1446,7 @@
     \field{pages}{035304}
     \field{title}{Nonlocal charge transport mediated by spin diffusion in the
   spin Hall effect regime}
-    \field{volume}{79}
+    \field{volume}{\bf{79}}
     \field{journaltitle}{Physical review B}
     \field{year}{2009}
   \endentry
@@ -1315,7 +1519,7 @@
     \field{pages}{448\bibrangedash 454}
     \field{title}{Evidence for the ballistic intrinsic spin Hall effect in HgTe
   nanostructures}
-    \field{volume}{6}
+    \field{volume}{\bf{6}}
     \field{journaltitle}{Nature Physics}
     \field{year}{2010}
   \endentry
@@ -1395,7 +1599,7 @@
     \field{number}{6027}
     \field{pages}{328\bibrangedash 330}
     \field{title}{Giant nonlocality near the Dirac point in graphene}
-    \field{volume}{332}
+    \field{volume}{\bf{332}}
     \field{journaltitle}{Science}
     \field{year}{2011}
   \endentry
@@ -1422,7 +1626,7 @@
     \field{pages}{284\bibrangedash 287}
     \field{title}{G., Jaiswal, M., Castro Neto, AH \& {\"O}zyilmaz, B. Colossal
   enhancement of spin--orbit coupling in weakly hydrogenated graphene}
-    \field{volume}{9}
+    \field{volume}{\bf{9}}
     \field{journaltitle}{Nat. Phys}
     \field{year}{2013}
   \endentry
@@ -1471,7 +1675,7 @@
     \field{pages}{016603}
     \field{title}{Proximity-induced ferromagnetism in graphene revealed by the
   anomalous Hall effect}
-    \field{volume}{114}
+    \field{volume}{\bf{114}}
     \field{journaltitle}{Physical review letters}
     \field{year}{2015}
   \endentry
@@ -1498,25 +1702,19 @@
       }}%
     }
     \list{publisher}{1}{%
-      {American Physical Society ({APS})}%
+      {APS}%
     }
     \strng{namehash}{BM+1}
     \strng{fullhash}{BMTFPM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1103/physrevb.94.121408
-    \endverb
     \field{number}{12}
+    \field{pages}{121408}
     \field{title}{Nonlocal topological valley transport at large valley Hall
   angles}
-    \verb{url}
-    \verb https://doi.org/10.1103%2Fphysrevb.94.121408
-    \endverb
-    \field{volume}{94}
+    \field{volume}{\bf{94}}
     \field{journaltitle}{Physical Review B}
     \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{rebecca2022moirè}{article}{}
@@ -1524,74 +1722,64 @@
       {{hash=AE}{%
          family={Arrighi},
          familyi={A\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
+         given={E},
+         giveni={E},
       }}%
       {{hash=NVH}{%
          family={Nguyen},
          familyi={N\bibinitperiod},
-         given={V.\bibnamedelima H.},
-         giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={V-H},
+         giveni={V\bibinithyphendelim H\bibinitperiod},
       }}%
       {{hash=DLM}{%
          family={Di\bibnamedelima Luca},
          familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
+         given={M},
+         giveni={M},
       }}%
       {{hash=MG}{%
          family={Maffione},
          familyi={M\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
+         given={G},
+         giveni={G},
       }}%
       {{hash=WK}{%
          family={Watanabe},
          familyi={W\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
+         given={K},
+         giveni={K},
       }}%
       {{hash=TT}{%
          family={Taniguchi},
          familyi={T\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
+         given={T},
+         giveni={T},
       }}%
       {{hash=MD}{%
          family={Mailly},
          familyi={M\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
+         given={D},
+         giveni={D},
       }}%
       {{hash=CJC}{%
          family={Charlier},
          familyi={C\bibinitperiod},
-         given={J.\bibnamedelima C.},
-         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={J-C},
+         giveni={J\bibinithyphendelim C\bibinitperiod},
       }}%
       {{hash=RPR}{%
          family={Ribeiro-Palau},
          familyi={R\bibinithyphendelim P\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
+         given={R},
+         giveni={R},
       }}%
     }
-    \list{publisher}{1}{%
-      {arXiv}%
-    }
-    \keyw{Mesoscale and Nanoscale Physics (cond-mat.mes-hall), FOS: Physical
-  sciences, FOS: Physical sciences}
     \strng{namehash}{AE+1}
     \strng{fullhash}{AENVHDLMMGWKTTMDCJCRPR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.48550/ARXIV.2205.01760
-    \endverb
-    \field{title}{Non-identical moiré twins in bilayer graphene}
-    \verb{url}
-    \verb https://arxiv.org/abs/2205.01760
-    \endverb
+    \field{title}{Non-identical moir\'e twins in bilayer graphene}
+    \field{journaltitle}{arXiv:2205.01760}
     \field{year}{2022}
   \endentry
 \enddatalist

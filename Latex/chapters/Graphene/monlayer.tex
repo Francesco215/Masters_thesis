@@ -219,6 +219,13 @@ The eigenvalues of the Hamiltonian gives us the dispersion relation \ref{fig:gra
     \caption{This is the dispersion relation for the single layer graphene, notice how near the vertices of the reciprocal lattice we get a cone-like dispersion relation typical of relativistic massless particles \cite{guinea2008review}}
     \label{fig:graphenedispersion}
 \end{figure}
+
+
+
+
+
+
+\subsubsection*{The Dirac cones}
 Near the degenerate points $\vect K_0$ and $\vect K_1$ (eq. \ref{eq:K_points}), the geometrical form factor can be expanded in Taylor series to first order in the wavevector measured from the $\vect K_0$ and $\vect K_1$ points. The resulting expression of the form factors are
 \begin{equation}
     F_{\vect K_0}(\vect k)=-F^*_{\vect K_1}(\vect k)= -\frac{\sqrt 3}2 \delta (k_x-ik_y)
@@ -255,5 +262,65 @@ We can also go futher on this, since an electron can be in a superposition betwe
     \label{eq:dirac_Hamiltonian_compressed}
 \end{equation}
 Here $\vect \sigma$ and $\vect \tau$ are Pauli matrices with $\sigma_z=\pm 1$ describing states on the $A(B)$ sublattice and $\tau_z=\pm 1$ describing states at the $\vect K_0(\vect K_1)$ points.
- GENERALIZZARE PER ENTRAMBI LE VALLEY
-%\subsection*{exfoliation}
+
+
+
+
+
+\subsubsection*{Why Dirac cones appear in the first place}
+Many of the properties of crystalline band structure can be infered by the symmetries of their spatial structure\cite{cardona2005fundamentals}, in this subsection we are going to talk about some of the properties of that give rise the Dirac cones.
+
+The Hamiltonian of graphene can be written as $2\times 2$ Hamiltonian that depends from a parameter $\vect k$ though the Peierls substitution that we introduced in section \ref{sec:berrybloch}
+\begin{equation}
+    H(\vect k)=\vect h(\vect k)\cdot\vect \sigma\,,
+\end{equation}
+where $\vect h(\vect k)=(h_x(\vect k),h_z(\vect k),h_z(\vect k))$ the parity operator $\mathcal P$ sends $\vect k\to -\vect k$ and exchanges the two sites so it acts as a $\sigma_x$ operator, so we have that
+\begin{equation}
+    H(\vect k)=\mathcal P^{-1}H(\vect k)\mathcal P=\sigma_x H(-\vect k)\sigma_x
+\end{equation}
+and since 
+\begin{equation}
+    \mathcal P^{-1}\vect \sigma\mathcal P=\sigma_x \vect \sigma\sigma_x =(\sigma_x,-\sigma_y,-\sigma_z)
+\end{equation}
+ we have that
+\begin{equation}
+    \begin{vmatrix}
+        h_x(\vect k)\\
+        h_y(\vect k)\\
+        h_z(\vect k)
+    \end{vmatrix}=
+    \begin{vmatrix}
+        h_x(-\vect k)\\
+        -h_y(-\vect k)\\
+        -h_z(-\vect k)
+    \end{vmatrix}
+    \label{eq:parity_cond}
+\end{equation}
+The time reversal operator $\mathcal T$ sends $\vect k\to -\vect k$ and it is antinunitary, so the system to have time reversal symmetry must obey 
+\begin{equation}
+    H(\vect k)=\mathcal T^{-1}H(\vect k)\mathcal T=H^*(\vect -k)
+\end{equation}
+However doesn't exchange the particle sites, it only does the complex conjucation
+\begin{equation}
+    \mathcal T^{-1}\vect \sigma\mathcal T=(\sigma_x,-\sigma_y,\sigma_z)
+\end{equation}
+so we have that
+\begin{equation}
+    \begin{vmatrix}
+        h_x(\vect k)\\
+        h_y(\vect k)\\
+        h_z(\vect k)
+    \end{vmatrix}=
+    \begin{vmatrix}
+        h_x(-\vect k)\\
+        -h_y(-\vect k)\\
+        h_z(-\vect k)
+    \end{vmatrix}
+    \label{eq:time_cond}
+\end{equation}
+Uniting the conditions from equation \ref{eq:parity_cond} and equation \ref{eq:time_cond} we have that
+\begin{equation}
+    h_z(\vect k)=0
+\end{equation}
+%This alone doesn't explain why there should be cone-like structures at the corners of the Brillouin zone. To prove this 
+The Dirac points occur because the two component $\vect h(\vect k)$ can have point zeros in two dimensions. In graphene they occur at two points $\vect K_0$ and $\vect K_1 = -\vect K_0$ \cite{hasan2010colloquium,divincenzo1984self}.

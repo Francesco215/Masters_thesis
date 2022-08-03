@@ -177,6 +177,7 @@ In equation \ref{eq:quantized sigma} we had a contribution that is the average o
 
 
 \section{Berry phase in Bloch bands}
+\label{sec:berrybloch}
 The band structure of crystals provides a natural platform to investigate the occurrence of the berry phase effect. Within the independent electron approximation, the band structure of a crystal is determined by the Bloch Hamiltonian:
 \begin{equation}
     H= \frac {\vect p^2}{2m} + V(\vect r)
@@ -266,7 +267,7 @@ Since $\vect A (t)$ preserves the translational symmetry, $\vect k$ is still a g
    \dot{\vect\pi}=-e \vect E
    \label{eq:pidt}
 \end{equation}
-To evaluate the velocity we have to use first order perturbation theory
+To evaluate the velocity we have to use first order perturbation theory \cite{thouless1983quantization}
 \begin{equation}
     \ket{\psi'_n}=\ket{\psi_n}+\sum_{n'\neq n}\frac{\braket{\psi_{n'}}{\Delta H|\psi_n}}{E_{n'}-E_n}\ket{\psi_{n'}}
 \end{equation}
@@ -297,7 +298,7 @@ and using equation \ref{eq:cryspeed}, equation \ref{eq:start-anom} becomes
     \braket{\psi_{n'}}{\partial_t\psi_n}
     -\textrm{c.c.}
 \end{equation}
-The second term in the equation above is the Berry curvature (equation \ref{eq:berry-curvature2}), so in the end we get that
+The second term in the equation above is the Berry curvature (equation \ref{eq:berry-curvature2}), so in the end we get that.
 
 \begin{equation}
     \vect v_n(\vect k)=\frac{\partial E_n (k)}{\hbar\partial \vect k} -\Omega^n_{\vect kt}
@@ -308,7 +309,7 @@ we have that
 \[
     \frac{\partial }{\partial t}=-\frac e\hbar \nabla_{\vect k}\cdot \vect E    
 \]
-Thought some mathematical manipulation it can be shown that parsing the equation above into equation \ref{eq:afgubaibg} we get that
+Thought some mathematical manipulation it can be shown that parsing the equation above into equation \ref{eq:afgubaibg} we get that  \cite{chang1995berry}
 
 \begin{equation}
     \vect v_n(\vect k)=\frac{\partial E_n (k)}{\hbar\partial \vect k} -\frac e\hbar \vect E\times \vect \Omega^n(\vect k)
@@ -320,4 +321,37 @@ Where $\vect \Omega^n(\vect k)$ is the Berry curvature of the $n$-th band
 \end{equation}
 From equation \ref{eq:anomalous_velocity} we can see that, in addition to the usual band dispersion contribution of equation \ref{eq:cryspeed}, an extra term previously known as an anomalous velocity contributes to $\vect v_n(\vect k)$. This velocity is transverse to the electric field, and it gives us yet another way of interpreting the Hall effect.
 
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Symmetry considerations for the Berry curvature}
+The velocity formula of equation \ref{eq:anomalous_velocity} shows us that, in addition to the band energy, the Berry curvature is required for a complete description of electron dynamics. However, the conventional formula of equation \ref{eq:cryspeed} has had great success describing electronic properties in the past. This suggests us that the Berry curvature term in most cases does not contribute.
+
+The general form of the Berry curvature $\Omega^n(\vect k)$ can be obtained via symmetry analysis. The velocity formula \ref{eq:anomalous_velocity} should be invariant under time reversal and spatial inversion symmetry if the unperturbed system possesses these symmetries to begin with. Under time reversal, $\vect v_n$ and $\vect k$ changes sign while $\vect E$ does not, in that case from \ref{eq:anomalous_velocity} we have that
+\begin{equation}
+    \Omega^n(-\vect k)=-\Omega(\vect k)\,.
+\end{equation}
+Under spatial inversion, $\vect v_n$, $\vect k$ and $\vect E$ changes sign, so from equation \ref{eq:anomalous_velocity}
+\begin{equation}
+    \Omega^n(-\vect k)=\Omega(\vect k)\,.
+\end{equation}
+\begin{wrapfigure}{r}{.5\textwidth}
+    \includegraphics[width=.5\textwidth]{Immagini/topo/curvature_Fe.pdf}
+    \caption{This plot represents the intersection of the be Brillouin zone with the 010 plane. The solid line i where the fermi surface intersects the 010 plane and in color in shown the magnitude of the Berry curvature $\Omega_z(\vect k)$ in atomic units \cite{yao2004first}}
+    \label{fig:berryferro}
+\end{wrapfigure} 
+Therefore, fore crystals with simultaneous time-reversal and spatial inversion symmetry the Berry curvature vanish identically throughout the Brillouin zone, this reduces equation \ref{eq:anomalous_velocity} to equation \ref{eq:cryspeed}.
+
+
+There are many important systems where both symmetries are not simultaneously present, for example in materials where the ferromagnetic ordering breaks the time reversal symmetry (figure \ref{fig:berryferro}).
+Another example is provided by single-layered graphene stacked on top of a substrate of Boron nitrite which breaks the inversion symmetry, it will be one of the main focuses of the thesis, but before delving into that we need to talk in more detail about the structure and electronic properties of graphene.
 
