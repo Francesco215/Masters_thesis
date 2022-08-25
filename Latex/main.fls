@@ -1053,11 +1053,11 @@ INPUT ./Immagini/stokes.eps
 INPUT ./Immagini/stokes-eps-converted-to.pdf
 INPUT ./Immagini/stokes-eps-converted-to.pdf
 INPUT ./Immagini/stokes-eps-converted-to.pdf
-INPUT ../website/images/berry/chern_theorem.png
-INPUT ../website/images/berry/chern_theorem.png
-INPUT ../website/images/berry/chern_theorem.png
-INPUT ../website/images/berry/chern_theorem.png
-INPUT ../website/images/berry/chern_theorem.png
+INPUT ./Immagini/topo/chern_theorem.png
+INPUT ./Immagini/topo/chern_theorem.png
+INPUT Immagini/topo/chern_theorem.png
+INPUT ./Immagini/topo/chern_theorem.png
+INPUT ./Immagini/topo/chern_theorem.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
