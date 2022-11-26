@@ -1,0 +1,29 @@
+\section{Gapped graphene}
+\label{sec:gapped-graphene}
+If either the sublattice symmetry $\mathcal P$ or the time reversal symmetry $\mathcal T$ are broken the Hamiltonian near the $\vect K$ points becomes a massive Dirac Hamiltonian.
+This means that for materials that do not have the parity symmetry $\mathcal P$ such as Boron Nitrite exhibit an open gap in the $\vect K$ points, alternatively one could layer graphene on top of another honeycomb lattice that doesn't have sublattice symmetry, therefore subjecting it with a periodic potential that breaks the symmetry and opens the gap by adding a mass term $\Delta$ in both the Dirac cones.\\
+Finding a crystalline structure that breaks time reversal symmetry can be a little more cumbersome, these kind of structures had been theorized by Haldane in 1987 \cite{haldane1988model}, then Kane and Mele \cite{kane2005quantum} proved that this happens in graphene itself if we take into account spin-orbit coupling, 
+
+
+Mathematically speaking, the tight binding Hamiltonian has two different energies for the two different atoms in the sub-lattice. With respect to equation \ref{eq:dirac_Hamiltonian} it becomes
+\begin{equation}
+    H(\vect k)=
+    \begin{bmatrix}
+        \Delta& v_F\hbar(\tau_zk_x-ik_y)\\
+        v_F\hbar(\tau_zk_x+ik_y)&-\Delta
+    \end{bmatrix}
+    \label{eq:gapped-dirac}\,,
+\end{equation}
+where $\Delta$ is half the difference of the diagonal energy on the two sublattices, and the energy zero has been shifted at the center of the energy gap. The dispersion relation now becomes
+\begin{equation}
+    E(\vect k)=\pm\sqrt{\Delta^2 + (v_F\hbar k)^2}\,.
+\end{equation}
+It is seen that the above dispersion curves are formally the same produced by the Dirac equations, with the light velocity $c$ replaced by the Fermi velocity $v_F$ and the rest mass $m_0=\Delta/v_F^2$.
+
+\begin{figure}[h]
+    \makebox[\textwidth][c]{
+        \includegraphics[width=\linewidth]{Immagini/graphene/dirac.pdf}
+        }%
+    \caption{Difference between the gapless and the gapped Dirac dispersion relation. In blue is showed the gapless Dirac Hamiltonian, while in orange the gapped Dirac Hamiltonian.}
+    \label{fig:dispersion-1D}
+\end{figure}
