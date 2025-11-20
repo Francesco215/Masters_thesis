@@ -1,43 +1,49 @@
 <!doctype html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1200">
     <script src="https://distill.pub/template.v2.js"></script>
     <link rel="stylesheet" href="website/style.css">
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
-    <script >
-        document.addEventListener("DOMContentLoaded", function() {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css"
+        integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"
+        integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js"
+        integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             renderMathInElement(document.body, {
                 // customised options
                 // • auto-render specific keys, e.g.:
                 delimiters: [
-                    {left: '$$', right: '$$', display: true},
-                    {left: '$', right: '$', display: false},
-                    {left: '\\(', right: '\\)', display: false},
-                    {left: '\\[', right: '\\]', display: true}
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true }
                 ],
                 // • rendering keys, e.g.:
-                throwOnError : false
+                throwOnError: false
             });
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELW1T3C1CX"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-ELW1T3C1CX');
-</script>
+        gtag('config', 'G-ELW1T3C1CX');
+    </script>
 
 </head>
 
 
 <d-front-matter>
-  <script type="text/json">{
+    <script type="text/json">{
     "title": "Topology in Quantum Mechanics",
     "description": "Sometimes the term Topology gets used in physics because it makes everything cool even if the connection with actual topology is not very clear. Here we are going to try to make clear the link between the two.",
     "authors": [
@@ -51,36 +57,41 @@
   }</script>
 </d-front-matter>
 
-  <d-title> 
+<d-title>
     <h1>What does Topology have to do with Physics?</h1>
     <p>
-        Sometimes the term "Topology" gets used in physics because it makes everything cool even if the connection with actual topology is not very clear. Here we are going to try to make clear the link between the two.
+        Sometimes the term "Topology" gets used in physics because it makes everything cool even if the connection with
+        actual topology is not very clear. Here we are going to try to make clear the link between the two.
     </p>
-    
-  </d-title>
 
-  <d-article>
+</d-title>
 
-    
+<d-article>
+
+
     <d-section id="intro">Introduction</d-section>
     <div>
-    <blockquote>
-        In mathematics, topology is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending; that is, without closing holes, opening holes, tearing, gluing, or passing through itself. <d-cite key="topologyWikipedia"></d-cite>
-    </blockquote>
-    <p>
-        Let's start with a simple but important example:
-    </p>
-    <p>
-        Let's consider the set of all the curves in the plane that don't pass thought the origin and that don't intersect themeseves. We can divide this set in two main subsets:
+        <blockquote>
+            In mathematics, topology is concerned with the properties of a geometric object that are preserved under
+            continuous deformations, such as stretching, twisting, crumpling, and bending; that is, without closing
+            holes, opening holes, tearing, gluing, or passing through itself. <d-cite key="topologyWikipedia"></d-cite>
+        </blockquote>
+        <p>
+            Let's start with a simple but important example:
+        </p>
+        <p>
+            Let's consider the set of all the curves in the plane that don't pass thought the origin and that don't
+            intersect themeseves. We can divide this set in two main subsets:
 
-    </p>
+        </p>
     </div>
 
     <div>
         <d-figure class="l-side">
             <img src="website/images/topology/topo1.svg" style="width:100%; height: auto; float: left;">
             <figcaption>
-                The origin in represented with a black dot. On the left the different equivalence classes are shown in different colors, and on the right you can see what happens when we apply noise
+                The origin in represented with a black dot. On the left the different equivalence classes are shown in
+                different colors, and on the right you can see what happens when we apply noise
             </figcaption>
         </d-figure>
         <ul>
@@ -88,37 +99,47 @@
             <li>The set of curves that don't circle around the origin (<font color="#648FFF">blue</font>)</li>
         </ul>
         <p>
-            You cannot deform continously a <font color="#FE6100">orange</font> curve in to a <font color="#648FFF">blue</font> one without crossing the origin, but you can deform continously a curve to reach one of the same color
+            You cannot deform continously a <font color="#FE6100">orange</font> curve in to a <font color="#648FFF">blue
+            </font> one without crossing the origin, but you can deform continously a curve to reach one of the same
+            color
         </p>
         <p>
-            So we say that the two types of curves have different topologies, or alternatively that they form two different classes of equivalence.
+            So we say that the two types of curves have different topologies, or alternatively that they form two
+            different classes of equivalence.
         </p>
         <p>
-            As you can see from the image below, if we add noise, most of the time the curves will keep their topology. However, if the noise is strong enough, or the curve close enough to the origin, the curve sometimes changes its topology.
+            As you can see from the image below, if we add noise, most of the time the curves will keep their topology.
+            However, if the noise is strong enough, or the curve close enough to the origin, the curve sometimes changes
+            its topology.
         </p>
     </div>
     <figure id="mamama">
         <img src="website/images/topology/toponoise.svg" style="width:100%; height: auto; float: left;">
         <figcaption>
-            In this image the <font color="#648FFF">blue</font> curve sometimes under noise keeps its topology, leaving it's color unchanged, other times it gets pushed beyond the origin and switches color  (here shown in <font color="#DC267F">fucsia</font>)
+            In this image the <font color="#648FFF">blue</font> curve sometimes under noise keeps its topology, leaving
+            it's color unchanged, other times it gets pushed beyond the origin and switches color (here shown in <font
+                color="#DC267F">fucsia</font>)
         </figcaption>
     </figure>
     <d-subsection id="why-important">Why is it important?</d-subsection>
 
     <p>
-        For a physicist, things that are inherently topological in nature are important because they are resistant to noise. For example, in quantum computing the main bottleneck comes from envorinment noise. Because of this reaserchers are trying to explore the possibility of using topological effects to execute noise-resistant computations.
+        For a physicist, things that are inherently topological in nature are important because they are resistant to
+        noise. For example, in quantum computing the main bottleneck comes from envorinment noise. Because of this
+        reaserchers are trying to explore the possibility of using topological effects to execute noise-resistant
+        computations.
     </p>
-    
+
     <d-section id="topoEM">Topology in ElectroMagnetism</d-section>
-    
+
     <p>
         The first example of topology in physics comes from Gauss's law
-    <d-equation id="gauss">
-    $$
-        \oint \mathbf{E}\cdot d\mathbf s= \frac {1}{\epsilon_0} Q_{\textrm{inside}}
-    $$
-    </d-equation>
-    Lets say that we only have to work with one charge, then there are two types of closed surfaces:
+        <d-equation id="gauss">
+            $$
+            \oint \mathbf{E}\cdot d\mathbf s= \frac {1}{\epsilon_0} Q_{\textrm{inside}}
+            $$
+        </d-equation>
+        Lets say that we only have to work with one charge, then there are two types of closed surfaces:
     <ol>
         <li>
             The ones that have the charge inside
@@ -131,64 +152,72 @@
     Thats exaclty the same as the example in the intoduction!
     </p>
     <p>
-        The reason I bring this up is because with this we have a way to actually calculate the topology of something instead of relying on what you eyes see
+        The reason I bring this up is because with this we have a way to actually calculate the topology of something
+        instead of relying on what you eyes see
     </p>
     <p>
-        There are a few other examples of things that link to topology in ElectroMagnetism, but we are going to skip them to jump straitgh into Quantum Mechanichs!
+        There are a few other examples of things that link to topology in ElectroMagnetism, but we are going to skip
+        them to jump straitgh into Quantum Mechanichs!
     </p>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <d-section id="no_flat">Topology in Quantum Mechanichs</d-section>
     <d-subsection id="fluxparticle">Particle moving around a Flux tube</d-subsection>
     <div>
         <p>
-            To start off we are goin to talk about a very specific case of a quantum particle in a ring around a infinitely long solenoid
+            To start off we are goin to talk about a very specific case of a quantum particle in a ring around a
+            infinitely long solenoid
             <d-footnote>
-                <i>Wait! isn't it harder to start off with Quantum Mechanichs + Electromagnetism? Why don't just use QM?</i><br><t>
-                &nbsp;&nbsp; Believe it or not, it's harder to use QM without EM for topological stuff, plus when we'll do that, we'll use tools that are better understood by doing analogies with the QM+EM case
+                <i>Wait! isn't it harder to start off with Quantum Mechanichs + Electromagnetism? Why don't just use
+                    QM?</i><br>
+                <t>
+                    &nbsp;&nbsp; Believe it or not, it's harder to use QM without EM for topological stuff, plus when
+                    we'll do that, we'll use tools that are better understood by doing analogies with the QM+EM case
             </d-footnote>
         </p>
         <p>
-            The hamiltonian of a particle with charge $-e$ moving through a magnetic field $\mathbf B= \nabla \times \mathbf A$ is
+            The hamiltonian of a particle with charge $-e$ moving through a magnetic field $\mathbf B= \nabla \times
+            \mathbf A$ is
             <d-equation id="EMHamiltonian">
                 $$
-                    H=\frac 1{2m}(\mathbf p + e\mathbf A)^2 
+                H=\frac 1{2m}(\mathbf p + e\mathbf A)^2
                 $$
             </d-equation>
         </p>
         <p>
-            Since $$\mathbf p=p_\theta \hat\theta=-\frac{i\hbar\mathbf {\hat \theta}}{R}\frac\partial {\partial \theta}$$
+            Since $$\mathbf p=p_\theta \hat\theta=-\frac{i\hbar\mathbf {\hat \theta}}{R}\frac\partial {\partial
+            \theta}$$
             $$
-             \oint \mathbf A\cdot d\mathbf r=\int \mathbf B\cdot d\mathbf s = \Phi
+            \oint \mathbf A\cdot d\mathbf r=\int \mathbf B\cdot d\mathbf s = \Phi
             $$
             it means that
             <d-equation id="vector_potential">
-            $$
+                $$
                 \mathbf A=\frac \Phi{2\pi R} \mathbf {\hat \theta}
-            $$
+                $$
             </d-equation>
             Putting it back into the hamiltonian
             <d-equation id="EMHamiltonian2">
-            $$
-                H=\frac 1{2m}\bigg(-\frac{i\hbar}{R}\frac\partial {\partial \theta} + \frac{e\Phi}{2\pi R}\bigg)^2 
-            $$
+                $$
+                H=\frac 1{2m}\bigg(-\frac{i\hbar}{R}\frac\partial {\partial \theta} + \frac{e\Phi}{2\pi R}\bigg)^2
+                $$
             </d-equation>
         </p>
     </div>
@@ -199,18 +228,19 @@
         <d-figure class="l-side">
             <img src="website/images/topology/spectral_flow.svg" style="width:100%; height: auto; float: left;">
             <figcaption>
-                Here plotted the energies $E_n$ (eq. <d-reference key="spectral_flow"></d-reference> ), notice how the state <i>"flow"</i> as we change $\Phi$
+                Here plotted the energies $E_n$ (eq. <d-reference key="spectral_flow"></d-reference> ), notice how the
+                state <i>"flow"</i> as we change $\Phi$
             </figcaption>
         </d-figure>
         <p>
-            The eigenstates of this hamiltonian are 
+            The eigenstates of this hamiltonian are
             $$
             \psi_n(\theta)=\frac {e^{in\theta}} {\sqrt{2\pi R}}; \quad n\in \mathbb Z
             $$
             Interestingly the Energies of the eigenstates are influenced by the vector potential
             <d-equation id="spectral_flow">
                 $$
-                    E_n=\frac 1{2mR^2}\bigg(\hbar n+ \frac{e\Phi}{2\pi}\bigg)^2=\tilde E\bigg(n+\frac{\Phi}{\Phi_0}\bigg)^2
+                E_n=\frac 1{2mR^2}\bigg(\hbar n+ \frac{e\Phi}{2\pi}\bigg)^2=\tilde E\bigg(n+\frac{\Phi}{\Phi_0}\bigg)^2
                 $$
             </d-equation>
             where
@@ -225,66 +255,82 @@
             state. If we increase the flux then, by the time we have reached $\Phi=\Phi_0$ , the $n=0$ state
             has transformed into the state that we previously labelled $n = 1$. Similarly, each state
             $n$ is shifted to the next state, $n + 1$ <d-footnote>It is tempting to invoke the adiabatic theorem
-            here but, because of level crossing at $\Phi=\Phi_0/2$ it is not valid</d-footnote>
+                here but, because of level crossing at $\Phi=\Phi_0/2$ it is not valid</d-footnote>
         </p>
     </div>
-        <figure id="state-flow1">
+    <figure id="state-flow1">
         <img src="website/images/topology/state-flow1.svg" style="width:100%; height: auto; float: left;">
     </figure>
     <p>
         This is an example of a phenomenon is called spectral flow: under a change of parameter
         the spectrum of the Hamiltonian changes, or “flows”. As we change increase the flux
-        by one unit  $\Phi_0$ the spectrum returns to itself, but individual states have morphed into
+        by one unit $\Phi_0$ the spectrum returns to itself, but individual states have morphed into
         each other. <d-cite key="tong2016lectures"></d-cite>
     </p>
-    
-    
-        <!--<p>
+
+
+    <!--<p>
             In Classical Electromagnetism the gauge potential $\mathbf A$ is unphisical: the physical quantities that affect the motion a particle are the electric and magnetic fields. But here we have shown that quantum mechanically the gauge potential acts in one way or the other on the particle
         </p>-->
-    
+
     <d-subsection id="paraBloch">Parallelism with Bloch's Theorem</d-subsection>
     <p>
-        The keen eyed among you might have noticed that Figure 3 is suspicially similar to a crystal band structure in the limit on which the periodic potential $V\to 0$ with periodicity $2\pi$, let's see if this analogy holds <i>the test of math</i>. Let's start by taking the single-particle free propagating Hamiltonian $$H=\frac 1{2m}p_\theta^2$$
+        The keen eyed among you might have noticed that Figure 3 is suspicially similar to a crystal band structure in
+        the limit on which the periodic potential $V\to 0$ with periodicity $2\pi$, let's see if this analogy holds
+        <i>the test of math</i>. Let's start by taking the single-particle free propagating Hamiltonian $$H=\frac
+        1{2m}p_\theta^2$$
     </p>
     <p>
-        The eigenstates this time have to respect the condition that $u_{n,q}(\theta)=e^{i2\pi q}u_{n,q}(\theta+2\pi)$.<d-footnote>This come from the block's theorem that states that the eigenstates of the hamiltonian of a periodic potential with periodicity $a$ mush obey that $u_{n,q}(x)=e^{iaq}u_{n,q}(x+a)$. In our case the periodicity $a=2\pi$ and the variable of the function is $\theta$ instead of $x$</d-footnote> This also means that if we substitute $q\to q+1$ the spectrum doesn't change 
+        The eigenstates this time have to respect the condition that $u_{n,q}(\theta)=e^{i2\pi
+        q}u_{n,q}(\theta+2\pi)$.<d-footnote>This come from the block's theorem that states that the eigenstates of the
+            hamiltonian of a periodic potential with periodicity $a$ mush obey that $u_{n,q}(x)=e^{iaq}u_{n,q}(x+a)$. In
+            our case the periodicity $a=2\pi$ and the variable of the function is $\theta$ instead of $x$</d-footnote>
+        This also means that if we substitute $q\to q+1$ the spectrum doesn't change
         <d-footnote>
             A brief proof of this is the following:<br>
-            The problem of the eigenvalues can be written like so 
+            The problem of the eigenvalues can be written like so
             $$
-                He^{iq\theta}u_{n,q}(\theta)=E_n(q)e^{iq\theta}u_{n,q}(\theta)
+            He^{iq\theta}u_{n,q}(\theta)=E_n(q)e^{iq\theta}u_{n,q}(\theta)
             $$
             if we now send $q\to q+1$ the equation above becomes
             $$
-                He^{iq\theta}e^{i\theta}u_{n,q+1}(\theta)=E_n(q+1)e^{iq\theta}e^{i\theta}u_{n,q+1}(\theta)
+            He^{iq\theta}e^{i\theta}u_{n,q+1}(\theta)=E_n(q+1)e^{iq\theta}e^{i\theta}u_{n,q+1}(\theta)
             $$
-            The terms $u'_{n,q}(\theta)\equiv e^{i\theta}u_{n,q+1}(\theta)$ are also periodic $u'_{n,q}(\theta)=u'_{n,q}(\theta+2\pi)$. If we put it back into the equation above we get
+            The terms $u'_{n,q}(\theta)\equiv e^{i\theta}u_{n,q+1}(\theta)$ are also periodic
+            $u'_{n,q}(\theta)=u'_{n,q}(\theta+2\pi)$. If we put it back into the equation above we get
             $$
-                He^{iq\theta}u'_{n,q}(\theta)=E_n(q+1)e^{iq\theta}u'_{n,q}(\theta)
+            He^{iq\theta}u'_{n,q}(\theta)=E_n(q+1)e^{iq\theta}u'_{n,q}(\theta)
             $$
-            That is completely equivalent to the equation at the start of this footnote, this means that the eigenvalues are periodic with periodicity 1
+            That is completely equivalent to the equation at the start of this footnote, this means that the eigenvalues
+            are periodic with periodicity 1
         </d-footnote>
     </p>
     <p>
         We now make the following unitary transformation to obtain a $q$-depentant Hamiltonian.
         $$
-            H(q)=e^{-iq\theta}He^{iq\theta}=\frac 1{2m}\bigg (p_\theta + \frac {\hbar q}R \bigg)^2
+        H(q)=e^{-iq\theta}He^{iq\theta}=\frac 1{2m}\bigg (p_\theta + \frac {\hbar q}R \bigg)^2
         $$
-        We can easly map this hamiltonian to the one in equation <d-reference key="EMHamiltonian2"></d-reference> just by difining $\Phi$ such that $\hbar q= \frac {e\Phi}{2\pi}$. 
+        We can easly map this hamiltonian to the one in equation <d-reference key="EMHamiltonian2"></d-reference> just
+        by difining $\Phi$ such that $\hbar q= \frac {e\Phi}{2\pi}$.
         <d-equation id="blochA">
-        $$
+            $$
             H(\Phi)=\frac 1{2m}\bigg(p_\theta + \frac{e\Phi}{2\pi R}\bigg)^2
-        $$
+            $$
         </d-equation>
-        Since before we said that the system doesn't change if we substitute $q\to q+1$, it means that now the system remains unchanged if we send $\Phi \to \Phi+\Phi_0$. This is exactly the result obtained in the previous section! (<d-reference key="fluxparticle"></d-reference>)
+        Since before we said that the system doesn't change if we substitute $q\to q+1$, it means that now the system
+        remains unchanged if we send $\Phi \to \Phi+\Phi_0$. This is exactly the result obtained in the previous
+        section! (<d-reference key="fluxparticle"></d-reference>)
     </p>
     <p>
-        And The tranformed eigenstates $\psi_{n,q}=e^{-iq\theta}u_{n,q}$ is just the cell-periodic part of the Bloch function. It satified the stricter periodic boundary condition
-        <d-equation id="blochboundraty"> 
-        $$\psi_{n,q}(\theta)=\psi_{n,q}(\theta +2\pi)$$
+        And The tranformed eigenstates $\psi_{n,q}=e^{-iq\theta}u_{n,q}$ is just the cell-periodic part of the Bloch
+        function. It satified the stricter periodic boundary condition
+        <d-equation id="blochboundraty">
+            $$\psi_{n,q}(\theta)=\psi_{n,q}(\theta +2\pi)$$
         </d-equation>
-        As you can see equations <d-reference key="blochA"></d-reference>  and <d-reference key="blochboundraty"></d-reference> create a system that is mathematically equivalent to the particle moving in a ring around a flux tube (subsection <d-reference key="fluxparticle"></d-reference>) <d-cite key="WeinbergBloch"></d-cite>
+        As you can see equations <d-reference key="blochA"></d-reference> and <d-reference
+            key="blochboundraty"></d-reference> create a system that is mathematically equivalent to the particle moving
+        in a ring around a flux tube (subsection <d-reference key="fluxparticle"></d-reference>) <d-cite
+            key="WeinbergBloch"></d-cite>
 
     </p>
     <d-subsection>Spectral flow in a more general context</d-subsection>
@@ -292,51 +338,65 @@
         The spectral flow is applicable in much more complex geometries than the one we have seen so far.<br>
         Suppose that now the particle can moove in a 3D potential $V(\mathbf r)$, the Hamiltonian is
         $$
-            H(\mathbf A)=\frac 1{2m}(\mathbf p + e\mathbf A)^2 + V(\mathbf r) 
+        H(\mathbf A)=\frac 1{2m}(\mathbf p + e\mathbf A)^2 + V(\mathbf r)
         $$
 
-        Since the solenoid is still the same, the formula for $\mathbf A$ remains unchanged (eq. <d-reference key="vector_potential"></d-reference> )
+        Since the solenoid is still the same, the formula for $\mathbf A$ remains unchanged (eq. <d-reference
+            key="vector_potential"></d-reference> )
         $$
-            H(\Phi)=\frac 1{2m}\bigg(\mathbf p + \frac{e\Phi}{2\pi R}\hat \theta\bigg)^2 + V(\mathbf r)
+        H(\Phi)=\frac 1{2m}\bigg(\mathbf p + \frac{e\Phi}{2\pi R}\hat \theta\bigg)^2 + V(\mathbf r)
         $$
-        and since it's expressed in cylindrical coordinates it's better to express also $\mathbf p$ in cylindrical coordinates.
+        and since it's expressed in cylindrical coordinates it's better to express also $\mathbf p$ in cylindrical
+        coordinates.
         $$
-         \mathbf p =-i\hbar \mathbf \nabla=-i\hbar\bigg( 
-             \mathbf{\hat r}\frac{\partial}{\partial r}+ \frac{\mathbf {\hat \theta}}{r}\frac{\partial}{\partial \theta} + \mathbf{\hat z}\frac{\partial}{\partial z}  \bigg) \equiv
-             \mathbf{\hat r} p_r+ \mathbf {\hat \theta} p_\theta + \mathbf{\hat z} p_z
+        \mathbf p =-i\hbar \mathbf \nabla=-i\hbar\bigg(
+        \mathbf{\hat r}\frac{\partial}{\partial r}+ \frac{\mathbf {\hat \theta}}{r}\frac{\partial}{\partial \theta} +
+        \mathbf{\hat z}\frac{\partial}{\partial z} \bigg) \equiv
+        \mathbf{\hat r} p_r+ \mathbf {\hat \theta} p_\theta + \mathbf{\hat z} p_z
         $$
         Of course if we send $\theta \to \theta + 2\pi$ the system should be unchanged.
         $$
-            \psi(r,\theta,z)=\psi(r,\theta+2\pi,z)
+        \psi(r,\theta,z)=\psi(r,\theta+2\pi,z)
         $$
-        Following the inverse reasoning done in subsection <d-reference key="paraBloch"></d-reference> we make the following unitary transformation.
+        Following the inverse reasoning done in subsection <d-reference key="paraBloch"></d-reference> we make the
+        following unitary transformation.
         $$
-            H=e^{i\theta\Phi/\Phi_0}H(\Phi)e^{-i\theta\Phi/\Phi_0}=\frac  {\mathbf p^2} {2m} + V(\mathbf r)
+        H=e^{i\theta\Phi/\Phi_0}H(\Phi)e^{-i\theta\Phi/\Phi_0}=\frac {\mathbf p^2} {2m} + V(\mathbf r)
         $$
         This means that the eigenvalue probelm is now written like so
         $$
-            He^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)=E(\Phi)e^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)
+        He^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)=E(\Phi)e^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)
         $$
 
         If we send $\Phi \to \Phi+\Phi_0$ we get an equivalent equation
         $$
-            He^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)=E(\Phi+\Phi_0)e^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)
+        He^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)=E(\Phi+\Phi_0)e^{i\theta\Phi/\Phi_0}\psi(r,\theta,z)
         $$
 
-        this means that the energy spectrum is unchanged if we send $\Phi \to \Phi+\Phi_0$. This is true regardless of the shape or geometry of $V(\mathbf r)$.
-        
+        this means that the energy spectrum is unchanged if we send $\Phi \to \Phi+\Phi_0$. This is true regardless of
+        the shape or geometry of $V(\mathbf r)$.
+
     </p>
     <d-subsection>The quantum Hall effect</d-subsection>
     <div>
-        
+
         <p>
-            We'll now see the effects of the spectral flow on physical properties of materials. Suppose we have a system like the one of the figure on the side. Now we slowly increase $\Phi$ from 0 to $\Phi_0$ in a total time $T$. This introduces a electromagnetice force arround the ring $\mathcal{E}=-\partial_t\Phi=-\Phi_0/T$.
+            We'll now see the effects of the spectral flow on physical properties of materials. Suppose we have a system
+            like the one of the figure on the side. Now we slowly increase $\Phi$ from 0 to $\Phi_0$ in a total time
+            $T$. This introduces a electromagnetice force arround the ring $\mathcal{E}=-\partial_t\Phi=-\Phi_0/T$.
         </p>
         <p>
-            Let's suppose that the disc has the property that due to spectral flow $n$ electrons are transferred form the inner cirlce to the outer cicle in this time $T$. This would result in a radial current $I_r=-ne/T$. This means that the resistance is <d-equation id="hall_resistivity">$$R_{xy}=\frac{\mathcal {E}}{I_r}=\frac{2\pi\hbar}{e^2}\frac 1n$$</d-equation>
+            Let's suppose that the disc has the property that due to spectral flow $n$ electrons are transferred form
+            the inner cirlce to the outer cicle in this time $T$. This would result in a radial current $I_r=-ne/T$.
+            This means that the resistance is <d-equation id="hall_resistivity">$$R_{xy}=\frac{\mathcal
+                {E}}{I_r}=\frac{2\pi\hbar}{e^2}\frac 1n$$</d-equation>
         </p>
         <p>
-            However, to be able to calculate $n$ we need to calculate how is the spectrum of the system as we change $\Phi$. This means that $n$ depends on the system, but equation <d-reference keY="hall_resistivity"></d-reference> is independent of the system. <d-footnote>There is the caveaut here that the system has to be in a defined quantum state, so in real world system it means that $T\approx0$</d-footnote>
+            However, to be able to calculate $n$ we need to calculate how is the spectrum of the system as we change
+            $\Phi$. This means that $n$ depends on the system, but equation <d-reference
+                keY="hall_resistivity"></d-reference> is independent of the system. <d-footnote>There is the caveaut
+                here that the system has to be in a defined quantum state, so in real world system it means that
+                $T\approx0$</d-footnote>
         </p>
     </div>
     <figure class="l-gutter" style="width:170%;">
@@ -346,9 +406,29 @@
         </figcaption>
     </figure>
 
-  </d-article>
-  <d-bibliography src="website/bibliography.bib"></d-bibliography>
-  <script rel="text/javascript" src="website/sourcecode.js"> </script>
+    <d-section id="conclusion">Conclusion</d-section>
+    <p>
+        We have taken a journey through the landscape where topology meets physics. We started by defining topology as
+        the study of properties preserved under continuous deformations, illustrating this with simple curves winding
+        around an origin.
+    </p>
+    <p>
+        We saw how this mathematical concept naturally arises in electromagnetism through Gauss's law, where the
+        "inside" and "outside" of a surface are topologically distinct. We then ventured into the quantum realm,
+        exploring the Aharonov-Bohm effect and the spectral flow of a particle on a ring, demonstrating that quantum
+        systems can be sensitive to global properties of the space they inhabit, even when local fields are zero.
+    </p>
+    <p>
+        Finally, we touched upon the Quantum Hall Effect, a striking example of how these topological invariants
+        manifest in real-world materials as robust physical quantities, like quantized resistance. This robustness
+        against disorder and noise is what makes topological phases of matter so exciting for the future of technology,
+        particularly in the race towards fault-tolerant quantum computing. As we continue to explore these topological
+        frontiers, we are likely to uncover even more exotic and useful phenomena.
+    </p>
+
+</d-article>
+<d-bibliography src="website/bibliography.bib"></d-bibliography>
+<script rel="text/javascript" src="website/sourcecode.js"> </script>
 
 </body>
 
